@@ -1,3 +1,5 @@
+Downloud plugin (https://raw.githubusercontent.com/RomanTrifanov/VSCode-support-SHM-template/refs/heads/main/tt_shm.vsix)
+
 # Template Toolkit for VS Code
 
 Support for [Perl Template Toolkit](http://www.template-toolkit.org/index.html) syntax and snippets in Visual Studio Code.
