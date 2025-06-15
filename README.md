@@ -1,7 +1,8 @@
-> [![!TIP]]
+> [!TIP]
 >**1.** Загрузите файл **tt_shm.vsix** (https://raw.githubusercontent.com/RomanTrifanov/VSCode-support-SHM-template/refs/heads/main/tt_shm.vsix)
 >
 >**2.** VSCode -> Расширения -> ... -> Установка из VSIX
+
 ![Снимок экрана от 2025-06-15 17-12-53](https://github.com/user-attachments/assets/d78545c4-dd85-4efb-873f-bb1ddd42623d)
 
 
