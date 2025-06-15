@@ -1,0 +1,107 @@
+{
+	"block": {
+		"prefix": "block",
+		"body": "{{ BLOCK ${1:name} }}\n   ${2:block...}\n{{ END }}\n",
+		"description": "BLOCK"
+	},
+	"call": {
+		"prefix": "call",
+		"body": "{{ CALL ${1:expr} }}\n",
+		"description": "CALL"
+	},
+	"def": {
+		"prefix": "def",
+		"body": "{{ DEFAULT ${1:var} = ${2:expr} }}\n",
+		"description": "DEFAULT"
+	},
+	"end": {
+		"prefix": "end",
+		"body": "{{ END }}\n",
+		"description": "END"
+	},
+	"for": {
+		"prefix": "for",
+		"body": "{{ FOR ${1:item} IN ${2:list...} }}\n   ${3:block...}\n{{ END }}\n",
+		"description": "FOR"
+	},
+	"get": {
+		"prefix": "get",
+		"body": "{{ GET ${1:expr} }}\n",
+		"description": "GET"
+	},
+	"ifelse": {
+		"prefix": "ifelse",
+		"body": "{{ IF ${1:expr} -}}\n   ${2:block...}\n{{ ELSE -}}\n   ${3:block...}\n{{ END }}\n",
+		"description": "IF ELSE"
+	},
+	"ifs": {
+		"prefix": "ifs",
+		"body": "{{ IF ${1:expr} -}}\n   ${2:block...}\n{{ ELSIF ${3:expr} -}}\n   ${4:block...}\n{{ ELSE -}}\n   ${5:block...}\n{{ END }}\n",
+		"description": "IF ELSIF ELSE"
+	},
+	"ifelsif": {
+		"prefix": "ifelsif",
+		"body": "{{ IF ${1:expr} -}}\n   ${2:block...}\n{{ ELSIF ${3:expr} -}}\n   ${4:block...}\n{{ END }}\n",
+		"description": "IF ELSIF"
+	},
+	"if": {
+		"prefix": "if",
+		"body": "{{ IF ${1:expr} }}\n   ${3:block...}\n{{ END }}\n",
+		"description": "IF"
+	},
+	"ins": {
+		"prefix": "ins",
+		"body": "{{ INSERT ${1:template} }}\n",
+		"description": "INSERT"
+	},
+	"inca": {
+		"prefix": "inca",
+		"body": "{{ INCLUDE ${1:template} ${2:args...} }}\n",
+		"description": "INCLUDE args"
+	},
+	"inc": {
+		"prefix": "inc",
+		"body": "{{ INCLUDE ${1:template} }}\n",
+		"description": "INCLUDE"
+	},
+	"macro": {
+		"prefix": "macro",
+		"body": "{{ MACRO ${1:name}\n         ${2:directive}\n}}\n",
+		"description": "MACRO"
+	},
+	"proca": {
+		"prefix": "proca",
+		"body": "{{ PROCESS ${1:template} ${2:args...} }}\n",
+		"description": "PROCESS args"
+	},
+	"proc": {
+		"prefix": "proc",
+		"body": "{{ PROCESS ${1:template} }}\n",
+		"description": "PROCESS"
+	},
+	"set": {
+		"prefix": "set",
+		"body": "{{ SET ${1:var} = ${2:expr} }}\n",
+		"description": "SET"
+	},
+	"switch": {
+		"prefix": "switch",
+		"body": "{{ SWITCH ${1:expr} -}}\n{{   CASE ${2:value1} -}}\n          ${3:block...}\n{{   CASE ${4:value2} -}}\n          ${5:block...}\n{{   CASE # default case -}}\n          ${6:block...}\n{{ END -}}\n",
+		"description": "SWITCH"
+	},
+	"use": {
+		"prefix": "use",
+		"body": "{{ USE ${1:plugin}(${2:args}) }}\n",
+		"description": "USE"
+	},
+	"wrapa": {
+		"prefix": "wrapa",
+		"body": "{{ WRAPPER ${1:template} ${2:args...} }}\n   ${3:content...}\n{{ END }}\n",
+		"description": "WRAPPER args"
+	},
+	"wrap": {
+		"prefix": "wrap",
+		"body": "{{ WRAPPER ${1:template} }}\n   ${3:content...}\n{{ END }}\n",
+		"description": "WRAPPER"
+	}
+}
