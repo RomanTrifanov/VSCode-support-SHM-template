@@ -31,17 +31,17 @@
 	},
 	"ifelse": {
 		"prefix": "ifelse",
-		"body": "{{ IF ${1:expr} -}}\n   ${2:block...}\n{{ ELSE -}}\n   ${3:block...}\n{{ END }}\n",
+		"body": "{{ IF ${1:expr} }}\n   ${2:block...}\n{{ ELSE }}\n   ${3:block...}\n{{ END }}\n",
 		"description": "IF ELSE"
 	},
 	"ifs": {
 		"prefix": "ifs",
-		"body": "{{ IF ${1:expr} -}}\n   ${2:block...}\n{{ ELSIF ${3:expr} -}}\n   ${4:block...}\n{{ ELSE -}}\n   ${5:block...}\n{{ END }}\n",
+		"body": "{{ IF ${1:expr} }}\n   ${2:block...}\n{{ ELSIF ${3:expr} }}\n   ${4:block...}\n{{ ELSE }}\n   ${5:block...}\n{{ END }}\n",
 		"description": "IF ELSIF ELSE"
 	},
 	"ifelsif": {
 		"prefix": "ifelsif",
-		"body": "{{ IF ${1:expr} -}}\n   ${2:block...}\n{{ ELSIF ${3:expr} -}}\n   ${4:block...}\n{{ END }}\n",
+		"body": "{{ IF ${1:expr} }}\n   ${2:block...}\n{{ ELSIF ${3:expr} }}\n   ${4:block...}\n{{ END }}\n",
 		"description": "IF ELSIF"
 	},
 	"if": {
@@ -86,7 +86,7 @@
 	},
 	"switch": {
 		"prefix": "switch",
-		"body": "{{ SWITCH ${1:expr} -}}\n{{   CASE ${2:value1} -}}\n          ${3:block...}\n{{   CASE ${4:value2} -}}\n          ${5:block...}\n{{   CASE # default case -}}\n          ${6:block...}\n{{ END -}}\n",
+		"body": "{{ SWITCH ${1:expr} }}\n{{   CASE ${2:value1} }}\n          ${3:block...}\n{{   CASE ${4:value2} }}\n          ${5:block...}\n{{   CASE # default case }}\n          ${6:block...}\n{{ END }}\n",
 		"description": "SWITCH"
 	},
 	"use": {
@@ -103,5 +103,10 @@
 		"prefix": "wrap",
 		"body": "{{ WRAPPER ${1:template} }}\n   ${3:content...}\n{{ END }}\n",
 		"description": "WRAPPER"
+	},
+	"text": {
+		"prefix": ["text", "TEXT"],
+		"body": "{{ TEXT = BLOCK }}\n   ${2:text...}\n{{ END #TEXT }}\n",
+		"description": "INCLUDE"
 	}
 }
