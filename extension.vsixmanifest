@@ -14,10 +14,10 @@
       <Property Id="Microsoft.VisualStudio.Code.ExtensionPack" Value="" />
       <Property Id="Microsoft.VisualStudio.Code.LocalizedLanguages" Value="" />
       
-        <Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="https://github.com/samosad/vscode-template-toolkit" />
-        <Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="https://github.com/samosad/vscode-template-toolkit" />
+        <Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="https://github.com/RomanTrifanov/VSCode-support-SHM-template" />
+        <Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="https://github.com/RomanTrifanov/VSCode-support-SHM-template" />
         
-          <Property Id="Microsoft.VisualStudio.Services.Links.GitHub" Value="https://github.com/samosad/vscode-template-toolkit" />
+          <Property Id="Microsoft.VisualStudio.Services.Links.GitHub" Value="https://github.com/RomanTrifanov/VSCode-support-SHM-template" />
         
       
       

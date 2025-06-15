@@ -4,9 +4,12 @@ Support for [Perl Template Toolkit](http://www.template-toolkit.org/index.html) 
 
 
 ## Features
+File extensions:
+-.tt
+-.tpl
 
 ### Syntaxes:
-
+SPECIAL for SHM (https://myshm.ru, https://docs.myshm.ru)
 - TT2 {{ ... }}
 
 ### Snippets:
