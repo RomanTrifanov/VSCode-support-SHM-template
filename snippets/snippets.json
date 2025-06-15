@@ -108,5 +108,80 @@
 		"prefix": ["text", "TEXT"],
 		"body": "{{ TEXT = BLOCK }}\n   ${2:text...}\n{{ END #TEXT }}\n",
 		"description": "INCLUDE"
+	},
+	"user.id()": {
+		"prefix": "user.id()",
+		"body": "user.id( $1 ) ",
+		"description": "user.id()"
+	},
+	"user.balance": {
+		"prefix": "user.balance",
+		"body": "user.balance ",
+		"description": "user.balance"
+	},
+	"user.full_name": {
+		"prefix": "user.full_name",
+		"body": "user.full_name ",
+		"description": "user.full_name"
+	},
+	"user.login": {
+		"prefix": "user.login",
+		"body": "user.login ",
+		"description": "user.login"
+	},
+	"user.credit": {
+		"prefix": "user.credit",
+		"body": "user.credit ",
+		"description": "user.credit"
+	},
+	"user.dogovor": {
+		"prefix": "user.dogovor",
+		"body": "user.dogovor ",
+		"description": "user.dogovor"
+	},
+	"user.settings": {
+		"prefix": "user.settings",
+		"body": "user.settings.",
+		"description": "user.settings"
+	},
+	"user.get_bonus": {
+		"prefix": "user.get_bonus",
+		"body": "user.get_bonus ",
+		"description": "user.get_bonus"
+	},
+	"user.income_percent": {
+		"prefix": "user.income_percent",
+		"body": "user.income_percent ",
+		"description": "user.income_percent"
+	},
+	"user.add_bonus": {
+		"prefix": "user.add_bonus",
+		"body": "user.add_bonus( ${1:amount},'${2:comment}' ) ",
+		"description": "user.add_bonus"
+	},
+	"user.set_settings": {
+		"prefix": "user.set_settings",
+		"body": "user.set_settings({ '${1:key}' => ${2:value} }) ",
+		"description": "user.set_settings"
+	},
+	"user.gen_session.id": {
+		"prefix": "user.gen_session.id",
+		"body": "user.gen_session.id ",
+		"description": "user.gen_session.id"
+	},
+	"user.pays": {
+		"prefix": "user.pays",
+		"body": "user.pays ",
+		"description": "user.pays"
+	},
+	"user.delete": {
+		"prefix": "user.delete",
+		"body": "user.delete ",
+		"description": "user.delete"
+	},
+	"user.list_for_api": {
+		"prefix": "user.list_for_api",
+		"body": "user.list_for_api( 'admin', 1) ",
+		"description": "user.list_for_api( 'admin', 1)"
 	}
 }
