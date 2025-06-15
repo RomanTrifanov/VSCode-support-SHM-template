@@ -21,26 +21,16 @@ SPECIAL for SHM (https://myshm.ru, https://docs.myshm.ru)
 - TT2 {{ ... }}
 
 ### Snippets:
-- BLOCK
-- CALL
-- DEFAULT
-- END
-- FOREACH
-- GET
-- IF ELSE
-- IF ELSIF ELSE
-- IF ELSIF
-- IF
-- INCLUDE
-- INSERT
-- MACRO
-- PROCESS
-- SET
-- SWITCH
-- USE
-- WRAPPER
+- BLOCK, CALL, DEFAULT, END, FOR, GET
+- IF ELSE, IF ELSIF ELSE, IF ELSIF, IF
+- INCLUDE, INSERT, MACRO, PROCESS
+- SET, SWITCH, USE, WRAPPER
+- TEXT
+
+### SHM snippets:
+- user.<method>
 
 ## Release Notes
 
-### 0.0.1
-- Initial release
+### 0.0.2
+- Add some SHM user methods

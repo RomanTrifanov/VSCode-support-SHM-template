@@ -2,7 +2,7 @@
     "name": "tt_castom",
     "displayName": "TT for SHM {{..}}",
     "description": "VS Code support for Perl Template Toolkit syntax {{..}}",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "Roman T",
     "repository": {
         "type": "git",
