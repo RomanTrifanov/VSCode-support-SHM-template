@@ -1,31 +1,31 @@
 > [!TIP]
->**1.** Загрузите файл **tt_shm.vsix** (https://raw.githubusercontent.com/RomanTrifanov/VSCode-support-SHM-template/refs/heads/main/tt_shm.vsix)
+> Установка расширения.
+>**1.** Загрузите файл **[tt_shm.vsix]** (https://raw.githubusercontent.com/RomanTrifanov/VSCode-support-SHM-template/refs/heads/main/tt_shm.vsix)
 >
 >**2.** VSCode -> Расширения -> ... -> Установка из VSIX
+![Снимок экрана от 2025-06-15 17-12-53](https://github.com/user-attachments/assets/c3b24044-4ce6-4775-a90b-babe9ba87a51)
 
-![Снимок экрана от 2025-06-15 17-12-53](https://github.com/user-attachments/assets/d78545c4-dd85-4efb-873f-bb1ddd42623d)
+> [!TIP]
+>Включить подсказки - `ctrl`+`space`
+![Снимок экрана от 2025-06-18 21-04-26](https://github.com/user-attachments/assets/d54bef9d-8166-484c-9de9-649357c379c7)
 
+![Снимок экрана от 2025-06-18 21-09-23](https://github.com/user-attachments/assets/9f22f76e-4324-4af0-a3fa-f8b22f29f47a)
 
-![Снимок экрана от 2025-06-15 17-58-48](https://github.com/user-attachments/assets/1ceed6a5-e0b1-4678-9e16-0d2f00e40880)
 
 # Template Toolkit for VS Code
 
 Support for [Perl Template Toolkit](http://www.template-toolkit.org/index.html) syntax and snippets in Visual Studio Code.
 ## Features
 File extensions:
--.tt
--.tpl
+-.tt, .tpl
 
 ### Syntaxes:
 SPECIAL for SHM (https://myshm.ru, https://docs.myshm.ru)
 - TT2 {{ ... }}
 
 ### Snippets:
-- BLOCK, CALL, DEFAULT, END, FOR, GET
-- IF ELSE, IF ELSIF ELSE, IF ELSIF, IF
-- INCLUDE, INSERT, MACRO, PROCESS
-- SET, SWITCH, USE, WRAPPER
-- TEXT
+- BLOCK, CALL, DEFAULT, END, FOR, GET, IF ELSE, IF ELSIF ELSE, IF ELSIF, IF
+- INCLUDE, INSERT, MACRO, PROCESS, SET, SWITCH, USE, WRAPPER, TEXT
 
 ### SHM snippets:
 - user, us, service, pay, wd, server, sg, tpl, storage
