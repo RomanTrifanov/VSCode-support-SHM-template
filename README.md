@@ -1,6 +1,6 @@
 > [!TIP]
 > Установка расширения.
->**1.** Загрузите файл [**tt_shm.vsix**] (https://raw.githubusercontent.com/RomanTrifanov/VSCode-support-SHM-template/refs/heads/main/tt_shm.vsix)
+>**1.** Загрузите файл [tt_shm.vsix](https://raw.githubusercontent.com/RomanTrifanov/VSCode-support-SHM-template/refs/heads/main/tt_shm.vsix)
 >
 >**2.** VSCode -> Расширения -> ... -> Установка из VSIX
 
@@ -8,6 +8,7 @@
 
 > [!TIP]
 >Включить подсказки - `ctrl`+`space`
+
 ![Снимок экрана от 2025-06-18 21-04-26](https://github.com/user-attachments/assets/d54bef9d-8166-484c-9de9-649357c379c7)
 
 ![Снимок экрана от 2025-06-18 21-09-23](https://github.com/user-attachments/assets/9f22f76e-4324-4af0-a3fa-f8b22f29f47a)
