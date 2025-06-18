@@ -1,5 +1,6 @@
 > [!TIP]
 > Установка расширения.
+> 
 >**1.** Загрузите файл [tt_shm.vsix](https://raw.githubusercontent.com/RomanTrifanov/VSCode-support-SHM-template/refs/heads/main/tt_shm.vsix)
 >```https://raw.githubusercontent.com/RomanTrifanov/VSCode-support-SHM-template/refs/heads/main/tt_shm.vsix```
 > 
