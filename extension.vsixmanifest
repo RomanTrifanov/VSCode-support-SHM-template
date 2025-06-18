@@ -5,6 +5,7 @@
     <DisplayName>TT for SHM</DisplayName>
     <Description xml:space="preserve">VS Code support for Perl Template Toolkit syntax  {{..}}</Description>
     <Tags>tt,perl,template,template toolkit,snippet,Template Toolkit,tt3,__ext_tt,__ext_tt3,__ext_htmltt</Tags>
+    <MoreInfo>"https://github.com/RomanTrifanov/VSCode-support-SHM-template"</MoreInfo>
     <Categories>Languages,Snippets</Categories>
     <GalleryFlags>Public</GalleryFlags>
     <Badges></Badges>
@@ -13,20 +14,13 @@
       <Property Id="Microsoft.VisualStudio.Code.ExtensionDependencies" Value="" />
       <Property Id="Microsoft.VisualStudio.Code.ExtensionPack" Value="" />
       <Property Id="Microsoft.VisualStudio.Code.LocalizedLanguages" Value="" />
-      
-        <Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="https://github.com/RomanTrifanov/VSCode-support-SHM-template" />
-        <Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="https://github.com/RomanTrifanov/VSCode-support-SHM-template" />
-        
-          <Property Id="Microsoft.VisualStudio.Services.Links.GitHub" Value="https://github.com/RomanTrifanov/VSCode-support-SHM-template" />
-        
-      
-      
-      
+      <Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="" />
+      <Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="" />
+      <Property Id="Microsoft.VisualStudio.Services.Links.GitHub" Value="https://github.com/RomanTrifanov/VSCode-support-SHM-template" />
       <Property Id="Microsoft.VisualStudio.Services.Branding.Color" Value="#00aaf0" />
       <Property Id="Microsoft.VisualStudio.Services.Branding.Theme" Value="light" />
       <Property Id="Microsoft.VisualStudio.Services.GitHubFlavoredMarkdown" Value="true" />
-      
-      
+
     </Properties>
     <License>extension/LICENSE.txt</License>
     <Icon>extension/logo.png</Icon>
@@ -37,6 +31,9 @@
   <Dependencies/>
   <Assets>
     <Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
-    <Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Services.Content.Changelog" Path="extension/CHANGELOG.md" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Services.Content.License" Path="extension/LICENSE.txt" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Services.Icons.Default" Path="extension/logo.png" Addressable="true" />
+    <Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true" />
+    <Asset Type="Microsoft.VisualStudio.Services.Content.Changelog" Path="extension/CHANGELOG.md" Addressable="true" />
+    <Asset Type="Microsoft.VisualStudio.Services.Content.License" Path="extension/LICENSE.txt" Addressable="true" />
+    <Asset Type="Microsoft.VisualStudio.Services.Icons.Default" Path="extension/logo.png" Addressable="true" />
   </Assets>
 </PackageManifest>
