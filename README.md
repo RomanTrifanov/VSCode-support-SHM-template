@@ -9,7 +9,7 @@
 
 ![Снимок экрана от 2025-06-15 17-12-53](https://github.com/user-attachments/assets/c3b24044-4ce6-4775-a90b-babe9ba87a51)
 
-> [!TIP]
+> [!NOTE]
 >Включить подсказки - `ctrl`+`space`
 
 ![Снимок экрана от 2025-06-18 21-04-26](https://github.com/user-attachments/assets/d54bef9d-8166-484c-9de9-649357c379c7)
