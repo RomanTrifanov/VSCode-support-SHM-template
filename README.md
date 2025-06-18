@@ -28,13 +28,14 @@ File extensions:
 SPECIAL for SHM (https://myshm.ru, https://docs.myshm.ru)
 - TT2 {{ ... }}
 
-### Snippets:
+### Template Toolkit snippets:
 - BLOCK, CALL, DEFAULT, END, FOR, GET, IF ELSE, IF ELSIF ELSE, IF ELSIF, IF
 - INCLUDE, INSERT, MACRO, PROCESS, SET, SWITCH, USE, WRAPPER, TEXT
+- VMethods snippets
 
 ### SHM snippets:
 - user, us, service, pay, wd, server, sg, tpl, storage
-- toJson, fromJson, toQueryString, filter, where, dump ...
+- toJson, fromJson, toQueryString, filter, where, dump, misc ...
 - tg_api: sendMessage, editMessageText, deleteMessage, answerCallbackQuery
 
 ## Release Notes
@@ -46,3 +47,6 @@ SPECIAL for SHM (https://myshm.ru, https://docs.myshm.ru)
 - Add SHM snippets for: us, service, pay, wd, server, sg, tpl, storage
 - Add SHM snippets: toJson, fromJson, toQueryString, filter, where, dump ...
 - Add SHM tg_api snippets: sendMessage, editMessageText, deleteMessage, answerCallbackQuery
+## 0.0.4
+- ADD Template Toolkit VMethods snippets
+- Add SHM snippets for misc
