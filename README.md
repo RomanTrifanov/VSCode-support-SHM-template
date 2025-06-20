@@ -35,7 +35,7 @@ SPECIAL for SHM (https://myshm.ru, https://docs.myshm.ru)
 
 ### SHM snippets:
 - user, us, service, pay, wd, server, sg, tpl, storage
-- toJson, fromJson, toQueryString, filter, where, dump, misc ...
+- toJson, fromJson, toQueryString, filter, where, dump, misc. ...
 - tg_api: sendMessage, editMessageText, deleteMessage, answerCallbackQuery
 
 ## Release Notes
