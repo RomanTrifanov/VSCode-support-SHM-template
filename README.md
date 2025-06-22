@@ -10,9 +10,15 @@
 ![Снимок экрана от 2025-06-15 17-12-53](https://github.com/user-attachments/assets/c3b24044-4ce6-4775-a90b-babe9ba87a51)
 
 > [!NOTE]
->Включить подсказки - `ctrl`+`space`
+>Включить подсказки - `Ctrl`+`Space`
 
 ![Снимок экрана от 2025-06-18 21-04-26](https://github.com/user-attachments/assets/d54bef9d-8166-484c-9de9-649357c379c7)
+
+> [!NOTE]
+>Если Вы хотете поддержать автора криптой:
+> 
+>- USDT (TRC20) `TXRt5vuc4E32XCwkBQvykFUDZQnqnTLhdK`
+>- Toncoin (TON) `UQBk6qSNV9B_8SED_zGBUP8EcMn6AaZSa0yrcwoClGTJjiIF`
 
 ![Снимок экрана от 2025-06-18 21-09-23](https://github.com/user-attachments/assets/9f22f76e-4324-4af0-a3fa-f8b22f29f47a)
 
