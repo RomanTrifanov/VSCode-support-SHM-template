@@ -31,7 +31,7 @@ File extensions:
 -.tt, .tpl
 
 ### Syntaxes:
-SPECIAL for SHM (https://myshm.ru, https://docs.myshm.ru)
+Special for SHM (https://myshm.ru, https://docs.myshm.ru)
 - TT2 {{ ... }}
 
 ### Template Toolkit snippets:
