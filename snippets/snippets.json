@@ -737,7 +737,7 @@
 	"tpl.id().parse": {
 		"prefix": ["tpl.id()", "parse"],
 		"body": "tpl.id( ${1:TEMPLATE} ).parse( 'usi', ${1:usi} )",
-		"description": "Выполнить шаблон с именем NAME для пользовательской услуги с идентификаторм usi"
+		"description": "Выполнить шаблон с именем NAME для пользовательской услуги с идентификатором usi"
 	},
 	"tpl.data": {
 		"prefix": "tpl.data",
@@ -797,7 +797,7 @@
 	"server.id()": {
 		"prefix": "server.id()",
 		"body": "server.id( $1 )",
-		"description": "Установить id серверав"
+		"description": "Установить id сервера"
 	},
 	"server.name": {
 		"prefix": "server.name",
