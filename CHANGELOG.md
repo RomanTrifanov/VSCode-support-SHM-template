@@ -10,3 +10,6 @@
 ## 0.0.4
 - ADD Template Toolkit VMethods
 - Add SHM snippets for misc 
+## 0.0.5
+- Add SHM http.method() snippets (get, post, put, delete, patch)
+- Add SHM snippets (user.has_payments, user.us.has_services, user.us.has_services_active, us.is_paid and other)

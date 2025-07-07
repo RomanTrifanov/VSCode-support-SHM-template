@@ -1,12 +1,12 @@
 {
-    "name": "tt_castom",
+    "name": "tt_custom",
     "displayName": "TT for SHM {{..}}",
     "description": "VS Code support for Perl Template Toolkit syntax {{..}}",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "publisher": "Roman T",
     "repository": {
         "type": "git",
-        "url": "https://github.com/RomanTrifanov/VSCode-support-SHM-template"
+        "url": "https://github.com/RomanTrifanov/VSCode-support-SHM-template.git"
     },
     "engines": {
         "vscode": "^1.5.0"
