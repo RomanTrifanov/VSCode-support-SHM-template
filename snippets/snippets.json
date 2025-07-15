@@ -24,6 +24,16 @@
 		"body": "{{ FOR ${1:item} IN ${2:list...} }}\n   ${3:block...}\n{{ END }}\n",
 		"description": "FOR"
 	},
+	"for1": {
+		"prefix": "{{ for}}",
+		"body": "{{ FOR ${1:item} IN ${2:list...} }}\n   ${3:block...}\n{{ END ",
+		"description": "FOR"
+	},
+	"for2": {
+		"prefix": "{{for}}",
+		"body": "{{ FOR ${1:item} IN ${2:list...} }}\n   ${3:block...}\n{{ END ",
+		"description": "FOR"
+	},
 	"get": {
 		"prefix": "get",
 		"body": "{{ GET ${1:expr} }}\n",
@@ -47,6 +57,16 @@
 	"if": {
 		"prefix": "if",
 		"body": "{{ IF ${1:expr} }}\n   ${3:block...}\n{{ END }}\n",
+		"description": "IF"
+	},
+	"if1": {
+		"prefix": "{{ if}}",
+		"body": "{{ IF ${1:expr} }}\n   ${3:block...}\n{{ END ",
+		"description": "IF"
+	},
+	"if2": {
+		"prefix": "{{if}}",
+		"body": "{{ IF ${1:expr} }}\n   ${3:block...}\n{{ END ",
 		"description": "IF"
 	},
 	"ins": {
@@ -1321,5 +1341,15 @@
         "prefix": "us.has_expired",
         "body": "us.has_expired",
         "description": "Возвращает 1, если срок действия услуги истек, 0, срок действия услуги не истек"
+    },
+    "comment": {
+        "prefix": "comment",
+        "body": "{{# ${1:comment} }}",
+        "description": "Комментарий в коде {{# комментарий }}"
+    },
+    "misc.html_escape": {
+        "prefix": "misc.html_escape()",
+        "body": "misc.html_escape(${1:str})",
+        "description": "Заменяет HTML символы: & => &amp;, < => &lt;, > => &gt;, / => '&#x2F;' и кавычки "
     }
 }

@@ -13,3 +13,8 @@
 ## 0.0.5
 - Add SHM http.method() snippets (get, post, put, delete, patch)
 - Add SHM snippets (user.has_payments, user.us.has_services, user.us.has_services_active, us.is_paid and other)
+## 0.0.6
+- Add comment snippet (type 'comment')
+- Add misc.html_escape(str) snippet
+- Fix IF and FOR snippets.
+  You can start to type: for, {{for, {{ for, if, {{if, {{ if. This will be completed correctly.
