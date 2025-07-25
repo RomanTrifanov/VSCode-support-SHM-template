@@ -19,7 +19,8 @@
 >- USDT (TRC20) `TXRt5vuc4E32XCwkBQvykFUDZQnqnTLhdK`
 >- Toncoin (TON) `UQBk6qSNV9B_8SED_zGBUP8EcMn6AaZSa0yrcwoClGTJjiIF`
 
-![Снимок экрана от 2025-06-18 21-09-23](https://github.com/user-attachments/assets/9f22f76e-4324-4af0-a3fa-f8b22f29f47a)
+<img width="464" height="596" alt="Снимок экрана от 2025-07-26 02-06-56" src="https://github.com/user-attachments/assets/95a74698-37e5-42ba-86ba-70268da66086" />
+
 
 
 # Template Toolkit for VS Code
