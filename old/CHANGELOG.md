@@ -18,5 +18,3 @@
 - Add misc.html_escape(str) snippet
 - Fix IF and FOR snippets.
   You can start to type: for, {{for, {{ for, if, {{if, {{ if. This will be completed correctly.
-## 1.0.
-- Marketplace release.

@@ -1,59 +1,44 @@
 {
-    "name": "tt_custom",
-    "displayName": "TT for SHM {{..}}",
-    "description": "VS Code support for Perl Template Toolkit syntax {{..}}",
-    "version": "0.0.6",
-    "publisher": "Roman T",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/RomanTrifanov/VSCode-support-SHM-template.git"
-    },
-    "engines": {
-        "vscode": "^1.5.0"
-    },
-    "license": "MIT",
-    "categories": [
-        "Languages",
-        "Snippets"
-    ],
+  "name": "tt-for-shm",
+  "displayName": "TT for SHM",
+  "description": "VS Code support for SHM Template Toolkit syntax {{..}}",
+  "author":{
+    "name": "Roman Trifanov"
+  },
+  "repository": "https://github.com/RomanTrifanov/VSCode-support-SHM-template",
+  "homepage": "https://github.com/RomanTrifanov/VSCode-support-SHM-template/blob/main/README.md",
+  "version": "1.0.0",
+  "publisher": "romant38",
+  "license": "MIT",
+  "icon": "./images/logo.png",
+  "engines": {
+    "vscode": "^1.5.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "tt2",
+      "aliases": ["TT2", "tt2"],
+      "extensions": [".tt",".tpl"],
+      "configuration": "./language-configuration.json"
+    }],
     "keywords": [
-        "tt",
-        "perl",
-        "template",
-        "template toolkit"
+      "shm",
+      "tt",
+      "perl",
+      "template",
+      "template toolkit"
     ],
-    "icon": "logo.png",
-    "galleryBanner": {
-        "color": "#00aaf0",
-        "theme": "light"
-    },
-    "contributes": {
-        "languages": [
-            {
-                "id": "tt",
-                "aliases": [
-                    "Template Toolkit",
-                    "tt"
-                ],
-                "extensions": [
-                    ".tt",
-                    ".tpl"
-                ],
-                "configuration": "./language-configuration.json"
-            }
-        ],
-        "grammars": [
-            {
-                "language": "tt",
-                "scopeName": "source.tt2",
-                "path": "./syntaxes/TT2.tmLanguage"
-            }
-        ],
-        "snippets": [
-            {
-                "language": "tt",
-                "path": "./snippets/snippets.json"
-            }
-        ]
-    }
+    "grammars": [{
+      "language": "tt2",
+      "scopeName": "source.tt2",
+      "path": "./syntaxes/tt2.tmLanguage"
+    }],
+    "snippets": [{
+      "language": "tt2",
+      "path": "./snippets/snippets.json"
+    }]
+  }
 }

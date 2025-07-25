@@ -1,0 +1,59 @@
+{
+    "name": "tt_custom",
+    "displayName": "TT for SHM {{..}}",
+    "description": "VS Code support for Perl Template Toolkit syntax {{..}}",
+    "version": "0.0.6",
+    "publisher": "Roman T",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/RomanTrifanov/VSCode-support-SHM-template.git"
+    },
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "license": "MIT",
+    "categories": [
+        "Languages",
+        "Snippets"
+    ],
+    "keywords": [
+        "tt",
+        "perl",
+        "template",
+        "template toolkit"
+    ],
+    "icon": "logo.png",
+    "galleryBanner": {
+        "color": "#00aaf0",
+        "theme": "light"
+    },
+    "contributes": {
+        "languages": [
+            {
+                "id": "tt",
+                "aliases": [
+                    "Template Toolkit",
+                    "tt"
+                ],
+                "extensions": [
+                    ".tt",
+                    ".tpl"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "tt",
+                "scopeName": "source.tt2",
+                "path": "./syntaxes/TT2.tmLanguage"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "tt",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
