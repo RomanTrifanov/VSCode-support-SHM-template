@@ -1,16 +1,13 @@
 > [!TIP]
 > Установка расширения.
 > 
->**1.** Загрузите файл [tt_shm.vsix](https://raw.githubusercontent.com/RomanTrifanov/VSCode-support-SHM-template/refs/heads/main/tt_shm.vsix)
+> Перейдите в [marketplace.visualstudio.com](https://marketplace.visualstudio.com/items?itemName=RomanT38.tt-for-shm)
 > 
->https://raw.githubusercontent.com/RomanTrifanov/VSCode-support-SHM-template/refs/heads/main/tt_shm.vsix
+> Или найддите в расширениях `TT for SHM`
 > 
->**2.** VSCode -> Расширения -> ... -> Установка из VSIX
-
-![Снимок экрана от 2025-06-15 17-12-53](https://github.com/user-attachments/assets/c3b24044-4ce6-4775-a90b-babe9ba87a51)
-
+  
 > [!NOTE]
->Включить подсказки - `Ctrl`+`Space`
+>Включить подсказки - <kbd>Ctrl</kbd> + <kbd>Space</kbd>
 
 ![Снимок экрана от 2025-06-18 21-04-26](https://github.com/user-attachments/assets/d54bef9d-8166-484c-9de9-649357c379c7)
 
@@ -45,8 +42,10 @@ Special for SHM (https://myshm.ru, https://docs.myshm.ru)
 - tg_api: sendMessage, editMessageText, deleteMessage, answerCallbackQuery
 
 ## Release Notes
+# 1.0.
+- Marketplace release.
 
-## 0.0.6
+# 0.0.6
 - Add comment snippet (type 'comment')
 - Add misc.html_escape(str) snippet
 - Fix IF and FOR snippets
@@ -56,14 +55,14 @@ Special for SHM (https://myshm.ru, https://docs.myshm.ru)
 - Add SHM http.method() snippets (get, post, put, delete, patch)
 - Add SHM snippets (user.has_payments, user.us.has_services, user.us.has_services_active, us.is_paid and other)
 
-## 0.0.4
+# 0.0.4
 - ADD Template Toolkit VMethods snippets
 - Add SHM snippets for misc
 
-## 0.0.3
+# 0.0.3
 - Add SHM snippets for: us, service, pay, wd, server, sg, tpl, storage
 - Add SHM snippets: toJson, fromJson, toQueryString, filter, where, dump ...
 - Add SHM tg_api snippets: sendMessage, editMessageText, deleteMessage, answerCallbackQuery
 
-## 0.0.2
+# 0.0.2
 - Add some SHM user methods snippets
