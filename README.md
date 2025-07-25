@@ -1,5 +1,5 @@
 > [!TIP]
-> Установка расширения.
+> ### Установка расширения.
 > 
 > Перейдите в [marketplace.visualstudio.com](https://marketplace.visualstudio.com/items?itemName=RomanT38.tt-for-shm)
 > 
