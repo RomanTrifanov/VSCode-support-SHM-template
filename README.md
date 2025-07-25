@@ -3,7 +3,7 @@
 > 
 > Перейдите в [marketplace.visualstudio.com](https://marketplace.visualstudio.com/items?itemName=RomanT38.tt-for-shm)
 > 
-> Или найддите в расширениях `TT for SHM`
+> Или найдите в расширениях `TT for SHM`
 > 
   
 > [!NOTE]
