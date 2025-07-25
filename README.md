@@ -4,7 +4,9 @@
 > Перейдите в [marketplace.visualstudio.com](https://marketplace.visualstudio.com/items?itemName=RomanT38.tt-for-shm)
 > 
 > Или найдите в расширениях `TT for SHM`
-> 
+>
+> <img width="848" height="521" alt="Снимок экрана от 2025-07-26 02-02-12" src="https://github.com/user-attachments/assets/07216711-03d5-422a-bae6-066b00c3427b" />
+
   
 > [!NOTE]
 >Включить подсказки - <kbd>Ctrl</kbd> + <kbd>Space</kbd>
