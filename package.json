@@ -7,7 +7,7 @@
   },
   "repository": "https://github.com/RomanTrifanov/VSCode-support-SHM-template",
   "homepage": "https://github.com/RomanTrifanov/VSCode-support-SHM-template/blob/main/README.md",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "romant38",
   "license": "MIT",
   "icon": "./images/logo.png",
@@ -36,9 +36,51 @@
       "scopeName": "source.tt2",
       "path": "./syntaxes/tt2.tmLanguage"
     }],
-    "snippets": [{
+    "snippets": [
+      {
       "language": "tt2",
-      "path": "./snippets/snippets.json"
-    }]
+      "path": "./snippets/template_toolkit.json"
+      },
+      {
+      "language": "tt2",
+      "path": "./snippets/shm_wd.json"
+      },
+      {
+      "language": "tt2",
+      "path": "./snippets/shm_user.json"
+      },
+      {
+      "language": "tt2",
+      "path": "./snippets/shm_us.json"
+      },
+      {
+      "language": "tt2",
+      "path": "./snippets/shm_tpl_storage_config.json"
+      },
+      {
+      "language": "tt2",
+      "path": "./snippets/shm_tg_task.json"
+      },
+      {
+      "language": "tt2",
+      "path": "./snippets/shm_service.json"
+      },
+      {
+      "language": "tt2",
+      "path": "./snippets/shm_server_sg.json"
+      },
+      {
+      "language": "tt2",
+      "path": "./snippets/shm_pay_bonus.json"
+      },
+      {
+      "language": "tt2",
+      "path": "./snippets/shm_other_functions.json"
+      },
+      {
+      "language": "tt2",
+      "path": "./snippets/shm_misc.json"
+      }
+    ]
   }
 }

@@ -1,0 +1,142 @@
+{
+    "us.change(finish_active = 1)": {
+		"prefix": "us.change",
+		"body": "us.change( service_id = ${1:N}, finish_active = 1 ) ",
+		"description": "Метод смены тарифа с завершением услуги, где N идентификатор новой услуги"
+	},
+	"us.change(finish_active = 0)": {
+		"prefix": "us.change",
+		"body": "us.change( service_id = ${1:N}, finish_active = 0 ) ",
+		"description": "Метод смены тарифа без завершения услуги, где N идентификатор новой услуги"
+	},
+	"us.touch": {
+		"prefix": "us.touch",
+		"body": "us.touch ",
+		"description": "Толкнуть, вызвать пролонгацию услуги"
+	},
+    "us.id()": {
+        "prefix": "us.id()",
+        "body": "us.id( $1 )",
+        "description": "Идентификатор пользовательской услуги (установить)"
+    },
+	"us.id": {
+        "prefix": "us.id",
+        "body": "us.id",
+        "description": "Идентификатор пользовательской услуги (получить)"
+    },
+    "us.name": {
+        "prefix": "us.name",
+        "body": "us.name ",
+        "description": "Имя пользовательской услуги"
+    },
+    "us.created": {
+        "prefix": "us.created",
+        "body": "us.created ",
+        "description": "Дата создания пользовательской услуги"
+    },
+    "us.expire": {
+        "prefix": "us.expire",
+        "body": "us.expire ",
+        "description": "Дата истечения пользовательской услуги"
+    },
+    "us.status": {
+        "prefix": "us.status",
+        "body": "us.status ",
+        "description": "Статус пользовательской услуги"
+    },
+    "us.settings": {
+        "prefix": "us.settings",
+        "body": "us.settings.",
+        "description": "Получить параметры пользовательской услуги"
+    },
+    "us.set_settings": {
+        "prefix": "us.set_settings",
+        "body": "us.set_settings({ '${1:key}' => ${2:value} }) ",
+        "description": "Сохранить в settings услуги пользователя произвольные данные"
+    },
+    "us.set": {
+        "prefix": "us.set",
+        "body": "us.set( '${1:FIELD}', ${2:'VALUE'} ) ",
+        "description": "Установка поля FIELD в значение VALUE. Пример: us.set('next', 123)"
+    },
+    "us.child_by_category": {
+        "prefix": "us.child_by_category",
+        "body": "us.child_by_category( ${1:CATEGORY} ) ",
+        "description": "Ссылка на дочернюю услугу определенной категории"
+    },
+    "us.finish": {
+        "prefix": "us.finish",
+        "body": "us.finish( 'money_back', ${1:1} ) ",
+        "description": "Завершение услуги с возвратом средств (биллинг продлит или заблокирует услугу в зависимости от наличия средств)"
+    },
+	"us.finish_": {
+        "prefix": "us.finish",
+        "body": "us.finish( 'money_back', ${1:0} ) ",
+        "description": "Завершение услуги без возврата средств (биллинг продлит или заблокирует услугу в зависимости от наличия средств)"
+    },
+    "us.block": {
+        "prefix": "us.block",
+        "body": "us.block ",
+        "description": "Принудительная блокировка услуги пользователя"
+    },
+    "us.activate": {
+        "prefix": "us.activate",
+        "body": "us.activate ",
+        "description": "Активация услуги пользователя после блокировки"
+    },
+    "us.delete": {
+        "prefix": "us.delete",
+        "body": "us.delete ",
+        "description": "Удаление заблокированной услуги пользователя"
+    },
+    "us.gen_store_pass": {
+        "prefix": "us.gen_store_pass",
+        "body": "us.gen_store_pass ",
+        "description": "Специальная функция для генерации и сохранения пароля в settings"
+    },
+    "us.parent": {
+        "prefix": "us.parent",
+        "body": "us.parent.",
+        "description": "Ссылка на родительскую услугу пользователя"
+    },
+    "us.top_parent": {
+        "prefix": "us.top_parent",
+        "body": "us.top_parent.",
+        "description": "Ссылка на самую верхнюю услугу пользователя"
+    },
+    "us.service": {
+        "prefix": "us.service",
+        "body": "us.service.",
+        "description": "Ссылка на каталог услуг"
+    },
+    "us.withdraw": {
+        "prefix": "us.withdraw",
+        "body": "us.withdraw.",
+        "description": "Ссылка на списание услуги"
+    },
+    "us.wd": {
+        "prefix": "us.wd",
+        "body": "us.wd.",
+        "description": "Ссылка на списание услуги"
+    },
+    "us.list_for_api": {
+        "prefix": "us.list_for_api",
+        "body": "us.list_for_api( $1 ) ",
+        "description": "Получение списка услуг пользователя"
+    },
+    "us.get_user_id": {
+        "prefix": "us.get_user_id",
+        "body": "us.get_user_id",
+        "description": "Получить id пользователя из услуги"
+    },
+	"us.is_paid": {
+        "prefix": "us.is_paid",
+        "body": "us.is_paid",
+        "description": "Возвращает 1, если услуга оплачена, 0, услуга не оплачена"
+    },
+    "us.has_expired": {
+        "prefix": "us.has_expired",
+        "body": "us.has_expired",
+        "description": "Возвращает 1, если срок действия услуги истек, 0, срок действия услуги не истек"
+    }
+}

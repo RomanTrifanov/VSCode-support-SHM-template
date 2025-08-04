@@ -40,11 +40,15 @@ Special for SHM (https://myshm.ru, https://docs.myshm.ru)
 - VMethods snippets
 
 ### SHM snippets:
+- Current SHM version 0.36.8
 - user, us, service, pay, wd, server, sg, tpl, storage
 - toJson, fromJson, toQueryString, filter, where, dump, misc. ...
 - tg_api: sendMessage, editMessageText, deleteMessage, answerCallbackQuery
 
 ## Release Notes
+### 1.0.1
+- Fix forecast snippet.
+- Add new snippets for SHM 0.36.8
 ### 1.0.0
 - Marketplace release.
 

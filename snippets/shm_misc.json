@@ -1,0 +1,62 @@
+{
+    "misc.uuid_gen": {
+        "prefix": "misc.uuid_gen",
+        "body": "misc.uuid_gen",
+        "description": "Генерирует уникальный идентификатор UUID"
+    },
+    "misc.passgen()": {
+        "prefix": "misc.passgen()",
+        "body": "misc.passgen(${1:10})",
+        "description": "Генерирует строку пароля с заданным количеством знаков"
+    },
+    "misc.string_to_utime()": {
+        "prefix": "misc.string_to_utime()",
+        "body": "misc.string_to_utime(${1:string})",
+        "description": "Переводит строку даты в Unix-временную отметку (UNIXTIME)"
+    },
+    "misc.utime_to_string()": {
+        "prefix": "misc.utime_to_string()",
+        "body": "misc.utime_to_string(${1:timestamp})",
+        "description": "Переводит временную отметку UNIXTIME в читаемую строку даты"
+    },
+    "misc.add_date_time()": {
+        "prefix": "misc.add_date_time()",
+        "body": "misc.add_date_time(${1:created}, ${2:day} = ${3:1})",
+        "description": "Прибавляет указанное количество лет, месяцев, дней и т.д. к указанной дате ( year, month, day, hour, min, sec). Для вычитания используйте '-', например: month = -6"
+    },
+    "misc.now": {
+        "prefix": "misc.now",
+        "body": "misc.now",
+        "description": "Текущая системная дата"
+    },
+    "misc.start_of_month()": {
+        "prefix": "misc.start_of_month()",
+        "body": "misc.start_of_month(${1:date})",
+        "description": "Приводит указанную дату к началу соответствующего месяца (первое число)"
+    },
+    "misc.end_of_month()": {
+        "prefix": "misc.end_of_month()",
+        "body": "misc.end_of_month(${1:date})",
+        "description": "Приводит указанную дату к концу соответствующего месяца (последнее число)"
+    },
+    "misc.days_in_months()": {
+        "prefix": "misc.days_in_months()",
+        "body": "misc.days_in_months(${1:date})",
+        "description": "Количество дней соответствующего месяца"
+    },
+    "misc.parse_period()": {
+        "prefix": "misc.parse_period()",
+        "body": "misc.parse_period(${1:1.2203}).${2:months}",
+        "description": "Подробный вывод значений периода услуги (.months, .days, .hours)"
+    },
+    "misc.parse_date()": {
+        "prefix": "misc.parse_date()",
+        "body": "misc.parse_date(${1:date}).${2:month}",
+        "description": "Подробный вывод значений даты (.year, .month, .day, .hour, .min, .sec)"
+    },
+    "misc.html_escape": {
+        "prefix": "misc.html_escape()",
+        "body": "misc.html_escape(${1:str})",
+        "description": "Заменяет HTML символы: & => &amp;, < => &lt;, > => &gt;, / => '&#x2F;' и кавычки "
+    }
+}

@@ -1,0 +1,57 @@
+{
+   "pay.id": {
+        "prefix": "pay.id",
+        "body": "pay.id ",
+        "description": "Получить id платежа"
+    },
+	"pay.id()": {
+        "prefix": "pay.id()",
+        "body": "pay.id( $1 ) ",
+        "description": "Установить id платежа"
+    },
+    "pay.date": {
+        "prefix": "pay.date",
+        "body": "pay.date ",
+        "description": "Дата и время платежа"
+    },
+    "pay.money": {
+        "prefix": "pay.money",
+        "body": "pay.money ",
+        "description": "Сумма платежа"
+    },
+    "pay.pay_system_id": {
+        "prefix": "pay.pay_system_id",
+        "body": "pay.pay_system_id ",
+        "description": "Имя платежной системы"
+    },
+    "pay.comment": {
+        "prefix": "pay.comment",
+        "body": "pay.comment ",
+        "description": "Комментарий к платежу"
+    },
+    "pay.last": {
+        "prefix": "pay.last",
+        "body": "pay.last ",
+        "description": "Получить ссылку на последний платеж"
+    },
+    "pay.forecast": {
+        "prefix": "pay.forecast",
+        "body": "pay.forecast( days = 3, blocked = 0 ) ",
+        "description": "Возвращает JSON прогноза оплат услуг. days - кол-во дней для прогноза (3 дня по-умолчанию), blocked - учитывать заблокированные услуги (0 - по-умолчанию НЕТ, 1 - ДА)"
+    },
+    "pay.paysystems": {
+        "prefix": "pay.paysystems",
+        "body": "pay.paysystems ",
+        "description": "Получить список платежных систем"
+    },
+    "pay.list_for_api": {
+        "prefix": "pay.list_for_api",
+        "body": "pay.list_for_api( $1 ) ",
+        "description": "Получение списка платежей"
+    },
+    "bonus.list_for_api": {
+        "prefix": "bonus.list_for_api",
+        "body": "bonus.list_for_api( $1 ) ",
+        "description": "Получение списка бонусов"
+    }
+}

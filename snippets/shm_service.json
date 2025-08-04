@@ -1,0 +1,77 @@
+{
+    "service.id": {
+        "prefix": "service.id",
+        "body": "service.id ",
+        "description": "Идентификатор пользовательской услуги (получить)"
+    },
+	"service.id()": {
+        "prefix": "service.id()",
+        "body": "service.id( $1 )",
+        "description": "Идентификатор пользовательской услуги (установить)"
+    },
+    "service.name": {
+        "prefix": "service.name",
+        "body": "service.name ",
+        "description": "Название услуги"
+    },
+    "service.cost": {
+        "prefix": "service.cost",
+        "body": "service.cost ",
+        "description": "Базовая стоимость услуги"
+    },
+    "service.period": {
+        "prefix": "service.period",
+        "body": "service.period ",
+        "description": "Период услуги"
+    },
+    "service.category": {
+        "prefix": "service.category",
+        "body": "service.category ",
+        "description": "Категория услуги"
+    },
+    "service.server": {
+        "prefix": "service.server",
+        "body": "service.server",
+        "description": "Ссылка на сервер услуги"
+    },
+    "service.id.N.name": {
+        "prefix": "service.id.N.name",
+        "body": "service.id(${1:N}).name ",
+        "description": "Получение имени услуги c идентификатором N"
+    },
+    "service.id.N.FIELD": {
+        "prefix": "service.id.N.FIELD",
+        "body": "service.id( ${1:N} ).${2:FIELD}",
+        "description": "Получение произвольного поля услуги c идентификатором N"
+    },
+    "service.api_price_list": {
+        "prefix": "service.api_price_list",
+        "body": "service.api_price_list( $1 )",
+        "description": "Возвращает массив услуг из каталога"
+    },
+    "service.settings": {
+        "prefix": "service.settings",
+        "body": "service.settings",
+        "description": "Получить settings услуги"
+    },
+    "service.set_settings": {
+        "prefix": "service.set_settings",
+        "body": "service.set_settings({ '${1:key}' => ${2:value} }) ",
+        "description": "Сохранить в settings услуги произвольные данные"
+    },
+    "service.withdraw": {
+        "prefix": "service.withdraw",
+        "body": "service.withdraw.",
+        "description": "Ссылка на объект списания"
+    },
+    "service.create_for_api": {
+        "prefix": "service.create_for_api",
+        "body": "service.create_for_api( 'service_id', ${1:N}, 'check_allow_to_order', 1 ) ",
+        "description": "Регистрирует услугу клиенту с идентификатором N"
+    },
+    "service.list_for_api": {
+        "prefix": "service.list_for_api",
+        "body": "service.list_for_api()",
+        "description": "Получение списка услуг из каталога"
+    }
+}

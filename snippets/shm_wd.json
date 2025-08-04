@@ -1,0 +1,77 @@
+{
+    "wd.id": {
+        "prefix": "wd.id",
+        "body": "wd.id ",
+        "description": "Получить id списания"
+    },
+    "wd.id()": {
+        "prefix": "wd.id()",
+        "body": "wd.id( $1 )",
+        "description": "Установить id списания"
+    },
+    "wd.create_date": {
+        "prefix": "wd.create_date",
+        "body": "wd.create_date ",
+        "description": "Дата создания списания"
+    },
+    "wd.withdraw_date": {
+        "prefix": "wd.withdraw_date",
+        "body": "wd.withdraw_date ",
+        "description": "Дата списания списания"
+    },
+    "wd.cost": {
+        "prefix": "wd.cost",
+        "body": "wd.cost ",
+        "description": "Сумма списания"
+    },
+    "wd.discount": {
+        "prefix": "wd.discount",
+        "body": "wd.discount ",
+        "description": "Скидка"
+    },
+    "wd.bonus": {
+        "prefix": "wd.bonus",
+        "body": "wd.bonus ",
+        "description": "Количество бонусов"
+    },
+    "wd.months": {
+        "prefix": "wd.months",
+        "body": "wd.months ",
+        "description": "Период услуги"
+    },
+    "wd.total": {
+        "prefix": "wd.total",
+        "body": "wd.total ",
+        "description": "Итоговая стоимость"
+    },
+    "wd.service_id": {
+        "prefix": "wd.service_id",
+        "body": "wd.service_id ",
+        "description": "Идентификатор каталога услуг"
+    },
+    "wd.user_service_id": {
+        "prefix": "wd.user_service_id",
+        "body": "wd.user_service_id ",
+        "description": "Идентификатор услуги пользователя"
+    },
+    "wd.qnt": {
+        "prefix": "wd.qnt",
+        "body": "wd.qnt ",
+        "description": "Количество единиц товара"
+    },
+    "wd.paid": {
+        "prefix": "wd.paid",
+        "body": "wd.paid",
+        "description": "Метод возвращает 1, если списание оплачено"
+    },
+    "wd.unpaid": {
+        "prefix": "wd.unpaid",
+        "body": "wd.unpaid",
+        "description": "Метод возвращает 1, если списание НЕ оплачено"
+    },
+    "wd.list_for_api": {
+        "prefix": "wd.list_for_api",
+        "body": "wd.list_for_api( $1 ) ",
+        "description": "Получение списка списаний"
+    }
+}

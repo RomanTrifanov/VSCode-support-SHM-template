@@ -1,0 +1,323 @@
+{
+"user.id()": {
+		"prefix": "user.id()",
+		"body": "user.id( $1 )",
+		"description": "Идентификатор пользователя (установить)"
+	},
+	"u.id()": {
+		"prefix": "u.id()",
+		"body": "u.id( $1 )",
+		"description": "Идентификатор пользователя (установить)"
+	},
+	"user.id": {
+		"prefix": "user.id",
+		"body": "user.id ",
+		"description": "Идентификатор пользователя (получить)"
+	},
+	"u.id": {
+		"prefix": "u.id",
+		"body": "u.id ",
+		"description": "Идентификатор пользователя (получить)"
+	},
+	"user.switch": {
+		"prefix": "user.switch",
+		"body": "user.switch( $1 ) ",
+		"description": "Переключение пользователя на указанного (смена контекста)"
+	},
+	"u.switch": {
+		"prefix": "u.switch",
+		"body": "u.switch( $1 ) ",
+		"description": "Переключение пользователя на указанного (смена контекста)"
+	},
+	"user.balance": {
+		"prefix": "user.balance",
+		"body": "user.balance ",
+		"description": "Баланс пользователя"
+	},
+	"u.balance": {
+		"prefix": "u.balance",
+		"body": "u.balance ",
+		"description": "Баланс пользователя"
+	},
+	"user.full_name": {
+		"prefix": "user.full_name",
+		"body": "user.full_name ",
+		"description": "ФИО пользователя"
+	},
+	"u.full_name": {
+		"prefix": "u.full_name",
+		"body": "u.full_name ",
+		"description": "ФИО пользователя"
+	},
+	"user.login": {
+		"prefix": "user.login",
+		"body": "user.login ",
+		"description": "Логин пользователя"
+	},
+	"u.login": {
+		"prefix": "u.login",
+		"body": "u.login ",
+		"description": "Логин пользователя"
+	},
+	"user.credit": {
+		"prefix": "user.credit",
+		"body": "user.credit ",
+		"description": "Кредитный лимит пользователя"
+	},
+	"u.credit": {
+		"prefix": "u.credit",
+		"body": "u.credit ",
+		"description": "Кредитный лимит пользователя"
+	},
+	"user.dogovor": {
+		"prefix": "user.dogovor",
+		"body": "user.dogovor ",
+		"description": "Договор пользователя"
+	},
+	"u.dogovor": {
+		"prefix": "u.dogovor",
+		"body": "u.dogovor ",
+		"description": "Договор пользователя"
+	},
+	"user.settings": {
+		"prefix": "user.settings",
+		"body": "user.settings.",
+		"description": "Получить settings пользователя"
+	},
+	"u.settings": {
+		"prefix": "u.settings",
+		"body": "u.settings.",
+		"description": "Получить settings пользователя"
+	},
+	"user.get_bonus": {
+		"prefix": "user.get_bonus",
+		"body": "user.get_bonus ",
+		"description": "Получить кол-во бонусов"
+	},
+	"u.get_bonus": {
+		"prefix": "u.get_bonus",
+		"body": "u.get_bonus ",
+		"description": "Получить кол-во бонусов"
+	},
+	"user.income_percent": {
+		"prefix": "user.income_percent",
+		"body": "user.income_percent ",
+		"description": "Получить процент партнерских бонусов"
+	},
+	"u.income_percent": {
+		"prefix": "u.income_percent",
+		"body": "u.income_percent ",
+		"description": "Получить процент партнерских бонусов"
+	},
+	"user.add_bonus": {
+		"prefix": "user.add_bonus",
+		"body": "user.add_bonus( ${1:amount},'${2:comment}' ) ",
+		"description": "Начисление бонусов"
+	},
+	"u.add_bonus": {
+		"prefix": "u.add_bonus",
+		"body": "u.add_bonus( ${1:amount},'${2:comment}' ) ",
+		"description": "Начисление бонусов"
+	},
+	"user.set_settings": {
+		"prefix": "user.set_settings",
+		"body": "user.set_settings({ '${1:key}' => ${2:value} }) ",
+		"description": "Сохранить в settings пользователя произвольные данные"
+	},
+	"u.set_settings": {
+		"prefix": "u.set_settings",
+		"body": "u.set_settings({ '${1:key}' => ${2:value} }) ",
+		"description": "Сохранить в settings пользователя произвольные данные"
+	},
+	"user.gen_session.id": {
+		"prefix": "user.gen_session.id",
+		"body": "user.gen_session.id ",
+		"description": "Функция для генерации идентификатора сессии"
+	},
+	"u.gen_session.id": {
+		"prefix": "u.gen_session.id",
+		"body": "u.gen_session.id ",
+		"description": "Функция для генерации идентификатора сессии"
+	},
+	"user.pays": {
+		"prefix": "user.pays",
+		"body": "user.pays ",
+		"description": "Ссылка на платежи пользователя"
+	},
+	"u.pays": {
+		"prefix": "u.pays",
+		"body": "u.pays ",
+		"description": "Ссылка на платежи пользователя"
+	},
+	"user.pays.forecast": {
+                "prefix": "user.pays.forecast()",
+                "body": "user.pays.forecast( days = 3, blocked = 0 ) ",
+                "description": "Возвращает JSON прогноза оплат услуг. days - кол-во дней для прогноза (3 дня по-умолчанию), blocked - учитывать заблокированные услуги (0 - по-умолчанию НЕТ, 1 - ДА)"
+        },
+	
+	"u.pays.forecast": {
+                "prefix": "u.pays.forecast()",
+                "body": "u.pays.forecast( days = 3, blocked = 0 ) ",
+                "description": "Возвращает JSON прогноза оплат услуг. days - кол-во дней для прогноза (3 дня по-умолчанию), blocked - учитывать заблокированные услуги (0 - по-умолчанию НЕТ, 1 - ДА)"
+        },
+	"user.delete": {
+		"prefix": "user.delete",
+		"body": "user.delete ",
+		"description": "Удаление пользователя (с нулевым балансом, без услуг)"
+	},
+	"u.delete": {
+		"prefix": "u.delete",
+		"body": "u.delete ",
+		"description": "Удаление пользователя (с нулевым балансом, без услуг)"
+	},
+	"user.delete_force": {
+		"prefix": "user.delete(force = 1)",
+		"body": "user.delete( force = 1 ) ",
+		"description": "Удаление пользователя вместе с его услугами"
+	},
+	"u.delete_force": {
+		"prefix": "u.delete(force = 1)",
+		"body": "u.delete( force = 1 ) ",
+		"description": "Удаление пользователя вместе с его услугами"
+	},
+	"user.partner_id": {
+		"prefix": "user.partner_id",
+		"body": "user.partner_id ",
+		"description": "Партнер пользователя"
+	},
+	"u.partner_id": {
+		"prefix": "u.partner_id",
+		"body": "u.partner_id ",
+		"description": "Партнер пользователя"
+	},
+	"user.referrals_count": {
+		"prefix": "user.referrals_count",
+		"body": "user.referrals_count ",
+		"description": "Количество рефералов пользователя"
+	},
+	"u.referrals_count": {
+		"prefix": "u.referrals_count",
+		"body": "u.referrals_count ",
+		"description": "Количество рефералов пользователя"
+	},
+	"user.list_for_api": {
+		"prefix": "user.list_for_api",
+		"body": "user.list_for_api( 'admin', 1) ",
+		"description": "Получить всех пользователей"
+	},
+	"u.list_for_api": {
+		"prefix": "u.list_for_api",
+		"body": "u.list_for_api( 'admin', 1) ",
+		"description": "Получить всех пользователей"
+	},
+	"user.items": {
+		"prefix": "user.items",
+		"body": "user.items",
+		"description": "Список объектов всех пользователей"
+	},
+	"u.items": {
+		"prefix": "u.items",
+		"body": "u.items ",
+		"description": "Список объектов всех пользователей"
+	},
+	"user.us.items": {
+		"prefix": "user.us.items",
+		"body": "user.us.items",
+		"description": "Получить все услуги пользователя"
+	},
+	"u.us.items": {
+		"prefix": "u.us.items",
+		"body": "u.us.items ",
+		"description": "Получить все услуги пользователя"
+	},
+	"user.has_payments": {
+        "prefix": "user.has_payments",
+        "body": "user.has_payments",
+        "description": "Возвращает 1, если у пользователя был хотя бы один платеж, 0, если не было ни одного платежа"
+    },
+    "u.has_payments": {
+        "prefix": "u.has_payments",
+        "body": "u.has_payments",
+        "description": "Возвращает 1, если у пользователя был хотя бы один платеж, 0, если не было ни одного платежа"
+    },
+    "user.has_withdraws": {
+        "prefix": "user.has_withdraws",
+        "body": "user.has_withdraws",
+        "description": "Возвращает 1, если у пользователя было хотя бы одно списание, 0, если не было ни одного списания"
+    },
+    "u.has_withdraws": {
+        "prefix": "u.has_withdraws",
+        "body": "u.has_withdraws",
+        "description": "Возвращает 1, если у пользователя было хотя бы одно списание, 0, если не было ни одного списания"
+    },
+    "user.us.has_services": {
+        "prefix": "user.us.has_services",
+        "body": "user.us.has_services",
+        "description": "Возвращает 1, если у пользователя есть услуги, 0, если нет услуг"
+    },
+    "u.us.has_services": {
+        "prefix": "u.us.has_services",
+        "body": "u.us.has_services",
+        "description": "Возвращает 1, если у пользователя есть услуги, 0, если нет услуг"
+    },
+    "user.us.has_services_active": {
+        "prefix": "user.us.has_services_active",
+        "body": "user.us.has_services_active",
+        "description": "Возвращает 1, если у пользователя есть услуги в статусе ACTIVE, 0, если нет услуг в статусе ACTIVE"
+    },
+    "u.us.has_services_active": {
+        "prefix": "u.us.has_services_active",
+        "body": "u.us.has_services_active",
+        "description": "Возвращает 1, если у пользователя есть услуги в статусе ACTIVE, 0, если нет услуг в статусе ACTIVE"
+    },
+    "user.us.has_services_block": {
+        "prefix": "user.us.has_services_block",
+        "body": "user.us.has_services_block",
+        "description": "Возвращает 1, если у пользователя есть услуги в статусе BLOCK, 0, если нет услуг в статусе BLOCK"
+    },
+    "u.us.has_services_block": {
+        "prefix": "u.us.has_services_block",
+        "body": "u.us.has_services_block",
+        "description": "Возвращает 1, если у пользователя есть услуги в статусе BLOCK, 0, если нет услуг в статусе BLOCK"
+    },
+    "user.us.has_services_unpaid": {
+        "prefix": "user.us.has_services_unpaid",
+        "body": "user.us.has_services_unpaid",
+        "description": "Возвращает 1, если у пользователя есть услуги в статусе UNPAID, 0, если нет услуг в статусе UNPAID"
+    },
+    "u.us.has_services_unpaid": {
+        "prefix": "u.us.has_services_unpaid",
+        "body": "u.us.has_services_unpaid",
+        "description": "Возвращает 1, если у пользователя есть услуги в статусе UNPAID, 0, если нет услуг в статусе UNPAID"
+    },
+    "user.us.has_services_progress": {
+        "prefix": "user.us.has_services_progress",
+        "body": "user.us.has_services_progress",
+        "description": "Возвращает 1, если у пользователя есть услуги в статусе PROGRESS, 0, если нет услуг в статусе PROGRESS"
+    },
+    "u.us.has_services_progress": {
+        "prefix": "u.us.has_services_progress",
+        "body": "u.us.has_services_progress",
+        "description": "Возвращает 1, если у пользователя есть услуги в статусе PROGRESS, 0, если нет услуг в статусе PROGRESS"
+    },
+	"user.telegram.profile(profile).send": {
+        "prefix": "user.telegram.profile(",
+        "body": "user.telegram.profile( 'telegram_bot' ).send( sendMessage = {  } )",
+        "description": "Отправка сообщения текущему клиенту в телеграм  в указанный профиль, транспорт Local"
+    },
+	"u.telegram.profile(profile).send": {
+        "prefix": "u.telegram.profile(",
+        "body": "u.telegram.profile( 'telegram_bot' ).send( sendMessage = {  } )",
+        "description": "Отправка сообщения текущему клиенту в телеграм  в указанный профиль, транспорт Local"
+    },
+	"user.telegram.send(": {
+        "prefix": "user.telegram.send",
+        "body": "user.telegram.send( sendMessage = {  } )",
+        "description": "Отправка сообщения текущему клиенту в телеграм, транспорт Local"
+    },
+	"u.telegram.send(": {
+        "prefix": "u.telegram.send",
+        "body": "u.telegram.send( sendMessage = {  } )",
+        "description": "Отправка сообщения текущему клиенту в телеграм, транспорт Local"
+    }
+}

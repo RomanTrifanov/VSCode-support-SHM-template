@@ -1,0 +1,117 @@
+{
+    "for_us": {
+		"prefix": "for us in user.us.items",
+		"body": "{{ FOR us IN user.us.items }}\n   ${3:block...}\n{{ END }}",
+		"description": "FOR us IN user.us.items"
+	},
+	"for_user": {
+		"prefix": "for user in user.items",
+		"body": "{{ FOR user IN user.items }}\n   ${3:block...}\n{{ END }}",
+		"description": "FOR user IN user.items"
+	},
+	"for_us_": {
+		"prefix": "for us in u.us.items",
+		"body": "{{ FOR us IN u.us.items }}\n   ${3:block...}\n{{ END }}",
+		"description": "FOR us IN u.us.items"
+	},
+	"for_u": {
+		"prefix": "for u in user.items",
+		"body": "{{ FOR u IN user.items }}\n   ${3:block...}\n{{ END }}",
+		"description": "FOR u IN u.items"
+	},
+	"fromJson": {
+		"prefix": "fromJson",
+		"body": "fromJson( ${1:data} ) ",
+		"description": "fromJson"
+	},
+	"fromBase64Url": {
+		"prefix": "fromBase64Url",
+		"body": "fromBase64Url( '${1:Base64Url}' ) ",
+		"description": "fromBase64Url"
+	},
+	"dump": {
+		"prefix": "dump",
+		"body": "dump( ${1:data} ) ",
+		"description": "Дебаг значения переменных"
+	},
+    "request.headers": {
+        "prefix": ["request.headers", "headers"],
+        "body": "request.headers ",
+        "description": "Заголовки запроса"
+    },
+    "request.params": {
+        "prefix": ["request.params", "params"],
+        "body": "request.params ",
+        "description": "Данные запроса"
+    },
+    "filter": {
+        "prefix": "filter",
+        "body": "filter( ${1:key} = ${2:value} ) ",
+        "description": "filter"
+    },
+    "where": {
+        "prefix": "where",
+        "body": "where = { ${1:key} = ${2:value} } ",
+        "description": "where"
+    },
+	"toJson": {
+		"prefix": "toJson",
+		"body": "toJson( $1 )",
+		"description": "преобразование объекта в JSON"
+	},
+	"toQueryString": {
+		"prefix": "toQueryString",
+		"body": "toQueryString( $1 )",
+		"description": "преобразование объектов в Query string"
+	},
+	"event_name": {
+		"prefix": "event_name",
+		"body": "event_name ",
+		"description": "название текущего события"
+	},
+	"list_for_api": {
+		"prefix": "list_for_api",
+		"body": "list_for_api($1)",
+		"description": "получение списков данных из объекта"
+	},  
+    "spool.history.clean": {
+        "prefix": "spool.history.clean",
+        "body": "spool.history.clean( days = 30 )",
+        "description": "Удалить всю историю задач старше указанных дней (по умолчанию 30 дней)"
+    },
+    "http.get()": {
+        "prefix": "http.get()",
+        "body": "http.get( ${1:'URL'}, 'headers',headers )",
+        "description": "GET запрос, headers = {'Authorization' => token }"
+    },
+    "http.post()": {
+        "prefix": "http.post()",
+        "body": "http.post( ${1:'URL'}, 'content_type','application/json', 'headers',headers, 'content',content )",
+        "description": "POST запрос, headers = {'Authorization' => token }, content = { username = 'user' _ us.id }"
+    },
+    "http.put()": {
+        "prefix": "http.put()",
+        "body": "http.put( ${1:'URL'}, 'content_type','application/json', 'headers',headers, 'content',content )",
+        "description": "PUT запрос, headers = {'Authorization' => token }, content = { username = 'user' _ us.id }"
+    },
+    "http.delete()": {
+        "prefix": "http.delete()",
+        "body": "http.delete( ${1:'URL'}, 'content_type','application/json', 'headers',headers, 'content',content )",
+        "description": "DELETE запрос, headers = {'Authorization' => token }, content = { username = 'user' _ us.id }"
+    },
+    "http.patch()": {
+        "prefix": "http.patch()",
+        "body": "http.patch( ${1:'URL'}, 'content_type','application/json', 'headers',headers, 'content',content )",
+        "description": "PATCH запрос, headers = {'Authorization' => token }, content = { username = 'user' _ us.id }"
+    },
+    "http.options()": {
+        "prefix": "http.options()",
+        "body": "http.options( ${1:'URL'} )",
+        "description": "OPTIONS запрос"
+    },
+    "comment": {
+        "prefix": "comment",
+        "body": "{{# ${1:comment} }}",
+        "description": "Комментарий в коде {{# комментарий }}"
+    }
+}

@@ -1,0 +1,52 @@
+{
+	"config": {
+		"prefix": "config",
+		"body": "config.${1:NAME}",
+		"description": "Удалить данные из хранилища с ключом NAME"
+	},
+	"storage.save": {
+		"prefix": "storage.save",
+		"body": "storage.save( ${1:NAME}, ${2:DATA} ) ",
+		"description": "Сохранить данные DATA в хранилище с ключом NAME"
+	},
+	"storage.load": {
+		"prefix": "storage.load",
+		"body": "storage.load( ${1:NAME} )",
+		"description": "Получить данные из хранилища с ключом NAME"
+	},
+	"storage.read": {
+		"prefix": "storage.read",
+		"body": "storage.read( 'name', ${1:NAME} )",
+		"description": "Получить данные из хранилища"
+	},
+	"storage.del": {
+		"prefix": "storage.del",
+		"body": "storage.dele( ${1:NAME} ) ",
+		"description": "Удалить данные из хранилища с ключом NAME"
+	},
+	"storage.list_for_api": {
+		"prefix": "storage.list_for_api",
+		"body": "storage.list_for_api( $1 )",
+		"description": "Получение списка данных"
+	},
+	"tpl.id": {
+		"prefix": "tpl.id",
+		"body": "tpl.id",
+		"description": "Получить id шаблона"
+	},
+	"tpl.id().parse": {
+		"prefix": ["tpl.id()", "parse"],
+		"body": "tpl.id( ${1:TEMPLATE} ).parse( 'usi', ${1:usi} )",
+		"description": "Выполнить шаблон с именем NAME для пользовательской услуги с идентификатором usi"
+	},
+	"tpl.data": {
+		"prefix": "tpl.data",
+		"body": "tpl.data",
+		"description": "Данные шаблона"
+	},
+	"tpl.settings": {
+		"prefix": "tpl.settings",
+		"body": "tpl.settings",
+		"description": "Получить settings шаблона"
+	}
+}
