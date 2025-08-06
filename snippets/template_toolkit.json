@@ -368,5 +368,25 @@
         "prefix": ".item",
         "body": ".item(${1:0})",
         "description": "Возвращает элемент из списка, используя индекс, переданный в качестве аргумента."
-    }
+    },
+        "for_us": {
+		"prefix": "for us in user.us.items",
+		"body": "{{ FOR us IN user.us.items }}\n   ${3:block...}\n{{ END }}",
+		"description": "Цикл для перебора пользовательских услуг FOR us IN user.us.items"
+	},
+	"for_user": {
+		"prefix": "for user in user.items",
+		"body": "{{ FOR user IN user.items }}\n   ${3:block...}\n{{ END }}",
+		"description": "Цикл для перебора пользователей FOR user IN user.items"
+	},
+	"for_us_": {
+		"prefix": "for us in u.us.items",
+		"body": "{{ FOR us IN u.us.items }}\n   ${3:block...}\n{{ END }}",
+		"description": "Цикл для перебора пользовательских услуг  FOR us IN u.us.items"
+	},
+	"for_u": {
+		"prefix": "for u in user.items",
+		"body": "{{ FOR u IN user.items }}\n   ${3:block...}\n{{ END }}",
+		"description": "Цикл для перебора пользователей FOR u IN user.items"
+	}
 }

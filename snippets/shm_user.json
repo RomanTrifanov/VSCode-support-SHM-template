@@ -233,22 +233,22 @@
 	"user.has_payments": {
         "prefix": "user.has_payments",
         "body": "user.has_payments",
-        "description": "Возвращает 1, если у пользователя был хотя бы один платеж, 0, если не было ни одного платежа"
+        "description": "Возвращает 1, если у пользователя был хотя бы один платеж"
     },
     "u.has_payments": {
         "prefix": "u.has_payments",
         "body": "u.has_payments",
-        "description": "Возвращает 1, если у пользователя был хотя бы один платеж, 0, если не было ни одного платежа"
+        "description": "Возвращает 1, если у пользователя был хотя бы один платеж"
     },
     "user.has_withdraws": {
         "prefix": "user.has_withdraws",
         "body": "user.has_withdraws",
-        "description": "Возвращает 1, если у пользователя было хотя бы одно списание, 0, если не было ни одного списания"
+        "description": "Возвращает 1, если у пользователя было хотя бы одно списание"
     },
     "u.has_withdraws": {
         "prefix": "u.has_withdraws",
         "body": "u.has_withdraws",
-        "description": "Возвращает 1, если у пользователя было хотя бы одно списание, 0, если не было ни одного списания"
+        "description": "Возвращает 1, если у пользователя было хотя бы одно списание"
     },
     "user.us.has_services": {
         "prefix": "user.us.has_services",
@@ -258,47 +258,47 @@
     "u.us.has_services": {
         "prefix": "u.us.has_services",
         "body": "u.us.has_services",
-        "description": "Возвращает 1, если у пользователя есть услуги, 0, если нет услуг"
+        "description": "Возвращает 1, если у пользователя есть услуги"
     },
     "user.us.has_services_active": {
         "prefix": "user.us.has_services_active",
         "body": "user.us.has_services_active",
-        "description": "Возвращает 1, если у пользователя есть услуги в статусе ACTIVE, 0, если нет услуг в статусе ACTIVE"
+        "description": "Возвращает 1, если у пользователя есть услуги в статусе ACTIVE"
     },
     "u.us.has_services_active": {
         "prefix": "u.us.has_services_active",
         "body": "u.us.has_services_active",
-        "description": "Возвращает 1, если у пользователя есть услуги в статусе ACTIVE, 0, если нет услуг в статусе ACTIVE"
+        "description": "Возвращает 1, если у пользователя есть услуги в статусе ACTIVE"
     },
     "user.us.has_services_block": {
         "prefix": "user.us.has_services_block",
         "body": "user.us.has_services_block",
-        "description": "Возвращает 1, если у пользователя есть услуги в статусе BLOCK, 0, если нет услуг в статусе BLOCK"
+        "description": "Возвращает 1, если у пользователя есть услуги в статусе BLOCK"
     },
     "u.us.has_services_block": {
         "prefix": "u.us.has_services_block",
         "body": "u.us.has_services_block",
-        "description": "Возвращает 1, если у пользователя есть услуги в статусе BLOCK, 0, если нет услуг в статусе BLOCK"
+        "description": "Возвращает 1, если у пользователя есть услуги в статусе BLOCK"
     },
     "user.us.has_services_unpaid": {
         "prefix": "user.us.has_services_unpaid",
         "body": "user.us.has_services_unpaid",
-        "description": "Возвращает 1, если у пользователя есть услуги в статусе UNPAID, 0, если нет услуг в статусе UNPAID"
+        "description": "Возвращает 1, если у пользователя есть услуги в статусе UNPAID"
     },
     "u.us.has_services_unpaid": {
         "prefix": "u.us.has_services_unpaid",
         "body": "u.us.has_services_unpaid",
-        "description": "Возвращает 1, если у пользователя есть услуги в статусе UNPAID, 0, если нет услуг в статусе UNPAID"
+        "description": "Возвращает 1, если у пользователя есть услуги в статусе UNPAID"
     },
     "user.us.has_services_progress": {
         "prefix": "user.us.has_services_progress",
         "body": "user.us.has_services_progress",
-        "description": "Возвращает 1, если у пользователя есть услуги в статусе PROGRESS, 0, если нет услуг в статусе PROGRESS"
+        "description": "Возвращает 1, если у пользователя есть услуги в статусе PROGRESS"
     },
     "u.us.has_services_progress": {
         "prefix": "u.us.has_services_progress",
         "body": "u.us.has_services_progress",
-        "description": "Возвращает 1, если у пользователя есть услуги в статусе PROGRESS, 0, если нет услуг в статусе PROGRESS"
+        "description": "Возвращает 1, если у пользователя есть услуги в статусе PROGRESS"
     },
 	"user.telegram.profile(profile).send": {
         "prefix": "user.telegram.profile(",

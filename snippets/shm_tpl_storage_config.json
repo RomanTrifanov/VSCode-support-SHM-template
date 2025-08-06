@@ -2,7 +2,7 @@
 	"config": {
 		"prefix": "config",
 		"body": "config.${1:NAME}",
-		"description": "Удалить данные из хранилища с ключом NAME"
+		"description": "Получить данные NAME из конфигурации"
 	},
 	"storage.save": {
 		"prefix": "storage.save",

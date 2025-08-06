@@ -1,19 +1,4 @@
 {
-    "us.change(finish_active = 1)": {
-		"prefix": "us.change",
-		"body": "us.change( service_id = ${1:N}, finish_active = 1 ) ",
-		"description": "Метод смены тарифа с завершением услуги, где N идентификатор новой услуги"
-	},
-	"us.change(finish_active = 0)": {
-		"prefix": "us.change",
-		"body": "us.change( service_id = ${1:N}, finish_active = 0 ) ",
-		"description": "Метод смены тарифа без завершения услуги, где N идентификатор новой услуги"
-	},
-	"us.touch": {
-		"prefix": "us.touch",
-		"body": "us.touch ",
-		"description": "Толкнуть, вызвать пролонгацию услуги"
-	},
     "us.id()": {
         "prefix": "us.id()",
         "body": "us.id( $1 )",
@@ -44,6 +29,16 @@
         "body": "us.status ",
         "description": "Статус пользовательской услуги"
     },
+    "us.status_before": {
+        "prefix": "us.status_before",
+        "body": "us.status_before ",
+        "description": "Предыдущий Статус пользовательской услуги"
+    },
+    "us.service_id": {
+        "prefix": "us.service_id",
+        "body": "us.service_id ",
+        "description": "ID услуги в каталоге услуг"
+    },
     "us.settings": {
         "prefix": "us.settings",
         "body": "us.settings.",
@@ -64,6 +59,21 @@
         "body": "us.child_by_category( ${1:CATEGORY} ) ",
         "description": "Ссылка на дочернюю услугу определенной категории"
     },
+    "us.change(finish_active = 1)": {
+		"prefix": "us.change",
+		"body": "us.change( service_id = ${1:N}, finish_active = 1 ) ",
+		"description": "Метод смены тарифа с завершением услуги, где N идентификатор новой услуги"
+	},
+	"us.change(finish_active = 0)": {
+		"prefix": "us.change",
+		"body": "us.change( service_id = ${1:N}, finish_active = 0 ) ",
+		"description": "Метод смены тарифа БЕЗ завершения услуги, где N идентификатор новой услуги"
+	},
+	"us.touch": {
+		"prefix": "us.touch",
+		"body": "us.touch ",
+		"description": "Толкнуть, вызвать пролонгацию услуги"
+	},
     "us.finish": {
         "prefix": "us.finish",
         "body": "us.finish( 'money_back', ${1:1} ) ",
@@ -72,7 +82,7 @@
 	"us.finish_": {
         "prefix": "us.finish",
         "body": "us.finish( 'money_back', ${1:0} ) ",
-        "description": "Завершение услуги без возврата средств (биллинг продлит или заблокирует услугу в зависимости от наличия средств)"
+        "description": "Завершение услуги БЕЗ возврата средств (биллинг продлит или заблокирует услугу в зависимости от наличия средств)"
     },
     "us.block": {
         "prefix": "us.block",
@@ -114,6 +124,11 @@
         "body": "us.withdraw.",
         "description": "Ссылка на списание услуги"
     },
+    "us.withdraw_id": {
+        "prefix": "us.withdraw_id",
+        "body": "us.withdraw_id.",
+        "description": "ID последнего списание услуги"
+    },
     "us.wd": {
         "prefix": "us.wd",
         "body": "us.wd.",
@@ -132,11 +147,16 @@
 	"us.is_paid": {
         "prefix": "us.is_paid",
         "body": "us.is_paid",
-        "description": "Возвращает 1, если услуга оплачена, 0, услуга не оплачена"
+        "description": "Возвращает 1, если услуга оплачена"
     },
     "us.has_expired": {
         "prefix": "us.has_expired",
         "body": "us.has_expired",
-        "description": "Возвращает 1, если срок действия услуги истек, 0, срок действия услуги не истек"
+        "description": "Возвращает 1, если срок действия услуги истек"
+    },
+    "us.auto_bill": {
+        "prefix": "us.auto_bill",
+        "body": "us.auto_bill",
+        "description": "Состояние билинга, 1 - включен"
     }
 }

@@ -19,12 +19,12 @@
         "  })",
         "}}"
         ],
-        "description": "answerCallbackQuery"
+        "description": "Блок answerCallbackQuery"
   },
 	"tg_api(deleteMessage)": {
         "prefix": ["deleteMessage", "tg_api"],
         "body": "{{ tg_api( deleteMessage = { message_id = message.message_id } ) }}",
-        "description": "answerCallbackQuery"
+        "description": "Блок deleteMessage"
   },
 	"tg_api(editMessageText)": {
         "prefix": ["editMessageText", "tg_api"],
@@ -48,7 +48,7 @@
         "   })",
         "}}"
         ],
-        "description": "editMessageText"
+        "description": "Блок editMessageText"
   },
 	"tg_api(sendMessage)": {
         "prefix": ["sendMessage", "tg_api"],
@@ -70,6 +70,6 @@
         "   })",
         "}}"
         ],
-        "description": "tg_api(sendMessage)"
+        "description": "Блок sendMessage"
   }
 }

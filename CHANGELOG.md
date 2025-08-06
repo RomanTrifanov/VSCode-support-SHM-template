@@ -23,3 +23,6 @@
 ## 1.0.1
 - Fix forecast snippet.
 - Add new snippets for SHM 0.36.8
+## 1.0.2
+- Fix some description
+- Add more us. snippets
