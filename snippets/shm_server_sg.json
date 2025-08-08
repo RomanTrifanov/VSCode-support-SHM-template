@@ -1,122 +1,122 @@
 {
     "sg.id": {
-		"prefix": "sg.id",
-		"body": "sg.id",
-		"description": "Получить id группы серверов"
-	},
-	"sg.id()": {
-		"prefix": "sg.id()",
-		"body": "sg.id( $1 )",
-		"description": "Установить id группы серверов"
-	},
-	"sg.name": {
-		"prefix": "sg.name",
-		"body": "sg.name",
-		"description": "Имя группы серверов"
-	},
-	"sg.type": {
-		"prefix": "sg.type",
-		"body": "sg.type",
-		"description": "Способ выбора серверов (random,by-one,evenly)"
-	},
-	"sg.transport": {
-		"prefix": "sg.transport",
-		"body": "sg.transport",
-		"description": "Транспорт группы (local,ssh,http…)"
-	},
-	"sg.settings": {
-		"prefix": "sg.settings",
-		"body": "sg.settings",
-		"description": "settings группы серверов"
-	},
-	"sg.set_settings": {
-		"prefix": "sg.set_settings",
-		"body": "sg.set_settings({ '${1:key}' => ${2:value} }) ",
-		"description": "Сохранить в settings группы серверов произвольные данные"
-	},
-	"sg.list_for_api": {
-		"prefix": "sg.list_for_api",
-		"body": "sg.list_for_api( $1 )",
-		"description": "Получение списка групп серверов"
-	},
-	"server.server_id": {
-		"prefix": "server.server_id",
-		"body": "server.server_id",
-		"description": "Получить id сервера"
-	},
-	"server.id()": {
-		"prefix": "server.id()",
-		"body": "server.id( $1 )",
-		"description": "Установить id сервера"
-	},
-	"server.name": {
-		"prefix": "server.name",
-		"body": "server.name ",
-		"description": "Имя сервера"
-	},
-	"server.host": {
-		"prefix": "server.host",
-		"body": "server.host ",
-		"description": "Host сервера"
-	},
-	"server.transport": {
-		"prefix": "server.transport",
-		"body": "server.transport",
-		"description": "Транспорт сервера"
-	},
-	"server.settings": {
-		"prefix": "server.settings",
-		"body": "server.settings",
-		"description": "settings сервера"
-	},
-	"server.settings.template_id": {
-		"prefix": "server.settings.template_id",
-		"body": "server.settings.template_id",
-		"description": "Шаблон в настройках сервера"
-	},
-	"server.settings.max_services": {
-		"prefix": "server.settings.max_services",
-		"body": "server.settings.max_services",
-		"description": "Лимит услуг в настройках сервера"
-	},
-	"server.settings.key_id": {
-		"prefix": "server.settings.key_id",
-		"body": "server.settings.key_id",
-		"description": "ID ключа в настройках сервера"
-	},
-	"server.set_settings": {
-		"prefix": "server.set_settings()",
-		"body": "server.set_settings({ '${1:key}' => ${2:value} }) ",
-		"description": "Сохранить в settings сервера произвольные данные"
-	},
-	"server.group": {
-		"prefix": "server.group",
-		"body": "server.group",
-		"description": "Ссылка на группу сервера"
-	},
-	"server.services_count": {
-		"prefix": "server.services_count",
-		"body": "server.services_count",
-		"description": "Количество услуг на сервере"
-	},
-	"server.weight": {
-		"prefix": "server.weight",
-		"body": "server.weight",
-		"description": "Вес сервера в группе"
-	},
-	"server.enabled": {
-		"prefix": "server.enabled",
-		"body": "server.enabled",
-		"description": "1 - включен, 0 - выключен"
-	},
-	"server.servers_by_group_id": {
-		"prefix": "server.servers_by_group_id()",
-		"body": "server.servers_by_group_id( $1 )",
-		"description": "Получение списка серверов из группы N"
-	},
-	"server.list_for_api": {
-		"prefix": "list_for_api()",
-		"body": "list_for_api( $1 ) ",
-		"description": "Получение списка серверов"
-	}
+        "prefix": "sg.id",
+        "body": "sg.id",
+        "description": "Получить id группы серверов"
+    },
+    "sg.id()": {
+        "prefix": "sg.id()",
+        "body": "sg.id( $1 )",
+        "description": "Установить id группы серверов"
+    },
+    "sg.name": {
+        "prefix": "sg.name",
+        "body": "sg.name",
+        "description": "Имя группы серверов"
+    },
+    "sg.type": {
+        "prefix": "sg.type",
+        "body": "sg.type",
+        "description": "Способ выбора серверов (random,by-one,evenly)"
+    },
+    "sg.transport": {
+        "prefix": "sg.transport",
+        "body": "sg.transport",
+        "description": "Транспорт группы (local,ssh,http…)"
+    },
+    "sg.settings": {
+        "prefix": "sg.settings",
+        "body": "sg.settings",
+        "description": "settings группы серверов"
+    },
+    "sg.set_settings": {
+        "prefix": "sg.set_settings",
+        "body": "sg.set_settings({ '${1:key}' => ${2:value} }) ",
+        "description": "Сохранить в settings группы серверов произвольные данные"
+    },
+    "sg.list_for_api": {
+        "prefix": "sg.list_for_api",
+        "body": "sg.list_for_api( $1 )",
+        "description": "Получение списка групп серверов"
+    },
+    "server.server_id": {
+        "prefix": "server.server_id",
+        "body": "server.server_id",
+        "description": "Получить id сервера"
+    },
+    "server.id()": {
+        "prefix": "server.id()",
+        "body": "server.id( $1 )",
+        "description": "Установить id сервера"
+    },
+    "server.name": {
+        "prefix": "server.name",
+        "body": "server.name ",
+        "description": "Имя сервера"
+    },
+    "server.host": {
+        "prefix": "server.host",
+        "body": "server.host ",
+        "description": "Host сервера"
+    },
+    "server.transport": {
+        "prefix": "server.transport",
+        "body": "server.transport",
+        "description": "Транспорт сервера"
+    },
+    "server.settings": {
+        "prefix": "server.settings",
+        "body": "server.settings",
+        "description": "settings сервера"
+    },
+    "server.settings.template_id": {
+        "prefix": "server.settings.template_id",
+        "body": "server.settings.template_id",
+        "description": "Шаблон в настройках сервера"
+    },
+    "server.settings.max_services": {
+        "prefix": "server.settings.max_services",
+        "body": "server.settings.max_services",
+        "description": "Лимит услуг в настройках сервера"
+    },
+    "server.settings.key_id": {
+        "prefix": "server.settings.key_id",
+        "body": "server.settings.key_id",
+        "description": "ID ключа в настройках сервера"
+    },
+    "server.set_settings": {
+        "prefix": "server.set_settings()",
+        "body": "server.set_settings({ '${1:key}' => ${2:value} }) ",
+        "description": "Сохранить в settings сервера произвольные данные"
+    },
+    "server.group": {
+        "prefix": "server.group",
+        "body": "server.group",
+        "description": "Ссылка на группу сервера"
+    },
+    "server.services_count": {
+        "prefix": "server.services_count",
+        "body": "server.services_count",
+        "description": "Количество услуг на сервере"
+    },
+    "server.weight": {
+        "prefix": "server.weight",
+        "body": "server.weight",
+        "description": "Вес сервера в группе"
+    },
+    "server.enabled": {
+        "prefix": "server.enabled",
+        "body": "server.enabled",
+        "description": "1 - включен, 0 - выключен"
+    },
+    "server.servers_by_group_id": {
+        "prefix": "server.servers_by_group_id()",
+        "body": "server.servers_by_group_id( $1 )",
+        "description": "Получение списка серверов из группы N"
+    },
+    "server.list_for_api": {
+        "prefix": "list_for_api()",
+        "body": "list_for_api( $1 ) ",
+        "description": "Получение списка серверов"
+    }
 }

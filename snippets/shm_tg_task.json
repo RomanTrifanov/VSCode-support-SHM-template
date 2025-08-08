@@ -1,75 +1,92 @@
 {
-  "task": {
-		"prefix": "task",
-		"body": "task",
-		"description": "Работа с задачами"
-	},
-  "telegram.bot": {
-		"prefix": "telegram.bot",
-		"body": "telegram.bot( ${1:TEMPLATE}, ${2:CMD}, ${3:ARGS} ) ",
-		"description": "Выполнить CMD с аргументами ARGS из шаблона TEMPLATE"
-	},
-  "tg_api(answerCallbackQuery)": {
-        "prefix": ["answerCallbackQuery", "tg_api"],
+    "task": {
+        "prefix": "task",
+        "body": "task",
+        "description": "Работа с задачами"
+    },
+    "task.answer": {
+        "prefix": "task.answer",
+        "body": "task.answer( status = ${1:SUCCESS}, msg = '${2:string}' )",
+        "description": "Установить статус (SUCCESS, STUCK, FAIL) и сообщение задачи"
+    },
+    "telegram.bot": {
+        "prefix": "telegram.bot",
+        "body": "telegram.bot( ${1:TEMPLATE}, ${2:CMD}, ${3:ARGS} ) ",
+        "description": "Выполнить CMD с аргументами ARGS из шаблона TEMPLATE"
+    },
+    "tg_api(answerCallbackQuery)": {
+        "prefix": [
+            "answerCallbackQuery",
+            "tg_api"
+        ],
         "body": [
-        "{{ tg_api( \"answerCallbackQuery\" = {",
-        "     \"show_alert\" = \"true\"",
-        "     \"callback_query_id\" = callback_query.id",
-        "     \"text\" = \"${1:TEXT}\"",
-        "  })",
-        "}}"
+            "{{ tg_api( \"answerCallbackQuery\" = {",
+            "     \"show_alert\" = \"true\"",
+            "     \"callback_query_id\" = callback_query.id",
+            "     \"text\" = \"${1:TEXT}\"",
+            "  })",
+            "}}"
         ],
         "description": "Блок answerCallbackQuery"
-  },
-	"tg_api(deleteMessage)": {
-        "prefix": ["deleteMessage", "tg_api"],
+    },
+    "tg_api(deleteMessage)": {
+        "prefix": [
+            "deleteMessage",
+            "tg_api"
+        ],
         "body": "{{ tg_api( deleteMessage = { message_id = message.message_id } ) }}",
         "description": "Блок deleteMessage"
-  },
-	"tg_api(editMessageText)": {
-        "prefix": ["editMessageText", "tg_api"],
+    },
+    "tg_api(editMessageText)": {
+        "prefix": [
+            "editMessageText",
+            "tg_api"
+        ],
         "body": [
-        "{{ tg_api( \"editMessageText\" = {",
-        "    \"message_id\" = message.message_id",
-        "    \"parse_mode\" = \"HTML\"",
-        "    \"disable_notification\" = \"true\"",
-        "    \"text\" = \"${1:TEXT}\"",
-        "    \"reply_markup\" = {",
-        "        \"inline_keyboard\" = [",
-        "            [{",
-        "               \"text\" = \"${2:button1_text}\"",
-        "               \"callback_data\" = \"${3:button1_cb}\"",
-        "            }]",
-        "            [{",
-        "                \"text\" = \"${4:button2_text}\"",
-        "                \"callback_data\" = \"${5:button2_cb}\"",
-        "            }]",
-        "        ]}",
-        "   })",
-        "}}"
+            "{{ tg_api( \"editMessageText\" = {",
+            "    \"message_id\" = message.message_id",
+            "    \"parse_mode\" = \"HTML\"",
+            "    \"disable_notification\" = \"true\"",
+            "    \"text\" = \"${1:TEXT}\"",
+            "    \"reply_markup\" = {",
+            "        \"inline_keyboard\" = [",
+            "            [{",
+            "               \"text\" = \"${2:button1_text}\"",
+            "               \"callback_data\" = \"${3:button1_cb}\"",
+            "            }]",
+            "            [{",
+            "                \"text\" = \"${4:button2_text}\"",
+            "                \"callback_data\" = \"${5:button2_cb}\"",
+            "            }]",
+            "        ]}",
+            "   })",
+            "}}"
         ],
         "description": "Блок editMessageText"
-  },
-	"tg_api(sendMessage)": {
-        "prefix": ["sendMessage", "tg_api"],
+    },
+    "tg_api(sendMessage)": {
+        "prefix": [
+            "sendMessage",
+            "tg_api"
+        ],
         "body": [
-        "{{ tg_api( \"sendMessage\" = {",
-        "    \"parse_mode\" = \"HTML\"",
-        "    \"text\" = \"${1:TEXT}\"",
-        "    \"reply_markup\" = {",
-        "        \"inline_keyboard\" = [",
-        "            [{",
-        "               \"text\" = \"${2:button1_text}\"",
-        "               \"callback_data\" = \"${3:button1_cb}\"",
-        "            }]",
-        "            [{",
-        "                \"text\" = \"${4:button2_text}\"",
-        "                \"callback_data\" = \"${5:button2_cb}\"",
-        "            }]",
-        "        ]}",
-        "   })",
-        "}}"
+            "{{ tg_api( \"sendMessage\" = {",
+            "    \"parse_mode\" = \"HTML\"",
+            "    \"text\" = \"${1:TEXT}\"",
+            "    \"reply_markup\" = {",
+            "        \"inline_keyboard\" = [",
+            "            [{",
+            "               \"text\" = \"${2:button1_text}\"",
+            "               \"callback_data\" = \"${3:button1_cb}\"",
+            "            }]",
+            "            [{",
+            "                \"text\" = \"${4:button2_text}\"",
+            "                \"callback_data\" = \"${5:button2_cb}\"",
+            "            }]",
+            "        ]}",
+            "   })",
+            "}}"
         ],
         "description": "Блок sendMessage"
-  }
+    }
 }

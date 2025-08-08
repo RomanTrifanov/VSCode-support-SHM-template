@@ -26,3 +26,6 @@
 ## 1.0.2
 - Fix some description
 - Add more us. snippets
+## 1.0.3
+- Fix some description
+- Add spool snippets

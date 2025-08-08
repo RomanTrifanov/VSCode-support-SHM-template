@@ -1,86 +1,104 @@
 {
-  "name": "tt-for-shm",
-  "displayName": "TT for SHM",
-  "description": "VS Code support for SHM Template Toolkit syntax {{..}}",
-  "author":{
-    "name": "Roman Trifanov"
-  },
-  "repository": "https://github.com/RomanTrifanov/VSCode-support-SHM-template",
-  "homepage": "https://github.com/RomanTrifanov/VSCode-support-SHM-template/blob/main/README.md",
-  "version": "1.0.2",
-  "publisher": "romant38",
-  "license": "MIT",
-  "icon": "./images/logo.png",
-  "engines": {
-    "vscode": "^1.5.0"
-  },
-  "categories": [
-    "Programming Languages"
-  ],
-  "contributes": {
-    "languages": [{
-      "id": "tt2",
-      "aliases": ["TT2", "tt2"],
-      "extensions": [".tt",".tpl"],
-      "configuration": "./language-configuration.json"
-    }],
-    "keywords": [
-      "shm",
-      "tt",
-      "perl",
-      "template",
-      "template toolkit"
+    "name": "tt-for-shm",
+    "displayName": "TT for SHM",
+    "description": "VS Code support for SHM Template Toolkit syntax {{..}}",
+    "author": {
+        "name": "Roman Trifanov"
+    },
+    "repository": "https://github.com/RomanTrifanov/VSCode-support-SHM-template",
+    "homepage": "https://github.com/RomanTrifanov/VSCode-support-SHM-template/blob/main/README.md",
+    "version": "1.0.3",
+    "publisher": "romant38",
+    "license": "MIT",
+    "icon": "./images/logo.png",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Programming Languages"
     ],
-    "grammars": [{
-      "language": "tt2",
-      "scopeName": "source.tt2",
-      "path": "./syntaxes/tt2.tmLanguage"
-    }],
-    "snippets": [
-      {
-      "language": "tt2",
-      "path": "./snippets/template_toolkit.json"
-      },
-      {
-      "language": "tt2",
-      "path": "./snippets/shm_wd.json"
-      },
-      {
-      "language": "tt2",
-      "path": "./snippets/shm_user.json"
-      },
-      {
-      "language": "tt2",
-      "path": "./snippets/shm_us.json"
-      },
-      {
-      "language": "tt2",
-      "path": "./snippets/shm_tpl_storage_config.json"
-      },
-      {
-      "language": "tt2",
-      "path": "./snippets/shm_tg_task.json"
-      },
-      {
-      "language": "tt2",
-      "path": "./snippets/shm_service.json"
-      },
-      {
-      "language": "tt2",
-      "path": "./snippets/shm_server_sg.json"
-      },
-      {
-      "language": "tt2",
-      "path": "./snippets/shm_pay_bonus.json"
-      },
-      {
-      "language": "tt2",
-      "path": "./snippets/shm_other_functions.json"
-      },
-      {
-      "language": "tt2",
-      "path": "./snippets/shm_misc.json"
-      }
-    ]
-  }
+    "contributes": {
+        "languages": [
+            {
+                "id": "tt2",
+                "aliases": [
+                    "TT2",
+                    "tt2"
+                ],
+                "extensions": [
+                    ".tt",
+                    ".tpl"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "keywords": [
+            "shm",
+            "tt",
+            "perl",
+            "template",
+            "template toolkit"
+        ],
+        "grammars": [
+            {
+                "language": "tt2",
+                "scopeName": "source.tt2",
+                "path": "./syntaxes/tt2.tmLanguage"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "tt2",
+                "path": "./snippets/template_toolkit_Directives.json"
+            },
+            {
+                "language": "tt2",
+                "path": "./snippets/template_toolkit_VMethods.json"
+            },
+            {
+                "language": "tt2",
+                "path": "./snippets/shm_wd.json"
+            },
+            {
+                "language": "tt2",
+                "path": "./snippets/shm_user.json"
+            },
+            {
+                "language": "tt2",
+                "path": "./snippets/shm_spool.json"
+            },
+            {
+                "language": "tt2",
+                "path": "./snippets/shm_us.json"
+            },
+            {
+                "language": "tt2",
+                "path": "./snippets/shm_tpl_storage_config.json"
+            },
+            {
+                "language": "tt2",
+                "path": "./snippets/shm_tg_task.json"
+            },
+            {
+                "language": "tt2",
+                "path": "./snippets/shm_service.json"
+            },
+            {
+                "language": "tt2",
+                "path": "./snippets/shm_server_sg.json"
+            },
+            {
+                "language": "tt2",
+                "path": "./snippets/shm_pay_bonus.json"
+            },
+            {
+                "language": "tt2",
+                "path": "./snippets/shm_other_functions.json"
+            },
+            {
+                "language": "tt2",
+                "path": "./snippets/shm_misc.json"
+            }
+        ]
+    }
 }

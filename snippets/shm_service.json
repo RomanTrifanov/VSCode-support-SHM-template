@@ -4,7 +4,7 @@
         "body": "service.id ",
         "description": "Идентификатор пользовательской услуги (получить)"
     },
-	"service.id()": {
+    "service.id()": {
         "prefix": "service.id()",
         "body": "service.id( $1 )",
         "description": "Идентификатор пользовательской услуги (установить)"

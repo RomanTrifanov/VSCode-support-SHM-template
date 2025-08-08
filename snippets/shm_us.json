@@ -4,7 +4,7 @@
         "body": "us.id( $1 )",
         "description": "Идентификатор пользовательской услуги (установить)"
     },
-	"us.id": {
+    "us.id": {
         "prefix": "us.id",
         "body": "us.id",
         "description": "Идентификатор пользовательской услуги (получить)"
@@ -60,26 +60,26 @@
         "description": "Ссылка на дочернюю услугу определенной категории"
     },
     "us.change(finish_active = 1)": {
-		"prefix": "us.change",
-		"body": "us.change( service_id = ${1:N}, finish_active = 1 ) ",
-		"description": "Метод смены тарифа с завершением услуги, где N идентификатор новой услуги"
-	},
-	"us.change(finish_active = 0)": {
-		"prefix": "us.change",
-		"body": "us.change( service_id = ${1:N}, finish_active = 0 ) ",
-		"description": "Метод смены тарифа БЕЗ завершения услуги, где N идентификатор новой услуги"
-	},
-	"us.touch": {
-		"prefix": "us.touch",
-		"body": "us.touch ",
-		"description": "Толкнуть, вызвать пролонгацию услуги"
-	},
+        "prefix": "us.change",
+        "body": "us.change( service_id = ${1:N}, finish_active = 1 ) ",
+        "description": "Метод смены тарифа с завершением услуги, где N идентификатор новой услуги"
+    },
+    "us.change(finish_active = 0)": {
+        "prefix": "us.change",
+        "body": "us.change( service_id = ${1:N}, finish_active = 0 ) ",
+        "description": "Метод смены тарифа БЕЗ завершения услуги, где N идентификатор новой услуги"
+    },
+    "us.touch": {
+        "prefix": "us.touch",
+        "body": "us.touch ",
+        "description": "Толкнуть, вызвать пролонгацию услуги"
+    },
     "us.finish": {
         "prefix": "us.finish",
         "body": "us.finish( 'money_back', ${1:1} ) ",
         "description": "Завершение услуги с возвратом средств (биллинг продлит или заблокирует услугу в зависимости от наличия средств)"
     },
-	"us.finish_": {
+    "us.finish_": {
         "prefix": "us.finish",
         "body": "us.finish( 'money_back', ${1:0} ) ",
         "description": "Завершение услуги БЕЗ возврата средств (биллинг продлит или заблокирует услугу в зависимости от наличия средств)"
@@ -144,7 +144,7 @@
         "body": "us.get_user_id",
         "description": "Получить id пользователя из услуги"
     },
-	"us.is_paid": {
+    "us.is_paid": {
         "prefix": "us.is_paid",
         "body": "us.is_paid",
         "description": "Возвращает 1, если услуга оплачена"

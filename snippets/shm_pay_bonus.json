@@ -1,10 +1,10 @@
 {
-   "pay.id": {
+    "pay.id": {
         "prefix": "pay.id",
         "body": "pay.id ",
         "description": "Получить id платежа"
     },
-	"pay.id()": {
+    "pay.id()": {
         "prefix": "pay.id()",
         "body": "pay.id( $1 ) ",
         "description": "Установить id платежа"

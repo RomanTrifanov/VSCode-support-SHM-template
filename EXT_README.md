@@ -19,7 +19,7 @@ Special for SHM (https://myshm.ru, https://docs.myshm.ru)
 
 ### SHM snippets:
 - Current SHM version 0.36.8
-- user, us, service, pay, wd, server, sg, tpl, storage
+- user, us, service, pay, wd, server, sg, tpl, storage, spool
 - toJson, fromJson, toQueryString, filter, where, dump, misc. ...
 - tg_api: sendMessage, editMessageText, deleteMessage, answerCallbackQuery
 - http.method() snippets (get, post, put, delete, patch)

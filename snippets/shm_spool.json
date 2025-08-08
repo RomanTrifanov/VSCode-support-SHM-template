@@ -1,0 +1,107 @@
+{
+    "spool.id": {
+        "prefix": "spool.id",
+        "body": "spool.id",
+        "description": "Получить id задачи из очереди"
+    },
+    "spool.id($1)": {
+        "prefix": "spool.id",
+        "body": "spool.id(${1:id})",
+        "description": "Установить id задачи из очереди"
+    },
+    "spool.created": {
+        "prefix": "spool.created",
+        "body": "spool.created",
+        "description": "Дата и время создания задачи"
+    },
+    "spool.executed": {
+        "prefix": "spool.executed",
+        "body": "spool.executed",
+        "description": "Дата и время последнего выполнения"
+    },
+    "spool.status": {
+        "prefix": "spool.status",
+        "body": "spool.status",
+        "description": "Статус выполнения команды (NEW, PAUSED ..)"
+    },
+    "spool.settings": {
+        "prefix": "spool.settings",
+        "body": "spool.settings",
+        "description": "Настройки задачи (объект)"
+    },
+    "spool.settings.template_id": {
+        "prefix": "spool.settings.template_id",
+        "body": "spool.settings.template_id",
+        "description": "Шаблон для выполнения задачи"
+    },
+    "spool.settings.user_id": {
+        "prefix": "spool.settings.user_id",
+        "body": "spool.settings.user_id",
+        "description": "ID пользователя для выполнения задачи"
+    },
+    "spool.delayed": {
+        "prefix": "spool.delayed",
+        "body": "spool.delayed",
+        "description": "Отложена (в секундах)"
+    },
+    "spool.user_service_id": {
+        "prefix": "spool.user_service_id",
+        "body": "spool.user_service_id",
+        "description": "ID пользовательской услуги"
+    },
+    "spool.event": {
+        "prefix": "spool.event",
+        "body": "spool.event",
+        "description": "Событие (объект)"
+    },
+    "spool.event.kind": {
+        "prefix": "spool.event.kind",
+        "body": "spool.event.kind",
+        "description": "Вид события (например Jobs)"
+    },
+    "spool.event.period": {
+        "prefix": "spool.event.period",
+        "body": "spool.event.period",
+        "description": "Период выполнения в секундах (86400 — раз в сутки)"
+    },
+    "spool.event.method": {
+        "prefix": "spool.event.method",
+        "body": "spool.event.method",
+        "description": "Метод (job_users, job_make_forecasts ..)"
+    },
+    "spool.event.title": {
+        "prefix": "spool.event.title",
+        "body": "spool.event.title",
+        "description": "Название события для задачи"
+    },
+    "spool.event.server_gid": {
+        "prefix": "spool.event.server_gid",
+        "body": "spool.event.server_gid",
+        "description": "Группа серверов для задачи"
+    },
+    "spool.response": {
+        "prefix": "spool.response",
+        "body": "spool.response",
+        "description": "Результат выполнения"
+    },
+    "spool.prio": {
+        "prefix": "spool.prio",
+        "body": "spool.prio",
+        "description": "Приоритет команды"
+    },
+    "spool.user_id": {
+        "prefix": "spool.user_id",
+        "body": "spool.user_id",
+        "description": "ID пользователя"
+    },
+    "spool.add": {
+        "prefix": "spool.add",
+        "body": "spool.add",
+        "description": "Добавить задачу в очередь"
+    },
+    "spool.delete": {
+        "prefix": "spool.delete",
+        "body": "spool.delete",
+        "description": "Удалить задачу из очереди"
+    }
+}
