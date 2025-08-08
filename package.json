@@ -7,7 +7,7 @@
     },
     "repository": "https://github.com/RomanTrifanov/VSCode-support-SHM-template",
     "homepage": "https://github.com/RomanTrifanov/VSCode-support-SHM-template/blob/main/README.md",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "publisher": "romant38",
     "license": "MIT",
     "icon": "./images/logo.png",

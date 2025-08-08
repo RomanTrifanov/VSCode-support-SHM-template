@@ -46,6 +46,11 @@ Special for SHM (https://myshm.ru, https://docs.myshm.ru)
 - tg_api: sendMessage, editMessageText, deleteMessage, answerCallbackQuery
 
 ## Release Notes
+## 1.0.4
+- Fix some VMethods
+## 1.0.3
+- Fix some description
+- Add spool snippets
 ## 1.0.2
 - Fix some descriptions
 - Add more us. snippets

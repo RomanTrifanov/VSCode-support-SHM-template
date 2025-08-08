@@ -29,3 +29,5 @@
 ## 1.0.3
 - Fix some description
 - Add spool snippets
+## 1.0.4
+- Fix some VMethods
