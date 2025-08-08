@@ -1,4 +1,10 @@
 > [!TIP]
+> ### 🆕 ⚡️ Достепен онлайн просмотр сниппетов для методов с описаниями!
+>
+>🌐 [Online Snippets Viewer](https://romantrifanov.github.io/VSCode-support-SHM-template/)
+>
+
+> [!TIP]
 > ### Установка расширения.
 > 
 > Перейдите в [marketplace.visualstudio.com](https://marketplace.visualstudio.com/items?itemName=RomanT38.tt-for-shm)
