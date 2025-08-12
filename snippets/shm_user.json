@@ -321,22 +321,32 @@
     },
     "user.spool.add": {
         "prefix": "user.spool.add",
-        "body": "user.spool.add( ( content ) )",
-        "description": "Довавить задачу для пользователя"
+        "body": "user.spool.add( content )",
+        "description": "Добавить задачу для пользователя"
     },
     "u.spool.add": {
         "prefix": "u.spool.add",
-        "body": "u.spool.add( ( content ) )",
-        "description": "Довавить задачу для пользователя"
+        "body": "u.spool.add( content )",
+        "description": "Добавить задачу для пользователя"
     },
     "user.spool.items": {
         "prefix": "user.spool.items",
         "body": "user.spool.items",
-        "description": "Список объектов задачь пользователя"
+        "description": "Список объектов задач пользователя"
     },
     "u.spool.items": {
         "prefix": "u.spool.items",
         "body": "u.spool.items",
-        "description": "Список объектов задачь пользователя"
+        "description": "Список объектов задач пользователя"
+    },
+    "user.make_event('EVENT')": {
+        "prefix": "user.make_event",
+        "body": "user.make_event('${1:EVENT}')",
+        "description": "Выполнить принудительно событие для пользователя, например: user.make_event( 'forecast' )"
+    },
+    "u.make_event('EVENT')": {
+        "prefix": "u.make_event",
+        "body": "user.make_event( '${1:EVENT}' )",
+        "description": "Выполнить принудительно событие для пользователя, например: u.make_event( 'forecast' )"
     }
 }

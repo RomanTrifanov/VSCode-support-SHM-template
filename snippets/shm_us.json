@@ -27,12 +27,22 @@
     "us.status": {
         "prefix": "us.status",
         "body": "us.status ",
-        "description": "Статус пользовательской услуги"
+        "description": "Получить статус пользовательской услуги"
+    },
+    "us.status('STATUS')": {
+        "prefix": "us.status()",
+        "body": "us.status( '${1:STATUS}' ) ",
+        "description": "Изменить статус пользовательской услуги, чтобы при этом выполнилось событие: CHANGED"
     },
     "us.status_before": {
         "prefix": "us.status_before",
         "body": "us.status_before ",
         "description": "Предыдущий Статус пользовательской услуги"
+    },
+    "us.last_event": {
+        "prefix": "us.last_event",
+        "body": "us.last_event ",
+        "description": "Последнее событие пользовательской услуги"
     },
     "us.service_id": {
         "prefix": "us.service_id",
@@ -72,14 +82,19 @@
     "us.touch": {
         "prefix": "us.touch",
         "body": "us.touch ",
-        "description": "Толкнуть, вызвать пролонгацию услуги"
+        "description": "Этой командой, мы просим биллинг 'посмотреть' на услугу и сделать с ней что-нибудь, если это требуется (активировать, разблокировать, продлить и т.п.). Это не работает для услуг в статусе PROGRESS и для удаленных услуг"
     },
-    "us.finish": {
+    "us.make_commands_by_event('EVENT')": {
+        "prefix": "us.make_commands_by_event",
+        "body": "us.make_commands_by_event( '${1:EVENT}' ) ",
+        "description": "Принудительно выполнить событие. Нужно предварительно перевести услугу в статус PROGRESS и затем выполнить нужное событие, пример: us.set( status = 'PROGRESS'), затем us.make_commands_by_event( 'CREATE' )"
+    },
+    "us.finish('money_back', 1)": {
         "prefix": "us.finish",
         "body": "us.finish( 'money_back', ${1:1} ) ",
         "description": "Завершение услуги с возвратом средств (биллинг продлит или заблокирует услугу в зависимости от наличия средств)"
     },
-    "us.finish_": {
+    "us.finish('money_back', 0)": {
         "prefix": "us.finish",
         "body": "us.finish( 'money_back', ${1:0} ) ",
         "description": "Завершение услуги БЕЗ возврата средств (биллинг продлит или заблокирует услугу в зависимости от наличия средств)"
@@ -157,6 +172,6 @@
     "us.auto_bill": {
         "prefix": "us.auto_bill",
         "body": "us.auto_bill",
-        "description": "Состояние билинга, 1 - включен"
+        "description": "Состояние биллинга, 1 - включен"
     }
 }

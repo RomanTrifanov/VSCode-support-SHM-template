@@ -31,3 +31,5 @@
 - Add spool snippets
 ## 1.0.4
 - Fix some VMethods
+## 1.0.5
+- Add some snippets
