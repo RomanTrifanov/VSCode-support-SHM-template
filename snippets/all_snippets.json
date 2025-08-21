@@ -1,0 +1,1667 @@
+{
+    "block": {
+        "prefix": "block",
+        "body": "{{ BLOCK ${1:name} }}\n   ${2:block...}\n{{ END }}\n",
+        "description": "BLOCK"
+    },
+    "call": {
+        "prefix": "call",
+        "body": "{{ CALL ${1:expr} }}\n",
+        "description": "CALL"
+    },
+    "def": {
+        "prefix": "def",
+        "body": "{{ DEFAULT ${1:var} = ${2:expr} }}\n",
+        "description": "DEFAULT"
+    },
+    "end": {
+        "prefix": "end",
+        "body": "{{ END }}\n",
+        "description": "END"
+    },
+    "for": {
+        "prefix": "for",
+        "body": "{{ FOR ${1:item} IN ${2:list...} }}\n   ${3:block...}\n{{ END }}\n",
+        "description": "FOR"
+    },
+    "for1": {
+        "prefix": "{{ for}}",
+        "body": "{{ FOR ${1:item} IN ${2:list...} }}\n   ${3:block...}\n{{ END ",
+        "description": "FOR"
+    },
+    "for2": {
+        "prefix": "{{for}}",
+        "body": "{{ FOR ${1:item} IN ${2:list...} }}\n   ${3:block...}\n{{ END ",
+        "description": "FOR"
+    },
+    "get": {
+        "prefix": "get",
+        "body": "{{ GET ${1:expr} }}\n",
+        "description": "GET"
+    },
+    "ifelse": {
+        "prefix": "ifelse",
+        "body": "{{ IF ${1:expr} }}\n   ${2:block...}\n{{ ELSE }}\n   ${3:block...}\n{{ END }}\n",
+        "description": "IF ELSE"
+    },
+    "ifs": {
+        "prefix": "ifs",
+        "body": "{{ IF ${1:expr} }}\n   ${2:block...}\n{{ ELSIF ${3:expr} }}\n   ${4:block...}\n{{ ELSE }}\n   ${5:block...}\n{{ END }}\n",
+        "description": "IF ELSIF ELSE"
+    },
+    "ifelsif": {
+        "prefix": "ifelsif",
+        "body": "{{ IF ${1:expr} }}\n   ${2:block...}\n{{ ELSIF ${3:expr} }}\n   ${4:block...}\n{{ END }}\n",
+        "description": "IF ELSIF"
+    },
+    "if": {
+        "prefix": "if",
+        "body": "{{ IF ${1:expr} }}\n   ${3:block...}\n{{ END }}\n",
+        "description": "IF"
+    },
+    "if1": {
+        "prefix": "{{ if}}",
+        "body": "{{ IF ${1:expr} }}\n   ${3:block...}\n{{ END ",
+        "description": "IF"
+    },
+    "if2": {
+        "prefix": "{{if}}",
+        "body": "{{ IF ${1:expr} }}\n   ${3:block...}\n{{ END ",
+        "description": "IF"
+    },
+    "ins": {
+        "prefix": "ins",
+        "body": "{{ INSERT ${1:template} }}\n",
+        "description": "INSERT"
+    },
+    "inca": {
+        "prefix": "inca",
+        "body": "{{ INCLUDE ${1:template} ${2:args...} }}\n",
+        "description": "INCLUDE args"
+    },
+    "inc": {
+        "prefix": "inc",
+        "body": "{{ INCLUDE ${1:template} }}\n",
+        "description": "INCLUDE"
+    },
+    "macro": {
+        "prefix": "macro",
+        "body": "{{ MACRO ${1:name}\n         ${2:directive}\n}}\n",
+        "description": "MACRO"
+    },
+    "proca": {
+        "prefix": "proca",
+        "body": "{{ PROCESS ${1:template} ${2:args...} }}\n",
+        "description": "PROCESS args"
+    },
+    "proc": {
+        "prefix": "proc",
+        "body": "{{ PROCESS ${1:template} }}\n",
+        "description": "PROCESS"
+    },
+    "set": {
+        "prefix": "set",
+        "body": "{{ SET ${1:var} = ${2:expr} }}\n",
+        "description": "SET"
+    },
+    "switch": {
+        "prefix": "switch",
+        "body": "{{ SWITCH ${1:expr} }}\n{{   CASE ${2:value1} }}\n          ${3:block...}\n{{   CASE ${4:value2} }}\n          ${5:block...}\n{{   CASE # default case }}\n          ${6:block...}\n{{ END }}\n",
+        "description": "SWITCH"
+    },
+    "use": {
+        "prefix": "use",
+        "body": "{{ USE ${1:plugin}(${2:args}) }}\n",
+        "description": "USE"
+    },
+    "wrapa": {
+        "prefix": "wrapa",
+        "body": "{{ WRAPPER ${1:template} ${2:args...} }}\n   ${3:content...}\n{{ END }}\n",
+        "description": "WRAPPER args"
+    },
+    "wrap": {
+        "prefix": "wrap",
+        "body": "{{ WRAPPER ${1:template} }}\n   ${3:content...}\n{{ END }}\n",
+        "description": "WRAPPER"
+    },
+    "text": {
+        "prefix": [
+            "text",
+            "TEXT"
+        ],
+        "body": "{{ TEXT = BLOCK }}\n   ${2:text...}\n{{ END #TEXT }}\n",
+        "description": "TEXT"
+    },
+    "for_us": {
+        "prefix": "for us in user.us.items",
+        "body": "{{ FOR us IN user.us.items }}\n   ${3:block...}\n{{ END }}",
+        "description": "Цикл для перебора пользовательских услуг FOR us IN user.us.items"
+    },
+    "for_user": {
+        "prefix": "for user in user.items",
+        "body": "{{ FOR user IN user.items }}\n   ${3:block...}\n{{ END }}",
+        "description": "Цикл для перебора пользователей FOR user IN user.items"
+    },
+    "for_us_": {
+        "prefix": "for us in u.us.items",
+        "body": "{{ FOR us IN u.us.items }}\n   ${3:block...}\n{{ END }}",
+        "description": "Цикл для перебора пользовательских услуг  FOR us IN u.us.items"
+    },
+    "for_u": {
+        "prefix": "for u in user.items",
+        "body": "{{ FOR u IN user.items }}\n   ${3:block...}\n{{ END }}",
+        "description": "Цикл для перебора пользователей FOR u IN user.items"
+    },
+    ".chunk(size)": {
+        "prefix": ".chunk",
+        "body": ".chunk(${1:size}).join('${2:,}')",
+        "description": "Разбивает значение на список частей определенного размера"
+    },
+    ".collapse": {
+        "prefix": ".collapse",
+        "body": ".collapse",
+        "description": "Возвращает текст, в котором удалены все начальные и конечные пробелы, а все внутренние последовательности пробелов преобразованы в один пробел"
+    },
+    ".defined": {
+        "prefix": ".defined",
+        "body": ".defined",
+        "description": "Возвращает true, если значение определено или если список определен."
+    },
+    ".dquote": {
+        "prefix": ".dquote",
+        "body": ".dquote",
+        "description": "Возвращает текст с любыми символами двойных кавычек, экранированными префиксом обратной косой черты. Любые символы новой строки в тексте будут заменены на \"\\n\""
+    },
+    ".hash": {
+        "prefix": ".hash",
+        "body": ".hash",
+        "description": "Возвращает значение как ссылку на хэш, содержащую одну запись с ключом, указывающим на исходное скалярное значение. Используется для упрощения преобразования данных в разные форматы.\n\nТакже может возвращать ссылку на хэш-массив, состоящую из элементов списка, где четные элементы (0, 2, 4 и т.д.) становятся ключами, а нечетные (1, 3, 5 и т.д.) — значениями."
+    },
+    ".lcfirst": {
+        "prefix": ".lcfirst",
+        "body": ".lcfirst",
+        "description": "Возвращает текст, в котором первая буква преобразована в нижний регистр."
+    },
+    ".length": {
+        "prefix": ".length",
+        "body": ".length",
+        "description": "Возвращает длину строкового представления элемента:"
+    },
+    ".empty": {
+        "prefix": ".empty",
+        "body": ".empty",
+        "description": "Возвращает true, если строка пуста. Возвращает true, если хеш пуст или если список пуст."
+    },
+    ".lower": {
+        "prefix": ".lower",
+        "body": ".lower",
+        "description": "Возвращает текст в нижнем регистре"
+    },
+    ".match(pattern, global)": {
+        "prefix": ".match",
+        "body": ".match('${1:pattern}')",
+        "description": "Выполняет сопоставление регулярного выражения со строкой, используя шаблон, переданный в качестве аргумента. Если шаблон соответствует строке, то метод возвращает ссылку на список всех строк, захваченных в скобках в шаблоне. Если шаблон не совпадает, то метод возвращает false."
+    },
+    ".repeat(n)": {
+        "prefix": ".repeat",
+        "body": ".repeat(${1:number_of_times})",
+        "description": "Повторяет строку указанное количество раз."
+    },
+    ".replace(search, replace)": {
+        "prefix": ".replace",
+        "body": ".replace('${1:pattern}', '${2:string}')",
+        "description": "Заменяет все вхождения указанного шаблона (регулярное выражение Perl) другим текстом."
+    },
+    ".remove(pattern)": {
+        "prefix": ".remove",
+        "body": ".remove('${1:pattern}')",
+        "description": "Выводит строку, в которой удалены все вхождения шаблона (задано как регулярное выражение Perl)."
+    },
+    ".search(pattern)": {
+        "prefix": ".search",
+        "body": ".search('${1:pattern}')",
+        "description": "Возвращает true, если строка соответствует шаблону регулярного выражения."
+    },
+    ".size": {
+        "prefix": ".size",
+        "body": ".size",
+        "description": "Возвращает количество пар ключ/значение в хэше. Возвращает размер списка (количество элементов). Для скалярных значений всегда возвращается 1."
+    },
+    ".split(pattern)": {
+        "prefix": ".split",
+        "body": ".split('${1::}')",
+        "description": "Использует функцию Perl split(), чтобы разбить строку на список строк."
+    },
+    ".substr(offset, length, replacement)": {
+        "prefix": ".substr",
+        "body": ".substr(${1:offset}, ${2:length}, '${3:string}')",
+        "description": "Возвращает подстроку, начинающуюся с позиции offset, длиной length символов. Если длина не указана, возвращает весь остаток строки. Если задан replace, метод заменяет часть строки указанным значением и возвращает старую подстроку."
+    },
+    ".squote": {
+        "prefix": ".squote",
+        "body": ".squote",
+        "description": "Возвращает текст, содержащий все символы одинарных кавычек, экранированные префиксом в виде обратной косой черты."
+    },
+    ".trim": {
+        "prefix": ".trim",
+        "body": ".trim",
+        "description": "Возвращает текст, в котором удалены все начальные и конечные пробелы."
+    },
+    ".ucfirst": {
+        "prefix": ".ucfirst",
+        "body": ".ucfirst",
+        "description": "Преобразует первую букву текста в верхний регистр."
+    },
+    ".upper": {
+        "prefix": ".upper",
+        "body": ".upper",
+        "description": "Возвращает текст в верхнем регистре."
+    },
+    ".keys": {
+        "prefix": ".keys",
+        "body": ".keys",
+        "description": "Возвращает список ключей в хэше. Порядок неопределён, но соответствует порядку значений."
+    },
+    ".join": {
+        "prefix": ".join",
+        "body": ".join('${1:, }')",
+        "description": "Объединяет элементы списка в одну строку с разделителем, указанным в аргументе."
+    },
+    ".items": {
+        "prefix": ".items",
+        "body": ".items",
+        "description": "Возвращает список ключей и значений, развернутый в один общий список."
+    },
+    ".pairs": {
+        "prefix": ".pairs",
+        "body": ".pairs",
+        "description": "Возвращает список пар ключ-значение, отсортированный по ключам."
+    },
+    ".list": {
+        "prefix": ".list",
+        "body": ".list",
+        "description": "Возвращает содержимое хеша в виде списка."
+    },
+    ".sort": {
+        "prefix": [
+            ".sort"
+        ],
+        "body": ".sort",
+        "description": "Возвращает список ключей, отсортированных в алфавитном порядке."
+    },
+    ".sort()": {
+        "prefix": [
+            ".sort()"
+        ],
+        "body": ".sort('${1:key}')",
+        "description": "Возвращает список ключей, отсортированных в алфавитном порядке. Вы также можете указать несколько ключей сортировки."
+    },
+    ".nsort": {
+        "prefix": [
+            ".nsort"
+        ],
+        "body": ".nsort",
+        "description": "Возвращает список ключей, отсортированных по номерам (numerically sorted)."
+    },
+    ".nsort()": {
+        "prefix": [
+            ".nsort()"
+        ],
+        "body": ".nsort('${1:key}')",
+        "description": "Возвращает список ключей, отсортированных по номерам (numerically sorted). Вы также можете указать несколько ключей сортировки."
+    },
+    ".import": {
+        "prefix": ".import",
+        "body": ".import(${1:hash})",
+        "description": "Импортирует содержимое другого хэш-массива в текущий хэш-массив. Может использоваться для добавления элементов из одного или нескольких списков в существующий список."
+    },
+    ".defined()": {
+        "prefix": ".defined",
+        "body": ".defined('${1:somekey}')",
+        "description": "Возвращает true или false, проверяя, определен ли элемент в хеше или списке, указанный ключом или позицией."
+    },
+    ".exists": {
+        "prefix": ".exists",
+        "body": ".exists('${1:somekey}')",
+        "description": "Проверяет существование ключа в хэше и возвращает true или false."
+    },
+    ".delete": {
+        "prefix": ".delete",
+        "body": ".delete('${1:foo}', '${2:bar}')",
+        "description": "Удаляет один или несколько элементов из хэша."
+    },
+    ".first": {
+        "prefix": ".first",
+        "body": ".first(${1:n})",
+        "description": "Возвращает первый элемент в списке. Если передан числовой аргумент n, возвращает первые n элементов."
+    },
+    ".last": {
+        "prefix": ".last",
+        "body": ".last(${1:n})",
+        "description": "Возвращает последний элемент в списке. Если передан числовой аргумент n, возвращает последние n элементов."
+    },
+    ".max": {
+        "prefix": ".max",
+        "body": ".max",
+        "description": "Возвращает максимальный номер индекса (размер списка минус единица)."
+    },
+    ".reverse": {
+        "prefix": ".reverse",
+        "body": ".reverse",
+        "description": "Возвращает элементы списка в обратном порядке."
+    },
+    ".grep": {
+        "prefix": ".grep",
+        "body": ".grep('${1:^https:}')",
+        "description": "Возвращает список элементов, соответствующих указанному шаблону регулярного выражения."
+    },
+    ".push(item)": {
+        "prefix": ".push",
+        "body": ".push(${1:foo})",
+        "description": "Добавляет элемент или элементы в конец списка."
+    },
+    ".unshift(item)": {
+        "prefix": ".unshift",
+        "body": ".unshift(${1:foo})",
+        "description": "Добавляет элемент или элементы в начало списка."
+    },
+    ".shift": {
+        "prefix": ".shift",
+        "body": ".shift",
+        "description": "Удаляет первый элемент из списка и возвращает его."
+    },
+    ".pop": {
+        "prefix": ".pop",
+        "body": ".pop",
+        "description": "Удаляет последний элемент из списка и возвращает его."
+    },
+    ".unique": {
+        "prefix": ".unique",
+        "body": ".unique",
+        "description": "Возвращает список уникальных элементов в списке в том же порядке, что и в исходном списке."
+    },
+    ".merge": {
+        "prefix": ".merge",
+        "body": ".merge(${1:list_two}, ${2:list_three})",
+        "description": "Возвращает объединённый список из нуля или более других списков."
+    },
+    ".slice(from, to)": {
+        "prefix": ".slice",
+        "body": ".slice(${1:from}, ${2:to})",
+        "description": "Возвращает часть элементов списка между границами, переданными в качестве аргументов. Исходный список не изменяется."
+    },
+    ".splice(offset, length, list)": {
+        "prefix": ".splice",
+        "body": ".splice(${1:offset}, ${2:length}, ${3:list})",
+        "description": "Позволяет выборочно удалить и/или заменить элементы в списке. Удаляет length элементов, начиная с позиции offset, и заменяет их элементами из предоставленного списка."
+    },
+    ".item": {
+        "prefix": ".item",
+        "body": ".item(${1:0})",
+        "description": "Возвращает элемент из списка, используя индекс, переданный в качестве аргумента."
+    },
+    "user.id()": {
+        "prefix": "user.id()",
+        "body": "user.id( $1 )",
+        "description": "Идентификатор пользователя (установить)"
+    },
+    "u.id()": {
+        "prefix": "u.id()",
+        "body": "u.id( $1 )",
+        "description": "Идентификатор пользователя (установить)"
+    },
+    "user.id": {
+        "prefix": "user.id",
+        "body": "user.id ",
+        "description": "Идентификатор пользователя (получить)"
+    },
+    "u.id": {
+        "prefix": "u.id",
+        "body": "u.id ",
+        "description": "Идентификатор пользователя (получить)"
+    },
+    "user.switch": {
+        "prefix": "user.switch",
+        "body": "user.switch( $1 ) ",
+        "description": "Переключение пользователя на указанного (смена контекста)"
+    },
+    "u.switch": {
+        "prefix": "u.switch",
+        "body": "u.switch( $1 ) ",
+        "description": "Переключение пользователя на указанного (смена контекста)"
+    },
+    "user.balance": {
+        "prefix": "user.balance",
+        "body": "user.balance ",
+        "description": "Баланс пользователя"
+    },
+    "u.balance": {
+        "prefix": "u.balance",
+        "body": "u.balance ",
+        "description": "Баланс пользователя"
+    },
+    "user.full_name": {
+        "prefix": "user.full_name",
+        "body": "user.full_name ",
+        "description": "ФИО пользователя"
+    },
+    "u.full_name": {
+        "prefix": "u.full_name",
+        "body": "u.full_name ",
+        "description": "ФИО пользователя"
+    },
+    "user.login": {
+        "prefix": "user.login",
+        "body": "user.login ",
+        "description": "Логин пользователя"
+    },
+    "u.login": {
+        "prefix": "u.login",
+        "body": "u.login ",
+        "description": "Логин пользователя"
+    },
+    "user.credit": {
+        "prefix": "user.credit",
+        "body": "user.credit ",
+        "description": "Кредитный лимит пользователя"
+    },
+    "u.credit": {
+        "prefix": "u.credit",
+        "body": "u.credit ",
+        "description": "Кредитный лимит пользователя"
+    },
+    "user.dogovor": {
+        "prefix": "user.dogovor",
+        "body": "user.dogovor ",
+        "description": "Договор пользователя"
+    },
+    "u.dogovor": {
+        "prefix": "u.dogovor",
+        "body": "u.dogovor ",
+        "description": "Договор пользователя"
+    },
+    "user.settings": {
+        "prefix": "user.settings",
+        "body": "user.settings.",
+        "description": "Получить settings пользователя"
+    },
+    "u.settings": {
+        "prefix": "u.settings",
+        "body": "u.settings.",
+        "description": "Получить settings пользователя"
+    },
+    "user.get_bonus": {
+        "prefix": "user.get_bonus",
+        "body": "user.get_bonus ",
+        "description": "Получить кол-во бонусов"
+    },
+    "u.get_bonus": {
+        "prefix": "u.get_bonus",
+        "body": "u.get_bonus ",
+        "description": "Получить кол-во бонусов"
+    },
+    "user.income_percent": {
+        "prefix": "user.income_percent",
+        "body": "user.income_percent ",
+        "description": "Получить процент партнерских бонусов"
+    },
+    "u.income_percent": {
+        "prefix": "u.income_percent",
+        "body": "u.income_percent ",
+        "description": "Получить процент партнерских бонусов"
+    },
+    "user.add_bonus": {
+        "prefix": "user.add_bonus",
+        "body": "user.add_bonus( ${1:amount},'${2:comment}' ) ",
+        "description": "Начисление бонусов"
+    },
+    "u.add_bonus": {
+        "prefix": "u.add_bonus",
+        "body": "u.add_bonus( ${1:amount},'${2:comment}' ) ",
+        "description": "Начисление бонусов"
+    },
+    "user.set_settings": {
+        "prefix": "user.set_settings",
+        "body": "user.set_settings({ '${1:key}' => ${2:value} }) ",
+        "description": "Сохранить в settings пользователя произвольные данные"
+    },
+    "u.set_settings": {
+        "prefix": "u.set_settings",
+        "body": "u.set_settings({ '${1:key}' => ${2:value} }) ",
+        "description": "Сохранить в settings пользователя произвольные данные"
+    },
+    "user.gen_session.id": {
+        "prefix": "user.gen_session.id",
+        "body": "user.gen_session.id ",
+        "description": "Функция для генерации идентификатора сессии"
+    },
+    "u.gen_session.id": {
+        "prefix": "u.gen_session.id",
+        "body": "u.gen_session.id ",
+        "description": "Функция для генерации идентификатора сессии"
+    },
+    "user.pays": {
+        "prefix": "user.pays",
+        "body": "user.pays ",
+        "description": "Ссылка на платежи пользователя"
+    },
+    "u.pays": {
+        "prefix": "u.pays",
+        "body": "u.pays ",
+        "description": "Ссылка на платежи пользователя"
+    },
+    "user.pays.forecast": {
+        "prefix": "user.pays.forecast()",
+        "body": "user.pays.forecast( days = 3, blocked = 0 ) ",
+        "description": "Возвращает JSON прогноза оплат услуг. days - кол-во дней для прогноза (3 дня по-умолчанию), blocked - учитывать заблокированные услуги (0 - по-умолчанию НЕТ, 1 - ДА)"
+    },
+    "u.pays.forecast": {
+        "prefix": "u.pays.forecast()",
+        "body": "u.pays.forecast( days = 3, blocked = 0 ) ",
+        "description": "Возвращает JSON прогноза оплат услуг. days - кол-во дней для прогноза (3 дня по-умолчанию), blocked - учитывать заблокированные услуги (0 - по-умолчанию НЕТ, 1 - ДА)"
+    },
+    "user.delete": {
+        "prefix": "user.delete",
+        "body": "user.delete ",
+        "description": "Удаление пользователя (с нулевым балансом, без услуг)"
+    },
+    "u.delete": {
+        "prefix": "u.delete",
+        "body": "u.delete ",
+        "description": "Удаление пользователя (с нулевым балансом, без услуг)"
+    },
+    "user.delete_force": {
+        "prefix": "user.delete(force = 1)",
+        "body": "user.delete( force = 1 ) ",
+        "description": "Удаление пользователя вместе с его услугами"
+    },
+    "u.delete_force": {
+        "prefix": "u.delete(force = 1)",
+        "body": "u.delete( force = 1 ) ",
+        "description": "Удаление пользователя вместе с его услугами"
+    },
+    "user.partner_id": {
+        "prefix": "user.partner_id",
+        "body": "user.partner_id ",
+        "description": "Партнер пользователя"
+    },
+    "u.partner_id": {
+        "prefix": "u.partner_id",
+        "body": "u.partner_id ",
+        "description": "Партнер пользователя"
+    },
+    "user.referrals_count": {
+        "prefix": "user.referrals_count",
+        "body": "user.referrals_count ",
+        "description": "Количество рефералов пользователя"
+    },
+    "u.referrals_count": {
+        "prefix": "u.referrals_count",
+        "body": "u.referrals_count ",
+        "description": "Количество рефералов пользователя"
+    },
+    "user.list_for_api": {
+        "prefix": "user.list_for_api",
+        "body": "user.list_for_api( 'admin', 1) ",
+        "description": "Получить всех пользователей"
+    },
+    "u.list_for_api": {
+        "prefix": "u.list_for_api",
+        "body": "u.list_for_api( 'admin', 1) ",
+        "description": "Получить всех пользователей"
+    },
+    "user.items": {
+        "prefix": "user.items",
+        "body": "user.items",
+        "description": "Список объектов всех пользователей"
+    },
+    "u.items": {
+        "prefix": "u.items",
+        "body": "u.items ",
+        "description": "Список объектов всех пользователей"
+    },
+    "user.us.items": {
+        "prefix": "user.us.items",
+        "body": "user.us.items",
+        "description": "Получить все услуги пользователя"
+    },
+    "u.us.items": {
+        "prefix": "u.us.items",
+        "body": "u.us.items ",
+        "description": "Получить все услуги пользователя"
+    },
+    "user.has_payments": {
+        "prefix": "user.has_payments",
+        "body": "user.has_payments",
+        "description": "Возвращает 1, если у пользователя был хотя бы один платеж"
+    },
+    "u.has_payments": {
+        "prefix": "u.has_payments",
+        "body": "u.has_payments",
+        "description": "Возвращает 1, если у пользователя был хотя бы один платеж"
+    },
+    "user.has_withdraws": {
+        "prefix": "user.has_withdraws",
+        "body": "user.has_withdraws",
+        "description": "Возвращает 1, если у пользователя было хотя бы одно списание"
+    },
+    "u.has_withdraws": {
+        "prefix": "u.has_withdraws",
+        "body": "u.has_withdraws",
+        "description": "Возвращает 1, если у пользователя было хотя бы одно списание"
+    },
+    "user.us.has_services": {
+        "prefix": "user.us.has_services",
+        "body": "user.us.has_services",
+        "description": "Возвращает 1, если у пользователя есть услуги, 0, если нет услуг"
+    },
+    "u.us.has_services": {
+        "prefix": "u.us.has_services",
+        "body": "u.us.has_services",
+        "description": "Возвращает 1, если у пользователя есть услуги"
+    },
+    "user.us.has_services_active": {
+        "prefix": "user.us.has_services_active",
+        "body": "user.us.has_services_active",
+        "description": "Возвращает 1, если у пользователя есть услуги в статусе ACTIVE"
+    },
+    "u.us.has_services_active": {
+        "prefix": "u.us.has_services_active",
+        "body": "u.us.has_services_active",
+        "description": "Возвращает 1, если у пользователя есть услуги в статусе ACTIVE"
+    },
+    "user.us.has_services_block": {
+        "prefix": "user.us.has_services_block",
+        "body": "user.us.has_services_block",
+        "description": "Возвращает 1, если у пользователя есть услуги в статусе BLOCK"
+    },
+    "u.us.has_services_block": {
+        "prefix": "u.us.has_services_block",
+        "body": "u.us.has_services_block",
+        "description": "Возвращает 1, если у пользователя есть услуги в статусе BLOCK"
+    },
+    "user.us.has_services_unpaid": {
+        "prefix": "user.us.has_services_unpaid",
+        "body": "user.us.has_services_unpaid",
+        "description": "Возвращает 1, если у пользователя есть услуги в статусе UNPAID"
+    },
+    "u.us.has_services_unpaid": {
+        "prefix": "u.us.has_services_unpaid",
+        "body": "u.us.has_services_unpaid",
+        "description": "Возвращает 1, если у пользователя есть услуги в статусе UNPAID"
+    },
+    "user.us.has_services_progress": {
+        "prefix": "user.us.has_services_progress",
+        "body": "user.us.has_services_progress",
+        "description": "Возвращает 1, если у пользователя есть услуги в статусе PROGRESS"
+    },
+    "u.us.has_services_progress": {
+        "prefix": "u.us.has_services_progress",
+        "body": "u.us.has_services_progress",
+        "description": "Возвращает 1, если у пользователя есть услуги в статусе PROGRESS"
+    },
+    "user.telegram.profile(profile).send": {
+        "prefix": "user.telegram.profile(",
+        "body": "user.telegram.profile( 'telegram_bot' ).send( sendMessage = {  } )",
+        "description": "Отправка сообщения текущему клиенту в телеграм  в указанный профиль, транспорт Local"
+    },
+    "u.telegram.profile(profile).send": {
+        "prefix": "u.telegram.profile(",
+        "body": "u.telegram.profile( 'telegram_bot' ).send( sendMessage = {  } )",
+        "description": "Отправка сообщения текущему клиенту в телеграм  в указанный профиль, транспорт Local"
+    },
+    "user.telegram.send": {
+        "prefix": "user.telegram.send",
+        "body": "user.telegram.send( sendMessage = {  } )",
+        "description": "Отправка сообщения текущему клиенту в телеграм, транспорт Local"
+    },
+    "u.telegram.send": {
+        "prefix": "u.telegram.send",
+        "body": "u.telegram.send( sendMessage = {  } )",
+        "description": "Отправка сообщения текущему клиенту в телеграм, транспорт Local"
+    },
+    "user.spool.add": {
+        "prefix": "user.spool.add",
+        "body": "user.spool.add( content )",
+        "description": "Добавить задачу для пользователя"
+    },
+    "u.spool.add": {
+        "prefix": "u.spool.add",
+        "body": "u.spool.add( content )",
+        "description": "Добавить задачу для пользователя"
+    },
+    "user.spool.items": {
+        "prefix": "user.spool.items",
+        "body": "user.spool.items",
+        "description": "Список объектов задач пользователя"
+    },
+    "u.spool.items": {
+        "prefix": "u.spool.items",
+        "body": "u.spool.items",
+        "description": "Список объектов задач пользователя"
+    },
+    "user.make_event('EVENT')": {
+        "prefix": "user.make_event",
+        "body": "user.make_event('${1:EVENT}')",
+        "description": "Выполнить принудительно событие для пользователя, например: user.make_event( 'forecast' )"
+    },
+    "u.make_event('EVENT')": {
+        "prefix": "u.make_event",
+        "body": "user.make_event( '${1:EVENT}' )",
+        "description": "Выполнить принудительно событие для пользователя, например: u.make_event( 'forecast' )"
+    },
+    "us.id()": {
+        "prefix": "us.id()",
+        "body": "us.id( $1 )",
+        "description": "Идентификатор пользовательской услуги (установить)"
+    },
+    "us.id": {
+        "prefix": "us.id",
+        "body": "us.id",
+        "description": "Идентификатор пользовательской услуги (получить)"
+    },
+    "us.name": {
+        "prefix": "us.name",
+        "body": "us.name ",
+        "description": "Имя пользовательской услуги"
+    },
+    "us.created": {
+        "prefix": "us.created",
+        "body": "us.created ",
+        "description": "Дата создания пользовательской услуги"
+    },
+    "us.expire": {
+        "prefix": "us.expire",
+        "body": "us.expire ",
+        "description": "Дата истечения пользовательской услуги"
+    },
+    "us.status": {
+        "prefix": "us.status",
+        "body": "us.status ",
+        "description": "Получить статус пользовательской услуги"
+    },
+    "us.status('STATUS')": {
+        "prefix": "us.status()",
+        "body": "us.status( '${1:STATUS}' ) ",
+        "description": "Изменить статус пользовательской услуги, чтобы при этом выполнилось событие: CHANGED"
+    },
+    "us.status_before": {
+        "prefix": "us.status_before",
+        "body": "us.status_before ",
+        "description": "Предыдущий Статус пользовательской услуги"
+    },
+    "us.last_event": {
+        "prefix": "us.last_event",
+        "body": "us.last_event ",
+        "description": "Последнее событие пользовательской услуги"
+    },
+    "us.service_id": {
+        "prefix": "us.service_id",
+        "body": "us.service_id ",
+        "description": "ID услуги в каталоге услуг"
+    },
+    "us.settings": {
+        "prefix": "us.settings",
+        "body": "us.settings.",
+        "description": "Получить параметры пользовательской услуги"
+    },
+    "us.set_settings": {
+        "prefix": "us.set_settings",
+        "body": "us.set_settings({ '${1:key}' => ${2:value} }) ",
+        "description": "Сохранить в settings услуги пользователя произвольные данные"
+    },
+    "us.set": {
+        "prefix": "us.set",
+        "body": "us.set( '${1:FIELD}', ${2:'VALUE'} ) ",
+        "description": "Установка поля FIELD в значение VALUE. Пример: us.set('next', 123)"
+    },
+    "us.child_by_category": {
+        "prefix": "us.child_by_category",
+        "body": "us.child_by_category( ${1:CATEGORY} ) ",
+        "description": "Ссылка на дочернюю услугу определенной категории"
+    },
+    "us.change(finish_active = 1)": {
+        "prefix": "us.change",
+        "body": "us.change( service_id = ${1:N}, finish_active = 1 ) ",
+        "description": "Метод смены тарифа с завершением услуги, где N идентификатор новой услуги"
+    },
+    "us.change(finish_active = 0)": {
+        "prefix": "us.change",
+        "body": "us.change( service_id = ${1:N}, finish_active = 0 ) ",
+        "description": "Метод смены тарифа БЕЗ завершения услуги, где N идентификатор новой услуги"
+    },
+    "us.touch": {
+        "prefix": "us.touch",
+        "body": "us.touch ",
+        "description": "Этой командой, мы просим биллинг 'посмотреть' на услугу и сделать с ней что-нибудь, если это требуется (активировать, разблокировать, продлить и т.п.). Это не работает для услуг в статусе PROGRESS и для удаленных услуг"
+    },
+    "us.make_commands_by_event('EVENT')": {
+        "prefix": "us.make_commands_by_event",
+        "body": "us.make_commands_by_event( '${1:EVENT}' ) ",
+        "description": "Принудительно выполнить событие. Нужно предварительно перевести услугу в статус PROGRESS и затем выполнить нужное событие, пример: us.set( status = 'PROGRESS'), затем us.make_commands_by_event( 'CREATE' )"
+    },
+    "us.finish('money_back', 1)": {
+        "prefix": "us.finish",
+        "body": "us.finish( 'money_back', ${1:1} ) ",
+        "description": "Завершение услуги с возвратом средств (биллинг продлит или заблокирует услугу в зависимости от наличия средств)"
+    },
+    "us.finish('money_back', 0)": {
+        "prefix": "us.finish",
+        "body": "us.finish( 'money_back', ${1:0} ) ",
+        "description": "Завершение услуги БЕЗ возврата средств (биллинг продлит или заблокирует услугу в зависимости от наличия средств)"
+    },
+    "us.block": {
+        "prefix": "us.block",
+        "body": "us.block ",
+        "description": "Принудительная блокировка услуги пользователя"
+    },
+    "us.activate": {
+        "prefix": "us.activate",
+        "body": "us.activate ",
+        "description": "Активация услуги пользователя после блокировки"
+    },
+    "us.delete": {
+        "prefix": "us.delete",
+        "body": "us.delete ",
+        "description": "Удаление заблокированной услуги пользователя"
+    },
+    "us.gen_store_pass": {
+        "prefix": "us.gen_store_pass",
+        "body": "us.gen_store_pass ",
+        "description": "Специальная функция для генерации и сохранения пароля в settings"
+    },
+    "us.parent": {
+        "prefix": "us.parent",
+        "body": "us.parent.",
+        "description": "Ссылка на родительскую услугу пользователя"
+    },
+    "us.top_parent": {
+        "prefix": "us.top_parent",
+        "body": "us.top_parent.",
+        "description": "Ссылка на самую верхнюю услугу пользователя"
+    },
+    "us.service": {
+        "prefix": "us.service",
+        "body": "us.service.",
+        "description": "Ссылка на каталог услуг"
+    },
+    "us.withdraw": {
+        "prefix": "us.withdraw",
+        "body": "us.withdraw.",
+        "description": "Ссылка на списание услуги"
+    },
+    "us.withdraw_id": {
+        "prefix": "us.withdraw_id",
+        "body": "us.withdraw_id.",
+        "description": "ID последнего списание услуги"
+    },
+    "us.wd": {
+        "prefix": "us.wd",
+        "body": "us.wd.",
+        "description": "Ссылка на списание услуги"
+    },
+    "us.list_for_api": {
+        "prefix": "us.list_for_api",
+        "body": "us.list_for_api( $1 ) ",
+        "description": "Получение списка услуг пользователя"
+    },
+    "us.get_user_id": {
+        "prefix": "us.get_user_id",
+        "body": "us.get_user_id",
+        "description": "Получить id пользователя из услуги"
+    },
+    "us.is_paid": {
+        "prefix": "us.is_paid",
+        "body": "us.is_paid",
+        "description": "Возвращает 1, если услуга оплачена"
+    },
+    "us.has_expired": {
+        "prefix": "us.has_expired",
+        "body": "us.has_expired",
+        "description": "Возвращает 1, если срок действия услуги истек"
+    },
+    "us.auto_bill": {
+        "prefix": "us.auto_bill",
+        "body": "us.auto_bill",
+        "description": "Состояние биллинга, 1 - включен"
+    },
+    "service.id": {
+        "prefix": "service.id",
+        "body": "service.id ",
+        "description": "Идентификатор пользовательской услуги (получить)"
+    },
+    "service.id()": {
+        "prefix": "service.id()",
+        "body": "service.id( $1 )",
+        "description": "Идентификатор пользовательской услуги (установить)"
+    },
+    "service.name": {
+        "prefix": "service.name",
+        "body": "service.name ",
+        "description": "Название услуги"
+    },
+    "service.cost": {
+        "prefix": "service.cost",
+        "body": "service.cost ",
+        "description": "Базовая стоимость услуги"
+    },
+    "service.period": {
+        "prefix": "service.period",
+        "body": "service.period ",
+        "description": "Период услуги"
+    },
+    "service.category": {
+        "prefix": "service.category",
+        "body": "service.category ",
+        "description": "Категория услуги"
+    },
+    "service.server": {
+        "prefix": "service.server",
+        "body": "service.server",
+        "description": "Ссылка на сервер услуги"
+    },
+    "service.id.N.name": {
+        "prefix": "service.id.N.name",
+        "body": "service.id(${1:N}).name ",
+        "description": "Получение имени услуги c идентификатором N"
+    },
+    "service.id.N.FIELD": {
+        "prefix": "service.id.N.FIELD",
+        "body": "service.id( ${1:N} ).${2:FIELD}",
+        "description": "Получение произвольного поля услуги c идентификатором N"
+    },
+    "service.api_price_list": {
+        "prefix": "service.api_price_list",
+        "body": "service.api_price_list( $1 )",
+        "description": "Возвращает массив услуг из каталога"
+    },
+    "service.settings": {
+        "prefix": "service.settings",
+        "body": "service.settings",
+        "description": "Получить settings услуги"
+    },
+    "service.set_settings": {
+        "prefix": "service.set_settings",
+        "body": "service.set_settings({ '${1:key}' => ${2:value} }) ",
+        "description": "Сохранить в settings услуги произвольные данные"
+    },
+    "service.withdraw": {
+        "prefix": "service.withdraw",
+        "body": "service.withdraw.",
+        "description": "Ссылка на объект списания"
+    },
+    "service.create_for_api": {
+        "prefix": "service.create_for_api",
+        "body": "service.create_for_api( 'service_id', ${1:N}, 'check_allow_to_order', 1 ) ",
+        "description": "Регистрирует услугу клиенту с идентификатором N"
+    },
+    "service.list_for_api": {
+        "prefix": "service.list_for_api",
+        "body": "service.list_for_api()",
+        "description": "Получение списка услуг из каталога"
+    },
+    "wd.id": {
+        "prefix": "wd.id",
+        "body": "wd.id ",
+        "description": "Получить id списания"
+    },
+    "wd.id()": {
+        "prefix": "wd.id()",
+        "body": "wd.id( $1 )",
+        "description": "Установить id списания"
+    },
+    "wd.create_date": {
+        "prefix": "wd.create_date",
+        "body": "wd.create_date ",
+        "description": "Дата создания списания"
+    },
+    "wd.withdraw_date": {
+        "prefix": "wd.withdraw_date",
+        "body": "wd.withdraw_date ",
+        "description": "Дата списания списания"
+    },
+    "wd.cost": {
+        "prefix": "wd.cost",
+        "body": "wd.cost ",
+        "description": "Сумма списания"
+    },
+    "wd.discount": {
+        "prefix": "wd.discount",
+        "body": "wd.discount ",
+        "description": "Скидка"
+    },
+    "wd.bonus": {
+        "prefix": "wd.bonus",
+        "body": "wd.bonus ",
+        "description": "Количество бонусов"
+    },
+    "wd.months": {
+        "prefix": "wd.months",
+        "body": "wd.months ",
+        "description": "Период услуги"
+    },
+    "wd.total": {
+        "prefix": "wd.total",
+        "body": "wd.total ",
+        "description": "Итоговая стоимость"
+    },
+    "wd.service_id": {
+        "prefix": "wd.service_id",
+        "body": "wd.service_id ",
+        "description": "Идентификатор каталога услуг"
+    },
+    "wd.user_service_id": {
+        "prefix": "wd.user_service_id",
+        "body": "wd.user_service_id ",
+        "description": "Идентификатор услуги пользователя"
+    },
+    "wd.qnt": {
+        "prefix": "wd.qnt",
+        "body": "wd.qnt ",
+        "description": "Количество единиц товара"
+    },
+    "wd.paid": {
+        "prefix": "wd.paid",
+        "body": "wd.paid",
+        "description": "Метод возвращает 1, если списание оплачено"
+    },
+    "wd.unpaid": {
+        "prefix": "wd.unpaid",
+        "body": "wd.unpaid",
+        "description": "Метод возвращает 1, если списание НЕ оплачено"
+    },
+    "wd.list_for_api": {
+        "prefix": "wd.list_for_api",
+        "body": "wd.list_for_api( $1 ) ",
+        "description": "Получение списка списаний"
+    },
+    "pay.id": {
+        "prefix": "pay.id",
+        "body": "pay.id ",
+        "description": "Получить id платежа"
+    },
+    "pay.id()": {
+        "prefix": "pay.id()",
+        "body": "pay.id( $1 ) ",
+        "description": "Установить id платежа"
+    },
+    "pay.date": {
+        "prefix": "pay.date",
+        "body": "pay.date ",
+        "description": "Дата и время платежа"
+    },
+    "pay.money": {
+        "prefix": "pay.money",
+        "body": "pay.money ",
+        "description": "Сумма платежа"
+    },
+    "pay.pay_system_id": {
+        "prefix": "pay.pay_system_id",
+        "body": "pay.pay_system_id ",
+        "description": "Имя платежной системы"
+    },
+    "pay.comment": {
+        "prefix": "pay.comment",
+        "body": "pay.comment ",
+        "description": "Комментарий к платежу"
+    },
+    "pay.last": {
+        "prefix": "pay.last",
+        "body": "pay.last ",
+        "description": "Получить ссылку на последний платеж"
+    },
+    "pay.forecast": {
+        "prefix": "pay.forecast",
+        "body": "pay.forecast( days = 3, blocked = 0 ) ",
+        "description": "Возвращает JSON прогноза оплат услуг. days - кол-во дней для прогноза (3 дня по-умолчанию), blocked - учитывать заблокированные услуги (0 - по-умолчанию НЕТ, 1 - ДА)"
+    },
+    "pay.paysystems": {
+        "prefix": "pay.paysystems",
+        "body": "pay.paysystems ",
+        "description": "Получить список платежных систем"
+    },
+    "pay.list_for_api": {
+        "prefix": "pay.list_for_api",
+        "body": "pay.list_for_api( $1 ) ",
+        "description": "Получение списка платежей"
+    },
+    "bonus.list_for_api": {
+        "prefix": "bonus.list_for_api",
+        "body": "bonus.list_for_api( $1 ) ",
+        "description": "Получение списка бонусов"
+    },
+    "sg.id": {
+        "prefix": "sg.id",
+        "body": "sg.id",
+        "description": "Получить id группы серверов"
+    },
+    "sg.id()": {
+        "prefix": "sg.id()",
+        "body": "sg.id( $1 )",
+        "description": "Установить id группы серверов"
+    },
+    "sg.name": {
+        "prefix": "sg.name",
+        "body": "sg.name",
+        "description": "Имя группы серверов"
+    },
+    "sg.type": {
+        "prefix": "sg.type",
+        "body": "sg.type",
+        "description": "Способ выбора серверов (random,by-one,evenly)"
+    },
+    "sg.transport": {
+        "prefix": "sg.transport",
+        "body": "sg.transport",
+        "description": "Транспорт группы (local,ssh,http…)"
+    },
+    "sg.settings": {
+        "prefix": "sg.settings",
+        "body": "sg.settings",
+        "description": "settings группы серверов"
+    },
+    "sg.set_settings": {
+        "prefix": "sg.set_settings",
+        "body": "sg.set_settings({ '${1:key}' => ${2:value} }) ",
+        "description": "Сохранить в settings группы серверов произвольные данные"
+    },
+    "sg.list_for_api": {
+        "prefix": "sg.list_for_api",
+        "body": "sg.list_for_api( $1 )",
+        "description": "Получение списка групп серверов"
+    },
+    "server.server_id": {
+        "prefix": "server.server_id",
+        "body": "server.server_id",
+        "description": "Получить id сервера"
+    },
+    "server.id()": {
+        "prefix": "server.id()",
+        "body": "server.id( $1 )",
+        "description": "Установить id сервера"
+    },
+    "server.name": {
+        "prefix": "server.name",
+        "body": "server.name ",
+        "description": "Имя сервера"
+    },
+    "server.host": {
+        "prefix": "server.host",
+        "body": "server.host ",
+        "description": "Host сервера"
+    },
+    "server.transport": {
+        "prefix": "server.transport",
+        "body": "server.transport",
+        "description": "Транспорт сервера"
+    },
+    "server.settings": {
+        "prefix": "server.settings",
+        "body": "server.settings",
+        "description": "settings сервера"
+    },
+    "server.settings.template_id": {
+        "prefix": "server.settings.template_id",
+        "body": "server.settings.template_id",
+        "description": "Шаблон в настройках сервера"
+    },
+    "server.settings.max_services": {
+        "prefix": "server.settings.max_services",
+        "body": "server.settings.max_services",
+        "description": "Лимит услуг в настройках сервера"
+    },
+    "server.settings.key_id": {
+        "prefix": "server.settings.key_id",
+        "body": "server.settings.key_id",
+        "description": "ID ключа в настройках сервера"
+    },
+    "server.set_settings": {
+        "prefix": "server.set_settings()",
+        "body": "server.set_settings({ '${1:key}' => ${2:value} }) ",
+        "description": "Сохранить в settings сервера произвольные данные"
+    },
+    "server.group": {
+        "prefix": "server.group",
+        "body": "server.group",
+        "description": "Ссылка на группу сервера"
+    },
+    "server.services_count": {
+        "prefix": "server.services_count",
+        "body": "server.services_count",
+        "description": "Количество услуг на сервере"
+    },
+    "server.weight": {
+        "prefix": "server.weight",
+        "body": "server.weight",
+        "description": "Вес сервера в группе"
+    },
+    "server.enabled": {
+        "prefix": "server.enabled",
+        "body": "server.enabled",
+        "description": "1 - включен, 0 - выключен"
+    },
+    "server.servers_by_group_id": {
+        "prefix": "server.servers_by_group_id()",
+        "body": "server.servers_by_group_id( $1 )",
+        "description": "Получение списка серверов из группы N"
+    },
+    "server.list_for_api": {
+        "prefix": "list_for_api()",
+        "body": "list_for_api( $1 ) ",
+        "description": "Получение списка серверов"
+    },
+    "spool.id": {
+        "prefix": "spool.id",
+        "body": "spool.id",
+        "description": "Получить id задачи из очереди"
+    },
+    "spool.id($1)": {
+        "prefix": "spool.id",
+        "body": "spool.id(${1:id})",
+        "description": "Установить id задачи из очереди"
+    },
+    "spool.created": {
+        "prefix": "spool.created",
+        "body": "spool.created",
+        "description": "Дата и время создания задачи"
+    },
+    "spool.executed": {
+        "prefix": "spool.executed",
+        "body": "spool.executed",
+        "description": "Дата и время последнего выполнения"
+    },
+    "spool.status": {
+        "prefix": "spool.status",
+        "body": "spool.status",
+        "description": "Статус выполнения команды (NEW, PAUSED ..)"
+    },
+    "spool.settings": {
+        "prefix": "spool.settings",
+        "body": "spool.settings",
+        "description": "Настройки задачи (объект)"
+    },
+    "spool.settings.template_id": {
+        "prefix": "spool.settings.template_id",
+        "body": "spool.settings.template_id",
+        "description": "Шаблон для выполнения задачи"
+    },
+    "spool.settings.user_id": {
+        "prefix": "spool.settings.user_id",
+        "body": "spool.settings.user_id",
+        "description": "ID пользователя для выполнения задачи"
+    },
+    "spool.delayed": {
+        "prefix": "spool.delayed",
+        "body": "spool.delayed",
+        "description": "Отложена (в секундах)"
+    },
+    "spool.user_service_id": {
+        "prefix": "spool.user_service_id",
+        "body": "spool.user_service_id",
+        "description": "ID пользовательской услуги"
+    },
+    "spool.event": {
+        "prefix": "spool.event",
+        "body": "spool.event",
+        "description": "Событие (объект)"
+    },
+    "spool.event.kind": {
+        "prefix": "spool.event.kind",
+        "body": "spool.event.kind",
+        "description": "Вид события (например Jobs)"
+    },
+    "spool.event.period": {
+        "prefix": "spool.event.period",
+        "body": "spool.event.period",
+        "description": "Период выполнения в секундах (86400 — раз в сутки)"
+    },
+    "spool.event.method": {
+        "prefix": "spool.event.method",
+        "body": "spool.event.method",
+        "description": "Метод (job_users, job_make_forecasts ..)"
+    },
+    "spool.event.title": {
+        "prefix": "spool.event.title",
+        "body": "spool.event.title",
+        "description": "Название события для задачи"
+    },
+    "spool.event.server_gid": {
+        "prefix": "spool.event.server_gid",
+        "body": "spool.event.server_gid",
+        "description": "Группа серверов для задачи"
+    },
+    "spool.response": {
+        "prefix": "spool.response",
+        "body": "spool.response",
+        "description": "Результат выполнения"
+    },
+    "spool.prio": {
+        "prefix": "spool.prio",
+        "body": "spool.prio",
+        "description": "Приоритет команды"
+    },
+    "spool.user_id": {
+        "prefix": "spool.user_id",
+        "body": "spool.user_id",
+        "description": "ID пользователя"
+    },
+    "spool.add": {
+        "prefix": "spool.add",
+        "body": "spool.add",
+        "description": "Добавить задачу в очередь"
+    },
+    "spool.delete": {
+        "prefix": "spool.delete",
+        "body": "spool.delete",
+        "description": "Удалить задачу из очереди"
+    },
+    "config": {
+        "prefix": "config",
+        "body": "config.${1:NAME}",
+        "description": "Получить данные NAME из конфигурации"
+    },
+    "storage.save": {
+        "prefix": "storage.save",
+        "body": "storage.save( ${1:NAME}, ${2:DATA} ) ",
+        "description": "Сохранить данные DATA в хранилище с ключом NAME"
+    },
+    "storage.load": {
+        "prefix": "storage.load",
+        "body": "storage.load( ${1:NAME} )",
+        "description": "Получить данные из хранилища с ключом NAME"
+    },
+    "storage.read": {
+        "prefix": "storage.read",
+        "body": "storage.read( 'name', ${1:NAME} )",
+        "description": "Получить данные из хранилища"
+    },
+    "storage.del": {
+        "prefix": "storage.del",
+        "body": "storage.dele( ${1:NAME} ) ",
+        "description": "Удалить данные из хранилища с ключом NAME"
+    },
+    "storage.list_for_api": {
+        "prefix": "storage.list_for_api",
+        "body": "storage.list_for_api( $1 )",
+        "description": "Получение списка данных"
+    },
+    "tpl.id": {
+        "prefix": "tpl.id",
+        "body": "tpl.id",
+        "description": "Получить id шаблона"
+    },
+    "tpl.id().parse": {
+        "prefix": [
+            "tpl.id()",
+            "parse"
+        ],
+        "body": "tpl.id( ${1:TEMPLATE} ).parse( 'usi', ${1:usi} )",
+        "description": "Выполнить шаблон с именем NAME для пользовательской услуги с идентификатором usi"
+    },
+    "tpl.data": {
+        "prefix": "tpl.data",
+        "body": "tpl.data",
+        "description": "Данные шаблона"
+    },
+    "tpl.settings": {
+        "prefix": "tpl.settings",
+        "body": "tpl.settings",
+        "description": "Получить settings шаблона"
+    },
+    "task": {
+        "prefix": "task",
+        "body": "task",
+        "description": "Работа с задачами"
+    },
+    "task.answer": {
+        "prefix": "task.answer",
+        "body": "task.answer( status = ${1:SUCCESS}, msg = '${2:string}' )",
+        "description": "Установить статус (SUCCESS, STUCK, FAIL) и сообщение задачи"
+    },
+    "telegram.bot": {
+        "prefix": "telegram.bot",
+        "body": "telegram.bot( ${1:TEMPLATE}, ${2:CMD}, ${3:ARGS} ) ",
+        "description": "Выполнить CMD с аргументами ARGS из шаблона TEMPLATE"
+    },
+    "tg_api(answerCallbackQuery)": {
+        "prefix": [
+            "answerCallbackQuery",
+            "tg_api"
+        ],
+        "body": [
+            "{{ tg_api( \"answerCallbackQuery\" = {",
+            "     \"show_alert\" = \"true\"",
+            "     \"callback_query_id\" = callback_query.id",
+            "     \"text\" = \"${1:TEXT}\"",
+            "  })",
+            "}}"
+        ],
+        "description": "Блок answerCallbackQuery"
+    },
+    "tg_api(deleteMessage)": {
+        "prefix": [
+            "deleteMessage",
+            "tg_api"
+        ],
+        "body": "{{ tg_api( deleteMessage = { message_id = message.message_id } ) }}",
+        "description": "Блок deleteMessage"
+    },
+    "tg_api(editMessageText)": {
+        "prefix": [
+            "editMessageText",
+            "tg_api"
+        ],
+        "body": [
+            "{{ tg_api( \"editMessageText\" = {",
+            "    \"message_id\" = message.message_id",
+            "    \"parse_mode\" = \"HTML\"",
+            "    \"disable_notification\" = \"true\"",
+            "    \"text\" = \"${1:TEXT}\"",
+            "    \"reply_markup\" = {",
+            "        \"inline_keyboard\" = [",
+            "            [{",
+            "               \"text\" = \"${2:button1_text}\"",
+            "               \"callback_data\" = \"${3:button1_cb}\"",
+            "            }]",
+            "            [{",
+            "                \"text\" = \"${4:button2_text}\"",
+            "                \"callback_data\" = \"${5:button2_cb}\"",
+            "            }]",
+            "        ]}",
+            "   })",
+            "}}"
+        ],
+        "description": "Блок editMessageText"
+    },
+    "tg_api(sendMessage)": {
+        "prefix": [
+            "sendMessage",
+            "tg_api"
+        ],
+        "body": [
+            "{{ tg_api( \"sendMessage\" = {",
+            "    \"parse_mode\" = \"HTML\"",
+            "    \"text\" = \"${1:TEXT}\"",
+            "    \"reply_markup\" = {",
+            "        \"inline_keyboard\" = [",
+            "            [{",
+            "               \"text\" = \"${2:button1_text}\"",
+            "               \"callback_data\" = \"${3:button1_cb}\"",
+            "            }]",
+            "            [{",
+            "                \"text\" = \"${4:button2_text}\"",
+            "                \"callback_data\" = \"${5:button2_cb}\"",
+            "            }]",
+            "        ]}",
+            "   })",
+            "}}"
+        ],
+        "description": "Блок sendMessage"
+    },
+    "misc.uuid_gen": {
+        "prefix": "misc.uuid_gen",
+        "body": "misc.uuid_gen",
+        "description": "Генерирует уникальный идентификатор UUID"
+    },
+    "misc.passgen()": {
+        "prefix": "misc.passgen()",
+        "body": "misc.passgen(${1:10})",
+        "description": "Генерирует строку пароля с заданным количеством знаков"
+    },
+    "misc.string_to_utime()": {
+        "prefix": "misc.string_to_utime()",
+        "body": "misc.string_to_utime(${1:string})",
+        "description": "Переводит строку даты в Unix-временную отметку (UNIXTIME)"
+    },
+    "misc.utime_to_string()": {
+        "prefix": "misc.utime_to_string()",
+        "body": "misc.utime_to_string(${1:timestamp})",
+        "description": "Переводит временную отметку UNIXTIME в читаемую строку даты"
+    },
+    "misc.add_date_time()": {
+        "prefix": "misc.add_date_time()",
+        "body": "misc.add_date_time(${1:created}, ${2:day} = ${3:1})",
+        "description": "Прибавляет указанное количество лет, месяцев, дней и т.д. к указанной дате ( year, month, day, hour, min, sec). Для вычитания используйте '-', например: month = -6"
+    },
+    "misc.now": {
+        "prefix": "misc.now",
+        "body": "misc.now",
+        "description": "Текущая системная дата"
+    },
+    "misc.start_of_month()": {
+        "prefix": "misc.start_of_month()",
+        "body": "misc.start_of_month(${1:date})",
+        "description": "Приводит указанную дату к началу соответствующего месяца (первое число)"
+    },
+    "misc.end_of_month()": {
+        "prefix": "misc.end_of_month()",
+        "body": "misc.end_of_month(${1:date})",
+        "description": "Приводит указанную дату к концу соответствующего месяца (последнее число)"
+    },
+    "misc.days_in_months()": {
+        "prefix": "misc.days_in_months()",
+        "body": "misc.days_in_months(${1:date})",
+        "description": "Количество дней соответствующего месяца"
+    },
+    "misc.parse_period()": {
+        "prefix": "misc.parse_period()",
+        "body": "misc.parse_period(${1:1.2203}).${2:months}",
+        "description": "Подробный вывод значений периода услуги (.months, .days, .hours)"
+    },
+    "misc.parse_date()": {
+        "prefix": "misc.parse_date()",
+        "body": "misc.parse_date(${1:date}).${2:month}",
+        "description": "Подробный вывод значений даты (.year, .month, .day, .hour, .min, .sec)"
+    },
+    "misc.html_escape": {
+        "prefix": "misc.html_escape()",
+        "body": "misc.html_escape(${1:str})",
+        "description": "Заменяет HTML символы: & => &amp;, < => &lt;, > => &gt;, / => '&#x2F;' и кавычки "
+    },
+    "fromJson": {
+        "prefix": "fromJson",
+        "body": "fromJson( ${1:data} ) ",
+        "description": "Преобразование Json в объект"
+    },
+    "toJson": {
+        "prefix": "toJson",
+        "body": "toJson( $1 )",
+        "description": "Преобразование объекта в JSON"
+    },
+    "fromBase64Url": {
+        "prefix": "fromBase64Url",
+        "body": "fromBase64Url( '${1:Base64Url}' ) ",
+        "description": "Раскодирование из Base64Url"
+    },
+    "toBase64Url": {
+        "prefix": "toBase64Url",
+        "body": "toBase64Url( '${1:string}' ) ",
+        "description": "Кодирование в Base64Url"
+    },
+    "dump": {
+        "prefix": "dump",
+        "body": "dump( ${1:data} ) ",
+        "description": "Дебаг значения переменных"
+    },
+    "request.headers": {
+        "prefix": [
+            "request.headers",
+            "headers"
+        ],
+        "body": "request.headers ",
+        "description": "Заголовки запроса"
+    },
+    "request.params": {
+        "prefix": [
+            "request.params",
+            "params"
+        ],
+        "body": "request.params ",
+        "description": "Данные запроса"
+    },
+    "filter": {
+        "prefix": "filter",
+        "body": "filter( ${1:key} = ${2:value} ) ",
+        "description": "Пример: {{ nopaid_block2  = user.us.filter( status = [ 'NOT PAID', 'BLOCK' ] ).items }}"
+    },
+    "where": {
+        "prefix": "where",
+        "body": "where = { ${1:key} = ${2:value} } ",
+        "description": "Пример: {{ nopaid_block = user.us.items( where =  { status = [ 'NOT PAID', 'BLOCK' ] } ) }}"
+    },
+    "toQueryString": {
+        "prefix": "toQueryString",
+        "body": "toQueryString( $1 )",
+        "description": "Преобразование объектов в Query string"
+    },
+    "event_name": {
+        "prefix": "event_name",
+        "body": "event_name ",
+        "description": "Название текущего события"
+    },
+    "list_for_api": {
+        "prefix": "list_for_api",
+        "body": "list_for_api($1)",
+        "description": "Получение списков данных из объекта"
+    },
+    "spool.history.clean": {
+        "prefix": "spool.history.clean",
+        "body": "spool.history.clean( days = 30 )",
+        "description": "Удалить всю историю задач старше указанных дней (по умолчанию 30 дней)"
+    },
+    "http.get()": {
+        "prefix": "http.get()",
+        "body": "http.get( ${1:'URL'}, 'headers',headers )",
+        "description": "GET запрос, headers = {'Authorization' => token }"
+    },
+    "http.post()": {
+        "prefix": "http.post()",
+        "body": "http.post( ${1:'URL'}, 'content_type','application/json', 'headers',headers, 'content',content )",
+        "description": "POST запрос, headers = {'Authorization' => token }, content = { username = 'user' _ us.id }"
+    },
+    "http.put()": {
+        "prefix": "http.put()",
+        "body": "http.put( ${1:'URL'}, 'content_type','application/json', 'headers',headers, 'content',content )",
+        "description": "PUT запрос, headers = {'Authorization' => token }, content = { username = 'user' _ us.id }"
+    },
+    "http.delete()": {
+        "prefix": "http.delete()",
+        "body": "http.delete( ${1:'URL'}, 'content_type','application/json', 'headers',headers, 'content',content )",
+        "description": "DELETE запрос, headers = {'Authorization' => token }, content = { username = 'user' _ us.id }"
+    },
+    "http.patch()": {
+        "prefix": "http.patch()",
+        "body": "http.patch( ${1:'URL'}, 'content_type','application/json', 'headers',headers, 'content',content )",
+        "description": "PATCH запрос, headers = {'Authorization' => token }, content = { username = 'user' _ us.id }"
+    },
+    "http.options()": {
+        "prefix": "http.options()",
+        "body": "http.options( ${1:'URL'} )",
+        "description": "OPTIONS запрос"
+    },
+    "comment": {
+        "prefix": "comment",
+        "body": "{{# ${1:comment} }}",
+        "description": "Комментарий в коде {{# комментарий }}"
+    }
+}
