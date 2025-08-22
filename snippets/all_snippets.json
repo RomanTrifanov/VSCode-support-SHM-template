@@ -1256,7 +1256,7 @@
         "description": "Получить id задачи из очереди"
     },
     "spool.id($1)": {
-        "prefix": "spool.id",
+        "prefix": "spool.id()",
         "body": "spool.id(${1:id})",
         "description": "Установить id задачи из очереди"
     },
