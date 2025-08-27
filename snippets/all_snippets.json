@@ -1663,5 +1663,10 @@
         "prefix": "comment",
         "body": "{{# ${1:comment} }}",
         "description": "Комментарий в коде {{# комментарий }}"
+    },
+    ".set( 'FIELD', 'VALUE' )": {
+        "prefix": ".set( 'FIELD', 'VALUE' )",
+        "body": ".set( '${1:FIELD}', ${2:'VALUE'} ) ",
+        "description": "Установка поля FIELD в значение VALUE. Пример: server.set('services_count', 123), изменение количества услуг на сервере"
     }
 }
