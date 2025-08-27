@@ -152,252 +152,244 @@
         "body": "{{ FOR u IN user.items }}\n   ${3:block...}\n{{ END }}",
         "description": "Цикл для перебора пользователей FOR u IN user.items"
     },
-    ".chunk(size)": {
-        "prefix": ".chunk",
-        "body": ".chunk(${1:size}).join('${2:,}')",
+    "chunk(size)": {
+        "prefix": ["chunk", "tt_method - chunk"],
+        "body": "chunk(${1:size}).join('${2:,}')",
         "description": "Разбивает значение на список частей определенного размера"
     },
-    ".collapse": {
-        "prefix": ".collapse",
-        "body": ".collapse",
+    "collapse": {
+        "prefix": ["collapse", "tt_method - collapse"],
+        "body": "collapse",
         "description": "Возвращает текст, в котором удалены все начальные и конечные пробелы, а все внутренние последовательности пробелов преобразованы в один пробел"
     },
-    ".defined": {
-        "prefix": ".defined",
-        "body": ".defined",
+    "defined": {
+        "prefix": ["defined", "tt_method - defined"],
+        "body": "defined",
         "description": "Возвращает true, если значение определено или если список определен."
     },
-    ".dquote": {
-        "prefix": ".dquote",
-        "body": ".dquote",
+    "dquote": {
+        "prefix": ["dquote", "tt_method - dquote"],
+        "body": "dquote",
         "description": "Возвращает текст с любыми символами двойных кавычек, экранированными префиксом обратной косой черты. Любые символы новой строки в тексте будут заменены на \"\\n\""
     },
-    ".hash": {
-        "prefix": ".hash",
-        "body": ".hash",
+    "hash": {
+        "prefix": ["hash", "tt_method - hash"],
+        "body": "hash",
         "description": "Возвращает значение как ссылку на хэш, содержащую одну запись с ключом, указывающим на исходное скалярное значение. Используется для упрощения преобразования данных в разные форматы.\n\nТакже может возвращать ссылку на хэш-массив, состоящую из элементов списка, где четные элементы (0, 2, 4 и т.д.) становятся ключами, а нечетные (1, 3, 5 и т.д.) — значениями."
     },
-    ".lcfirst": {
-        "prefix": ".lcfirst",
-        "body": ".lcfirst",
+    "lcfirst": {
+        "prefix": ["lcfirst", "tt_method - lcfirst"],
+        "body": "lcfirst",
         "description": "Возвращает текст, в котором первая буква преобразована в нижний регистр."
     },
-    ".length": {
-        "prefix": ".length",
-        "body": ".length",
+    "length": {
+        "prefix": ["length", "tt_method - length"],
+        "body": "length",
         "description": "Возвращает длину строкового представления элемента:"
     },
-    ".empty": {
-        "prefix": ".empty",
-        "body": ".empty",
+    "empty": {
+        "prefix": ["empty", "tt_method - empty"],
+        "body": "empty",
         "description": "Возвращает true, если строка пуста. Возвращает true, если хеш пуст или если список пуст."
     },
-    ".lower": {
-        "prefix": ".lower",
-        "body": ".lower",
+    "lower": {
+        "prefix": ["lower", "tt_method - lower"],
+        "body": "lower",
         "description": "Возвращает текст в нижнем регистре"
     },
-    ".match(pattern, global)": {
-        "prefix": ".match",
-        "body": ".match('${1:pattern}')",
+    "match(pattern, global)": {
+        "prefix": ["match", "tt_method - match"],
+        "body": "match('${1:pattern}')",
         "description": "Выполняет сопоставление регулярного выражения со строкой, используя шаблон, переданный в качестве аргумента. Если шаблон соответствует строке, то метод возвращает ссылку на список всех строк, захваченных в скобках в шаблоне. Если шаблон не совпадает, то метод возвращает false."
     },
-    ".repeat(n)": {
-        "prefix": ".repeat",
-        "body": ".repeat(${1:number_of_times})",
+    "repeat(n)": {
+        "prefix": ["repeat", "tt_method - repeat"],
+        "body": "repeat(${1:number_of_times})",
         "description": "Повторяет строку указанное количество раз."
     },
-    ".replace(search, replace)": {
-        "prefix": ".replace",
-        "body": ".replace('${1:pattern}', '${2:string}')",
+    "replace(search, replace)": {
+        "prefix": ["replace", "tt_method - replace"],
+        "body": "replace('${1:pattern}', '${2:string}')",
         "description": "Заменяет все вхождения указанного шаблона (регулярное выражение Perl) другим текстом."
     },
-    ".remove(pattern)": {
-        "prefix": ".remove",
-        "body": ".remove('${1:pattern}')",
+    "remove(pattern)": {
+        "prefix": ["remove", "tt_method - remove"],
+        "body": "remove('${1:pattern}')",
         "description": "Выводит строку, в которой удалены все вхождения шаблона (задано как регулярное выражение Perl)."
     },
-    ".search(pattern)": {
-        "prefix": ".search",
-        "body": ".search('${1:pattern}')",
+    "search(pattern)": {
+        "prefix": ["search", "tt_method - search"],
+        "body": "search('${1:pattern}')",
         "description": "Возвращает true, если строка соответствует шаблону регулярного выражения."
     },
-    ".size": {
-        "prefix": ".size",
-        "body": ".size",
+    "size": {
+        "prefix": ["size", "tt_method - size"],
+        "body": "size",
         "description": "Возвращает количество пар ключ/значение в хэше. Возвращает размер списка (количество элементов). Для скалярных значений всегда возвращается 1."
     },
-    ".split(pattern)": {
-        "prefix": ".split",
-        "body": ".split('${1::}')",
+    "split(pattern)": {
+        "prefix": ["split", "tt_method - split"],
+        "body": "split('${1::}')",
         "description": "Использует функцию Perl split(), чтобы разбить строку на список строк."
     },
-    ".substr(offset, length, replacement)": {
-        "prefix": ".substr",
-        "body": ".substr(${1:offset}, ${2:length}, '${3:string}')",
+    "substr(offset, length, replacement)": {
+        "prefix": ["substr", "tt_method - substr"],
+        "body": "substr(${1:offset}, ${2:length}, '${3:string}')",
         "description": "Возвращает подстроку, начинающуюся с позиции offset, длиной length символов. Если длина не указана, возвращает весь остаток строки. Если задан replace, метод заменяет часть строки указанным значением и возвращает старую подстроку."
     },
-    ".squote": {
-        "prefix": ".squote",
-        "body": ".squote",
+    "squote": {
+        "prefix": ["squote", "tt_method - squote"],
+        "body": "squote",
         "description": "Возвращает текст, содержащий все символы одинарных кавычек, экранированные префиксом в виде обратной косой черты."
     },
-    ".trim": {
-        "prefix": ".trim",
-        "body": ".trim",
+    "trim": {
+        "prefix": ["trim", "tt_method - trim"],
+        "body": "trim",
         "description": "Возвращает текст, в котором удалены все начальные и конечные пробелы."
     },
-    ".ucfirst": {
-        "prefix": ".ucfirst",
-        "body": ".ucfirst",
+    "ucfirst": {
+        "prefix": ["ucfirst", "tt_method - ucfirst"],
+        "body": "ucfirst",
         "description": "Преобразует первую букву текста в верхний регистр."
     },
-    ".upper": {
-        "prefix": ".upper",
-        "body": ".upper",
+    "upper": {
+        "prefix": ["upper", "tt_method - upper"],
+        "body": "upper",
         "description": "Возвращает текст в верхнем регистре."
     },
-    ".keys": {
-        "prefix": ".keys",
-        "body": ".keys",
+    "keys": {
+        "prefix": ["keys", "tt_method - keys"],
+        "body": "keys",
         "description": "Возвращает список ключей в хэше. Порядок неопределён, но соответствует порядку значений."
     },
-    ".join": {
-        "prefix": ".join",
-        "body": ".join('${1:, }')",
+    "join": {
+        "prefix": ["join", "tt_method - join"],
+        "body": "join('${1:, }')",
         "description": "Объединяет элементы списка в одну строку с разделителем, указанным в аргументе."
     },
-    ".items": {
-        "prefix": ".items",
-        "body": ".items",
+    "items": {
+        "prefix": ["items", "tt_method - items"],
+        "body": "items",
         "description": "Возвращает список ключей и значений, развернутый в один общий список."
     },
-    ".pairs": {
-        "prefix": ".pairs",
-        "body": ".pairs",
+    "pairs": {
+        "prefix": ["pairs", "tt_method - pairs"],
+        "body": "pairs",
         "description": "Возвращает список пар ключ-значение, отсортированный по ключам."
     },
-    ".list": {
-        "prefix": ".list",
-        "body": ".list",
+    "list": {
+        "prefix": ["list", "tt_method - list"],
+        "body": "list",
         "description": "Возвращает содержимое хеша в виде списка."
     },
-    ".sort": {
-        "prefix": [
-            ".sort"
-        ],
-        "body": ".sort",
+    "sort": {
+        "prefix": ["sort", "tt_method - sort"],
+        "body": "sort",
         "description": "Возвращает список ключей, отсортированных в алфавитном порядке."
     },
-    ".sort()": {
-        "prefix": [
-            ".sort()"
-        ],
-        "body": ".sort('${1:key}')",
+    "sort()": {
+        "prefix": ["sort()", "tt_method - sort()"],
+        "body": "sort('${1:key}')",
         "description": "Возвращает список ключей, отсортированных в алфавитном порядке. Вы также можете указать несколько ключей сортировки."
     },
-    ".nsort": {
-        "prefix": [
-            ".nsort"
-        ],
-        "body": ".nsort",
+    "nsort": {
+        "prefix": ["nsort", "tt_method - nsort"],
+        "body": "nsort",
         "description": "Возвращает список ключей, отсортированных по номерам (numerically sorted)."
     },
-    ".nsort()": {
-        "prefix": [
-            ".nsort()"
-        ],
-        "body": ".nsort('${1:key}')",
+    "nsort()": {
+        "prefix": ["nsort()", "tt_method - nsort()"],
+        "body": "nsort('${1:key}')",
         "description": "Возвращает список ключей, отсортированных по номерам (numerically sorted). Вы также можете указать несколько ключей сортировки."
     },
-    ".import": {
-        "prefix": ".import",
-        "body": ".import(${1:hash})",
+    "import": {
+        "prefix": ["import", "tt_method - import"],
+        "body": "import(${1:hash})",
         "description": "Импортирует содержимое другого хэш-массива в текущий хэш-массив. Может использоваться для добавления элементов из одного или нескольких списков в существующий список."
     },
-    ".defined()": {
-        "prefix": ".defined",
-        "body": ".defined('${1:somekey}')",
+    "defined()": {
+        "prefix": ["defined()", "tt_method - defined()"],
+        "body": "defined('${1:somekey}')",
         "description": "Возвращает true или false, проверяя, определен ли элемент в хеше или списке, указанный ключом или позицией."
     },
-    ".exists": {
-        "prefix": ".exists",
-        "body": ".exists('${1:somekey}')",
+    "exists": {
+        "prefix": ["exists", "tt_method - exists"],
+        "body": "exists('${1:somekey}')",
         "description": "Проверяет существование ключа в хэше и возвращает true или false."
     },
-    ".delete": {
-        "prefix": ".delete",
-        "body": ".delete('${1:foo}', '${2:bar}')",
+    "delete": {
+        "prefix": ["delete", "tt_method - delete"],
+        "body": "delete('${1:foo}', '${2:bar}')",
         "description": "Удаляет один или несколько элементов из хэша."
     },
-    ".first": {
-        "prefix": ".first",
-        "body": ".first(${1:n})",
+    "first": {
+        "prefix": ["first", "tt_method - first"],
+        "body": "first(${1:n})",
         "description": "Возвращает первый элемент в списке. Если передан числовой аргумент n, возвращает первые n элементов."
     },
-    ".last": {
-        "prefix": ".last",
-        "body": ".last(${1:n})",
+    "last": {
+        "prefix": ["last", "tt_method - last"],
+        "body": "last(${1:n})",
         "description": "Возвращает последний элемент в списке. Если передан числовой аргумент n, возвращает последние n элементов."
     },
-    ".max": {
-        "prefix": ".max",
-        "body": ".max",
+    "max": {
+        "prefix": ["max", "tt_method - max"],
+        "body": "max",
         "description": "Возвращает максимальный номер индекса (размер списка минус единица)."
     },
-    ".reverse": {
-        "prefix": ".reverse",
-        "body": ".reverse",
+    "reverse": {
+        "prefix": ["reverse", "tt_method - reverse"],
+        "body": "reverse",
         "description": "Возвращает элементы списка в обратном порядке."
     },
-    ".grep": {
-        "prefix": ".grep",
-        "body": ".grep('${1:^https:}')",
+    "grep": {
+        "prefix": ["grep", "tt_method - grep"],
+        "body": "grep('${1:^https:}')",
         "description": "Возвращает список элементов, соответствующих указанному шаблону регулярного выражения."
     },
-    ".push(item)": {
-        "prefix": ".push",
-        "body": ".push(${1:foo})",
+    "push(item)": {
+        "prefix": ["push", "tt_method - push"],
+        "body": "push(${1:foo})",
         "description": "Добавляет элемент или элементы в конец списка."
     },
-    ".unshift(item)": {
-        "prefix": ".unshift",
-        "body": ".unshift(${1:foo})",
+    "unshift(item)": {
+        "prefix": ["unshift", "tt_method - unshift"],
+        "body": "unshift(${1:foo})",
         "description": "Добавляет элемент или элементы в начало списка."
     },
-    ".shift": {
-        "prefix": ".shift",
-        "body": ".shift",
+    "shift": {
+        "prefix": ["shift", "tt_method - shift"],
+        "body": "shift",
         "description": "Удаляет первый элемент из списка и возвращает его."
     },
-    ".pop": {
-        "prefix": ".pop",
-        "body": ".pop",
+    "pop": {
+        "prefix": ["pop", "tt_method - pop"],
+        "body": "pop",
         "description": "Удаляет последний элемент из списка и возвращает его."
     },
-    ".unique": {
-        "prefix": ".unique",
-        "body": ".unique",
+    "unique": {
+        "prefix": ["unique", "tt_method - unique"],
+        "body": "unique",
         "description": "Возвращает список уникальных элементов в списке в том же порядке, что и в исходном списке."
     },
-    ".merge": {
-        "prefix": ".merge",
-        "body": ".merge(${1:list_two}, ${2:list_three})",
+    "merge": {
+        "prefix": ["merge", "tt_method - merge"],
+        "body": "merge(${1:list_two}, ${2:list_three})",
         "description": "Возвращает объединённый список из нуля или более других списков."
     },
-    ".slice(from, to)": {
-        "prefix": ".slice",
-        "body": ".slice(${1:from}, ${2:to})",
+    "slice(from, to)": {
+        "prefix": ["slice", "tt_method - slice"],
+        "body": "slice(${1:from}, ${2:to})",
         "description": "Возвращает часть элементов списка между границами, переданными в качестве аргументов. Исходный список не изменяется."
     },
-    ".splice(offset, length, list)": {
-        "prefix": ".splice",
-        "body": ".splice(${1:offset}, ${2:length}, ${3:list})",
+    "splice(offset, length, list)": {
+        "prefix": ["splice", "tt_method - splice"],
+        "body": "splice(${1:offset}, ${2:length}, ${3:list})",
         "description": "Позволяет выборочно удалить и/или заменить элементы в списке. Удаляет length элементов, начиная с позиции offset, и заменяет их элементами из предоставленного списка."
     },
-    ".item": {
-        "prefix": ".item",
-        "body": ".item(${1:0})",
+    "item": {
+        "prefix": ["item", "tt_method - item"],
+        "body": "item(${1:0})",
         "description": "Возвращает элемент из списка, используя индекс, переданный в качестве аргумента."
     },
     "user.id()": {
@@ -573,12 +565,12 @@
     "user.delete_force": {
         "prefix": "user.delete(force = 1)",
         "body": "user.delete( force = 1 ) ",
-        "description": "Удаление пользователя вместе с его услугами"
+        "description": "Принудительное удаление пользователя (с услугами и/или балансом), без выполнения шаблонов по событию"
     },
     "u.delete_force": {
         "prefix": "u.delete(force = 1)",
         "body": "u.delete( force = 1 ) ",
-        "description": "Удаление пользователя вместе с его услугами"
+        "description": "Принудительное удаление пользователя (с услугами и/или балансом), без выполнения шаблонов по событию"
     },
     "user.partner_id": {
         "prefix": "user.partner_id",
@@ -749,6 +741,16 @@
         "prefix": "u.make_event",
         "body": "user.make_event( '${1:EVENT}' )",
         "description": "Выполнить принудительно событие для пользователя, например: u.make_event( 'forecast' )"
+    },
+    "user.comment": {
+        "prefix": "user.comment",
+        "body": "user.comment ",
+        "description": "Комментарий в карточке пользователя"
+    },
+    "u.comment": {
+        "prefix": "u.comment",
+        "body": "u.comment ",
+        "description": "Комментарий в карточке пользователя"
     },
     "us.id()": {
         "prefix": "us.id()",
@@ -1256,7 +1258,7 @@
         "description": "Получить id задачи из очереди"
     },
     "spool.id($1)": {
-        "prefix": "spool.id()",
+        "prefix": "spool.id",
         "body": "spool.id(${1:id})",
         "description": "Установить id задачи из очереди"
     },
@@ -1665,8 +1667,8 @@
         "description": "Комментарий в коде {{# комментарий }}"
     },
     ".set( 'FIELD', 'VALUE' )": {
-        "prefix": ".set( 'FIELD', 'VALUE' )",
-        "body": ".set( '${1:FIELD}', ${2:'VALUE'} ) ",
+        "prefix": "set( 'FIELD', 'VALUE' )",
+        "body": "set( '${1:FIELD}', ${2:'VALUE'} ) ",
         "description": "Установка поля FIELD в значение VALUE. Пример: server.set('services_count', 123), изменение количества услуг на сервере"
     }
 }
