@@ -423,12 +423,12 @@
         "description": "Идентификатор пользователя (получить)"
     },
     "user.switch": {
-        "prefix": "user.switch",
+        "prefix": "user.switch()",
         "body": "user.switch( $1 ) ",
         "description": "Переключение пользователя на указанного (смена контекста)"
     },
     "u.switch": {
-        "prefix": "u.switch",
+        "prefix": "u.switch()",
         "body": "u.switch( $1 ) ",
         "description": "Переключение пользователя на указанного (смена контекста)"
     },
@@ -513,22 +513,22 @@
         "description": "Получить процент партнерских бонусов"
     },
     "user.add_bonus": {
-        "prefix": "user.add_bonus",
+        "prefix": "user.add_bonus( amount, 'comment' )",
         "body": "user.add_bonus( ${1:amount},'${2:comment}' ) ",
         "description": "Начисление бонусов"
     },
     "u.add_bonus": {
-        "prefix": "u.add_bonus",
+        "prefix": "u.add_bonus( amount, 'comment' )",
         "body": "u.add_bonus( ${1:amount},'${2:comment}' ) ",
         "description": "Начисление бонусов"
     },
     "user.set_settings": {
-        "prefix": "user.set_settings",
+        "prefix": "user.set_settings({ 'key' => value })",
         "body": "user.set_settings({ '${1:key}' => ${2:value} }) ",
         "description": "Сохранить в settings пользователя произвольные данные"
     },
     "u.set_settings": {
-        "prefix": "u.set_settings",
+        "prefix": "u.set_settings({ 'key' => value })",
         "body": "u.set_settings({ '${1:key}' => ${2:value} }) ",
         "description": "Сохранить в settings пользователя произвольные данные"
     },
@@ -553,12 +553,12 @@
         "description": "Ссылка на платежи пользователя"
     },
     "user.pays.forecast": {
-        "prefix": "user.pays.forecast()",
+        "prefix": "user.pays.forecast( days = 3, blocked = 0 )",
         "body": "user.pays.forecast( days = 3, blocked = 0 ) ",
         "description": "Возвращает JSON прогноза оплат услуг. days - кол-во дней для прогноза (3 дня по-умолчанию), blocked - учитывать заблокированные услуги (0 - по-умолчанию НЕТ, 1 - ДА)"
     },
     "u.pays.forecast": {
-        "prefix": "u.pays.forecast()",
+        "prefix": "u.pays.forecast( days = 3, blocked = 0 )",
         "body": "u.pays.forecast( days = 3, blocked = 0 ) ",
         "description": "Возвращает JSON прогноза оплат услуг. days - кол-во дней для прогноза (3 дня по-умолчанию), blocked - учитывать заблокированные услуги (0 - по-умолчанию НЕТ, 1 - ДА)"
     },
@@ -818,7 +818,7 @@
         "description": "Получить параметры пользовательской услуги"
     },
     "us.set_settings": {
-        "prefix": "us.set_settings",
+        "prefix": "us.set_settings({ 'key' => value })",
         "body": "us.set_settings({ '${1:key}' => ${2:value} }) ",
         "description": "Сохранить в settings услуги пользователя произвольные данные"
     },
@@ -993,7 +993,7 @@
         "description": "Получить settings услуги"
     },
     "service.set_settings": {
-        "prefix": "service.set_settings",
+        "prefix": "service.set_settings({ 'key' => value })",
         "body": "service.set_settings({ '${1:key}' => ${2:value} }) ",
         "description": "Сохранить в settings услуги произвольные данные"
     },
@@ -1173,7 +1173,7 @@
         "description": "settings группы серверов"
     },
     "sg.set_settings": {
-        "prefix": "sg.set_settings",
+        "prefix": "sg.set_settings({ 'key' => value })",
         "body": "sg.set_settings({ '${1:key}' => ${2:value} }) ",
         "description": "Сохранить в settings группы серверов произвольные данные"
     },
@@ -1228,7 +1228,7 @@
         "description": "ID ключа в настройках сервера"
     },
     "server.set_settings": {
-        "prefix": "server.set_settings()",
+        "prefix": "server.set_settings({ 'key' => value })",
         "body": "server.set_settings({ '${1:key}' => ${2:value} }) ",
         "description": "Сохранить в settings сервера произвольные данные"
     },
