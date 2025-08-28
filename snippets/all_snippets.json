@@ -733,12 +733,12 @@
         "description": "Список объектов задач пользователя"
     },
     "user.make_event('EVENT')": {
-        "prefix": "user.make_event",
+        "prefix": "user.make_event()",
         "body": "user.make_event('${1:EVENT}')",
         "description": "Выполнить принудительно событие для пользователя, например: user.make_event( 'forecast' )"
     },
     "u.make_event('EVENT')": {
-        "prefix": "u.make_event",
+        "prefix": "u.make_event()",
         "body": "user.make_event( '${1:EVENT}' )",
         "description": "Выполнить принудительно событие для пользователя, например: u.make_event( 'forecast' )"
     },
@@ -813,7 +813,7 @@
         "description": "Сохранить в settings услуги пользователя произвольные данные"
     },
     "us.set": {
-        "prefix": "us.set",
+        "prefix": "us.set( 'FIELD', 'VALUE' )",
         "body": "us.set( '${1:FIELD}', ${2:'VALUE'} ) ",
         "description": "Установка поля FIELD в значение VALUE. Пример: us.set('next', 123)"
     },
@@ -823,12 +823,12 @@
         "description": "Ссылка на дочернюю услугу определенной категории"
     },
     "us.change(finish_active = 1)": {
-        "prefix": "us.change",
+        "prefix": "us.change( service_id = N, finish_active = 1 )",
         "body": "us.change( service_id = ${1:N}, finish_active = 1 ) ",
         "description": "Метод смены тарифа с завершением услуги, где N идентификатор новой услуги"
     },
     "us.change(finish_active = 0)": {
-        "prefix": "us.change",
+        "prefix": "us.change( service_id = N, finish_active = 0 )",
         "body": "us.change( service_id = ${1:N}, finish_active = 0 ) ",
         "description": "Метод смены тарифа БЕЗ завершения услуги, где N идентификатор новой услуги"
     },
@@ -838,17 +838,17 @@
         "description": "Этой командой, мы просим биллинг 'посмотреть' на услугу и сделать с ней что-нибудь, если это требуется (активировать, разблокировать, продлить и т.п.). Это не работает для услуг в статусе PROGRESS и для удаленных услуг"
     },
     "us.make_commands_by_event('EVENT')": {
-        "prefix": "us.make_commands_by_event",
+        "prefix": "us.make_commands_by_event('EVENT')",
         "body": "us.make_commands_by_event( '${1:EVENT}' ) ",
         "description": "Принудительно выполнить событие. Нужно предварительно перевести услугу в статус PROGRESS и затем выполнить нужное событие, пример: us.set( status = 'PROGRESS'), затем us.make_commands_by_event( 'CREATE' )"
     },
     "us.finish('money_back', 1)": {
-        "prefix": "us.finish",
+        "prefix": "us.finish('money_back', 1)",
         "body": "us.finish( 'money_back', ${1:1} ) ",
         "description": "Завершение услуги с возвратом средств (биллинг продлит или заблокирует услугу в зависимости от наличия средств)"
     },
     "us.finish('money_back', 0)": {
-        "prefix": "us.finish",
+        "prefix": "us.finish('money_back', 0)",
         "body": "us.finish( 'money_back', ${1:0} ) ",
         "description": "Завершение услуги БЕЗ возврата средств (биллинг продлит или заблокирует услугу в зависимости от наличия средств)"
     },
@@ -1662,7 +1662,7 @@
         "description": "OPTIONS запрос"
     },
     "comment": {
-        "prefix": "comment",
+        "prefix": ["comment", "a", "//"],
         "body": "{{# ${1:comment} }}",
         "description": "Комментарий в коде {{# комментарий }}"
     },
