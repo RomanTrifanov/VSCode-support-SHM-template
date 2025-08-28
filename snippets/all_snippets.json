@@ -703,12 +703,12 @@
         "description": "Возвращает 1, если у пользователя есть услуги в статусе PROGRESS"
     },
     "user.telegram.profile(profile).send": {
-        "prefix": "user.telegram.profile(",
+        "prefix": "user.telegram.profile().send",
         "body": "user.telegram.profile( 'telegram_bot' ).send( sendMessage = {  } )",
         "description": "Отправка сообщения текущему клиенту в телеграм  в указанный профиль, транспорт Local"
     },
     "u.telegram.profile(profile).send": {
-        "prefix": "u.telegram.profile(",
+        "prefix": "u.telegram.profile().send",
         "body": "u.telegram.profile( 'telegram_bot' ).send( sendMessage = {  } )",
         "description": "Отправка сообщения текущему клиенту в телеграм  в указанный профиль, транспорт Local"
     },
@@ -723,12 +723,12 @@
         "description": "Отправка сообщения текущему клиенту в телеграм, транспорт Local"
     },
     "user.spool.add": {
-        "prefix": "user.spool.add",
+        "prefix": "user.spool.add( content )",
         "body": "user.spool.add( content )",
         "description": "Добавить задачу для пользователя"
     },
     "u.spool.add": {
-        "prefix": "u.spool.add",
+        "prefix": "u.spool.add( content )",
         "body": "u.spool.add( content )",
         "description": "Добавить задачу для пользователя"
     },
@@ -973,12 +973,12 @@
         "description": "Ссылка на сервер услуги"
     },
     "service.id.N.name": {
-        "prefix": "service.id.N.name",
+        "prefix": "service.id(N).name",
         "body": "service.id(${1:N}).name ",
         "description": "Получение имени услуги c идентификатором N"
     },
     "service.id.N.FIELD": {
-        "prefix": "service.id.N.FIELD",
+        "prefix": "service.id(N).FIELD",
         "body": "service.id( ${1:N} ).${2:FIELD}",
         "description": "Получение произвольного поля услуги c идентификатором N"
     },
@@ -1003,7 +1003,7 @@
         "description": "Ссылка на объект списания"
     },
     "service.create_for_api": {
-        "prefix": "service.create_for_api",
+        "prefix": "service.create_for_api( 'service_id', N, 'check_allow_to_order', 1 )",
         "body": "service.create_for_api( 'service_id', ${1:N}, 'check_allow_to_order', 1 ) ",
         "description": "Регистрирует услугу клиенту с идентификатором N"
     },
@@ -1123,7 +1123,7 @@
         "description": "Получить ссылку на последний платеж"
     },
     "pay.forecast": {
-        "prefix": "pay.forecast",
+        "prefix": "pay.forecast( days = 3, blocked = 0 )",
         "body": "pay.forecast( days = 3, blocked = 0 ) ",
         "description": "Возвращает JSON прогноза оплат услуг. days - кол-во дней для прогноза (3 дня по-умолчанию), blocked - учитывать заблокированные услуги (0 - по-умолчанию НЕТ, 1 - ДА)"
     },
@@ -1268,7 +1268,7 @@
         "description": "Получить id задачи из очереди"
     },
     "spool.id($1)": {
-        "prefix": "spool.id",
+        "prefix": "spool.id()",
         "body": "spool.id(${1:id})",
         "description": "Установить id задачи из очереди"
     },
@@ -1373,22 +1373,22 @@
         "description": "Получить данные NAME из конфигурации"
     },
     "storage.save": {
-        "prefix": "storage.save",
+        "prefix": "storage.save( NAME, DATA )",
         "body": "storage.save( ${1:NAME}, ${2:DATA} ) ",
         "description": "Сохранить данные DATA в хранилище с ключом NAME"
     },
     "storage.load": {
-        "prefix": "storage.load",
+        "prefix": "storage.load( NAME )",
         "body": "storage.load( ${1:NAME} )",
         "description": "Получить данные из хранилища с ключом NAME"
     },
     "storage.read": {
-        "prefix": "storage.read",
+        "prefix": "storage.read( 'name', NAME )",
         "body": "storage.read( 'name', ${1:NAME} )",
         "description": "Получить данные из хранилища"
     },
     "storage.del": {
-        "prefix": "storage.del",
+        "prefix": "storage.del( NAME )",
         "body": "storage.dele( ${1:NAME} ) ",
         "description": "Удалить данные из хранилища с ключом NAME"
     },
@@ -1404,7 +1404,7 @@
     },
     "tpl.id().parse": {
         "prefix": [
-            "tpl.id()",
+            "tpl.id(TEMPLATE).parse( 'usi', usi )",
             "parse"
         ],
         "body": "tpl.id( ${1:TEMPLATE} ).parse( 'usi', ${1:usi} )",
@@ -1426,12 +1426,12 @@
         "description": "Работа с задачами"
     },
     "task.answer": {
-        "prefix": "task.answer",
+        "prefix": "task.answer( status = SUCCESS, msg = 'string' )",
         "body": "task.answer( status = ${1:SUCCESS}, msg = '${2:string}' )",
         "description": "Установить статус (SUCCESS, STUCK, FAIL) и сообщение задачи"
     },
     "telegram.bot": {
-        "prefix": "telegram.bot",
+        "prefix": "telegram.bot( TEMPLATE, CMD, ARGS )",
         "body": "telegram.bot( ${1:TEMPLATE}, ${2:CMD}, ${3:ARGS} ) ",
         "description": "Выполнить CMD с аргументами ARGS из шаблона TEMPLATE"
     },
@@ -1516,9 +1516,9 @@
         "description": "Генерирует уникальный идентификатор UUID"
     },
     "misc.passgen()": {
-        "prefix": "misc.passgen()",
+        "prefix": "misc.passgen(N)",
         "body": "misc.passgen(${1:10})",
-        "description": "Генерирует строку пароля с заданным количеством знаков"
+        "description": "Генерирует строку пароля с заданным количеством знаков N"
     },
     "misc.string_to_utime()": {
         "prefix": "misc.string_to_utime()",
@@ -1571,27 +1571,27 @@
         "description": "Заменяет HTML символы: & => &amp;, < => &lt;, > => &gt;, / => '&#x2F;' и кавычки "
     },
     "fromJson": {
-        "prefix": "fromJson",
+        "prefix": "fromJson( data )",
         "body": "fromJson( ${1:data} ) ",
         "description": "Преобразование Json в объект"
     },
     "toJson": {
-        "prefix": "toJson",
+        "prefix": "toJson()",
         "body": "toJson( $1 )",
         "description": "Преобразование объекта в JSON"
     },
     "fromBase64Url": {
-        "prefix": "fromBase64Url",
+        "prefix": "fromBase64Url( 'Base64Url' )",
         "body": "fromBase64Url( '${1:Base64Url}' ) ",
         "description": "Раскодирование из Base64Url"
     },
     "toBase64Url": {
-        "prefix": "toBase64Url",
+        "prefix": "toBase64Url( 'string' )",
         "body": "toBase64Url( '${1:string}' ) ",
         "description": "Кодирование в Base64Url"
     },
     "dump": {
-        "prefix": "dump",
+        "prefix": "dump(var)",
         "body": "dump( ${1:data} ) ",
         "description": "Дебаг значения переменных"
     },
@@ -1612,17 +1612,17 @@
         "description": "Данные запроса"
     },
     "filter": {
-        "prefix": "filter",
+        "prefix": "filter( key = value )",
         "body": "filter( ${1:key} = ${2:value} ) ",
         "description": "Пример: {{ nopaid_block2  = user.us.filter( status = [ 'NOT PAID', 'BLOCK' ] ).items }}"
     },
     "where": {
-        "prefix": "where",
+        "prefix": "where = { key = value }",
         "body": "where = { ${1:key} = ${2:value} } ",
         "description": "Пример: {{ nopaid_block = user.us.items( where =  { status = [ 'NOT PAID', 'BLOCK' ] } ) }}"
     },
     "toQueryString": {
-        "prefix": "toQueryString",
+        "prefix": "toQueryString()",
         "body": "toQueryString( $1 )",
         "description": "Преобразование объектов в Query string"
     },
@@ -1637,7 +1637,7 @@
         "description": "Получение списков данных из объекта"
     },
     "spool.history.clean": {
-        "prefix": "spool.history.clean",
+        "prefix": "spool.history.clean( days = 30 )",
         "body": "spool.history.clean( days = 30 )",
         "description": "Удалить всю историю задач старше указанных дней (по умолчанию 30 дней)"
     },
