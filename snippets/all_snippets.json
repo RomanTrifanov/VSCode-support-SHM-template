@@ -153,7 +153,7 @@
         "description": "Цикл для перебора пользователей FOR u IN user.items"
     },
     "chunk(size)": {
-        "prefix": ["chunk", "tt_method - chunk"],
+        "prefix": ["chunk(size).join(',')", "tt_method - chunk"],
         "body": "chunk(${1:size}).join('${2:,}')",
         "description": "Разбивает значение на список частей определенного размера"
     },
@@ -198,27 +198,27 @@
         "description": "Возвращает текст в нижнем регистре"
     },
     "match(pattern, global)": {
-        "prefix": ["match", "tt_method - match"],
+        "prefix": ["match('pattern')", "tt_method - match"],
         "body": "match('${1:pattern}')",
         "description": "Выполняет сопоставление регулярного выражения со строкой, используя шаблон, переданный в качестве аргумента. Если шаблон соответствует строке, то метод возвращает ссылку на список всех строк, захваченных в скобках в шаблоне. Если шаблон не совпадает, то метод возвращает false."
     },
     "repeat(n)": {
-        "prefix": ["repeat", "tt_method - repeat"],
+        "prefix": ["repeat(number_of_times)", "tt_method - repeat"],
         "body": "repeat(${1:number_of_times})",
         "description": "Повторяет строку указанное количество раз."
     },
     "replace(search, replace)": {
-        "prefix": ["replace", "tt_method - replace"],
+        "prefix": ["replace('pattern', 'string')", "tt_method - replace"],
         "body": "replace('${1:pattern}', '${2:string}')",
         "description": "Заменяет все вхождения указанного шаблона (регулярное выражение Perl) другим текстом."
     },
     "remove(pattern)": {
-        "prefix": ["remove", "tt_method - remove"],
+        "prefix": ["remove('pattern')", "tt_method - remove"],
         "body": "remove('${1:pattern}')",
         "description": "Выводит строку, в которой удалены все вхождения шаблона (задано как регулярное выражение Perl)."
     },
     "search(pattern)": {
-        "prefix": ["search", "tt_method - search"],
+        "prefix": ["search('pattern')", "tt_method - search"],
         "body": "search('${1:pattern}')",
         "description": "Возвращает true, если строка соответствует шаблону регулярного выражения."
     },
@@ -228,12 +228,12 @@
         "description": "Возвращает количество пар ключ/значение в хэше. Возвращает размер списка (количество элементов). Для скалярных значений всегда возвращается 1."
     },
     "split(pattern)": {
-        "prefix": ["split", "tt_method - split"],
+        "prefix": ["split(':')", "tt_method - split"],
         "body": "split('${1::}')",
         "description": "Использует функцию Perl split(), чтобы разбить строку на список строк."
     },
     "substr(offset, length, replacement)": {
-        "prefix": ["substr", "tt_method - substr"],
+        "prefix": ["substr(offset, length, replacement)", "tt_method - substr"],
         "body": "substr(${1:offset}, ${2:length}, '${3:string}')",
         "description": "Возвращает подстроку, начинающуюся с позиции offset, длиной length символов. Если длина не указана, возвращает весь остаток строки. Если задан replace, метод заменяет часть строки указанным значением и возвращает старую подстроку."
     },
@@ -263,7 +263,7 @@
         "description": "Возвращает список ключей в хэше. Порядок неопределён, но соответствует порядку значений."
     },
     "join": {
-        "prefix": ["join", "tt_method - join"],
+        "prefix": ["join(', ')", "tt_method - join"],
         "body": "join('${1:, }')",
         "description": "Объединяет элементы списка в одну строку с разделителем, указанным в аргументе."
     },
@@ -303,34 +303,44 @@
         "description": "Возвращает список ключей, отсортированных по номерам (numerically sorted). Вы также можете указать несколько ключей сортировки."
     },
     "import": {
-        "prefix": ["import", "tt_method - import"],
+        "prefix": ["import(hash)", "tt_method - import"],
         "body": "import(${1:hash})",
         "description": "Импортирует содержимое другого хэш-массива в текущий хэш-массив. Может использоваться для добавления элементов из одного или нескольких списков в существующий список."
     },
     "defined()": {
-        "prefix": ["defined()", "tt_method - defined()"],
+        "prefix": ["defined(somekey)", "tt_method - defined()"],
         "body": "defined('${1:somekey}')",
         "description": "Возвращает true или false, проверяя, определен ли элемент в хеше или списке, указанный ключом или позицией."
     },
     "exists": {
-        "prefix": ["exists", "tt_method - exists"],
+        "prefix": ["exists(somekey)", "tt_method - exists"],
         "body": "exists('${1:somekey}')",
         "description": "Проверяет существование ключа в хэше и возвращает true или false."
     },
     "delete": {
-        "prefix": ["delete", "tt_method - delete"],
+        "prefix": ["delete('foo', 'bar')", "tt_method - delete"],
         "body": "delete('${1:foo}', '${2:bar}')",
         "description": "Удаляет один или несколько элементов из хэша."
     },
     "first": {
         "prefix": ["first", "tt_method - first"],
+        "body": "first",
+        "description": "Возвращает первый элемент в списке."
+    },
+    "first(n)": {
+        "prefix": ["first(n)", "tt_method - first"],
         "body": "first(${1:n})",
-        "description": "Возвращает первый элемент в списке. Если передан числовой аргумент n, возвращает первые n элементов."
+        "description": "Если передан числовой аргумент n, возвращает первые n элементов в списке."
     },
     "last": {
         "prefix": ["last", "tt_method - last"],
+        "body": "last",
+        "description": "Возвращает последний элемент в списке."
+    },
+    "last(n)": {
+        "prefix": ["last(n)", "tt_method - last"],
         "body": "last(${1:n})",
-        "description": "Возвращает последний элемент в списке. Если передан числовой аргумент n, возвращает последние n элементов."
+        "description": "Если передан числовой аргумент n, возвращает последние n элементов."
     },
     "max": {
         "prefix": ["max", "tt_method - max"],
@@ -343,17 +353,17 @@
         "description": "Возвращает элементы списка в обратном порядке."
     },
     "grep": {
-        "prefix": ["grep", "tt_method - grep"],
+        "prefix": ["grep('^https:')", "tt_method - grep"],
         "body": "grep('${1:^https:}')",
         "description": "Возвращает список элементов, соответствующих указанному шаблону регулярного выражения."
     },
     "push(item)": {
-        "prefix": ["push", "tt_method - push"],
+        "prefix": ["push(item)", "tt_method - push"],
         "body": "push(${1:foo})",
         "description": "Добавляет элемент или элементы в конец списка."
     },
     "unshift(item)": {
-        "prefix": ["unshift", "tt_method - unshift"],
+        "prefix": ["unshift(item)", "tt_method - unshift"],
         "body": "unshift(${1:foo})",
         "description": "Добавляет элемент или элементы в начало списка."
     },
@@ -373,22 +383,22 @@
         "description": "Возвращает список уникальных элементов в списке в том же порядке, что и в исходном списке."
     },
     "merge": {
-        "prefix": ["merge", "tt_method - merge"],
+        "prefix": ["merge(list_two, list_three)", "tt_method - merge"],
         "body": "merge(${1:list_two}, ${2:list_three})",
         "description": "Возвращает объединённый список из нуля или более других списков."
     },
     "slice(from, to)": {
-        "prefix": ["slice", "tt_method - slice"],
+        "prefix": ["slice(from, to)", "tt_method - slice"],
         "body": "slice(${1:from}, ${2:to})",
         "description": "Возвращает часть элементов списка между границами, переданными в качестве аргументов. Исходный список не изменяется."
     },
     "splice(offset, length, list)": {
-        "prefix": ["splice", "tt_method - splice"],
+        "prefix": ["splice(offset, length, list)", "tt_method - splice"],
         "body": "splice(${1:offset}, ${2:length}, ${3:list})",
         "description": "Позволяет выборочно удалить и/или заменить элементы в списке. Удаляет length элементов, начиная с позиции offset, и заменяет их элементами из предоставленного списка."
     },
-    "item": {
-        "prefix": ["item", "tt_method - item"],
+    "item(0)": {
+        "prefix": ["item(0)", "tt_method - item"],
         "body": "item(${1:0})",
         "description": "Возвращает элемент из списка, используя индекс, переданный в качестве аргумента."
     },
