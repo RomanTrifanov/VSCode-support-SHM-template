@@ -1404,10 +1404,10 @@
     },
     "tpl.id().parse": {
         "prefix": [
-            "tpl.id(TEMPLATE).parse( 'usi', usi )",
+            "tpl.id(TEMPLATE).parse( 'usi', USI )",
             "parse"
         ],
-        "body": "tpl.id( ${1:TEMPLATE} ).parse( 'usi', ${1:usi} )",
+        "body": "tpl.id( ${1:TEMPLATE} ).parse( 'usi', ${2:USI} )",
         "description": "Выполнить шаблон с именем NAME для пользовательской услуги с идентификатором usi"
     },
     "tpl.data": {
