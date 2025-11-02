@@ -23,7 +23,7 @@
 >Если Вы хотете поддержать автора криптой:
 > 
 >- USDT (TRC20) `TXRt5vuc4E32XCwkBQvykFUDZQnqnTLhdK`
->- Toncoin (TON) `UQBk6qSNV9B_8SED_zGBUP8EcMn6AaZSa0yrcwoClGTJjiIF`
+>- Toncoin (TON) `UQB2LfFr7MfUDCn-m3f9uWwLMNsnnfljyS7p0JRIe-bvn8T9`
 
 <img width="464" height="596" alt="Снимок экрана от 2025-07-26 02-06-56" src="https://github.com/user-attachments/assets/95a74698-37e5-42ba-86ba-70268da66086" />
 
