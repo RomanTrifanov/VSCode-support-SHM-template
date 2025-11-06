@@ -424,62 +424,62 @@
     },
     "user.switch": {
         "prefix": "user.switch()",
-        "body": "user.switch( $1 ) ",
+        "body": "user.switch( $1 )",
         "description": "Переключение пользователя на указанного (смена контекста)"
     },
     "u.switch": {
         "prefix": "u.switch()",
-        "body": "u.switch( $1 ) ",
+        "body": "u.switch( $1 )",
         "description": "Переключение пользователя на указанного (смена контекста)"
     },
     "user.balance": {
         "prefix": "user.balance",
-        "body": "user.balance ",
+        "body": "user.balance",
         "description": "Баланс пользователя"
     },
     "u.balance": {
         "prefix": "u.balance",
-        "body": "u.balance ",
+        "body": "u.balance",
         "description": "Баланс пользователя"
     },
     "user.full_name": {
         "prefix": "user.full_name",
-        "body": "user.full_name ",
+        "body": "user.full_name",
         "description": "ФИО пользователя"
     },
     "u.full_name": {
         "prefix": "u.full_name",
-        "body": "u.full_name ",
+        "body": "u.full_name",
         "description": "ФИО пользователя"
     },
     "user.login": {
         "prefix": "user.login",
-        "body": "user.login ",
+        "body": "user.login",
         "description": "Логин пользователя"
     },
     "u.login": {
         "prefix": "u.login",
-        "body": "u.login ",
+        "body": "u.login",
         "description": "Логин пользователя"
     },
     "user.credit": {
         "prefix": "user.credit",
-        "body": "user.credit ",
+        "body": "user.credit",
         "description": "Кредитный лимит пользователя"
     },
     "u.credit": {
         "prefix": "u.credit",
-        "body": "u.credit ",
+        "body": "u.credit",
         "description": "Кредитный лимит пользователя"
     },
     "user.dogovor": {
         "prefix": "user.dogovor",
-        "body": "user.dogovor ",
+        "body": "user.dogovor",
         "description": "Договор пользователя"
     },
     "u.dogovor": {
         "prefix": "u.dogovor",
-        "body": "u.dogovor ",
+        "body": "u.dogovor",
         "description": "Договор пользователя"
     },
     "user.settings": {
@@ -494,72 +494,72 @@
     },
     "user.get_bonus": {
         "prefix": "user.get_bonus",
-        "body": "user.get_bonus ",
+        "body": "user.get_bonus",
         "description": "Получить кол-во бонусов"
     },
     "u.get_bonus": {
         "prefix": "u.get_bonus",
-        "body": "u.get_bonus ",
+        "body": "u.get_bonus",
         "description": "Получить кол-во бонусов"
     },
     "user.income_percent": {
         "prefix": "user.income_percent",
-        "body": "user.income_percent ",
+        "body": "user.income_percent",
         "description": "Получить процент партнерских бонусов"
     },
     "u.income_percent": {
         "prefix": "u.income_percent",
-        "body": "u.income_percent ",
+        "body": "u.income_percent",
         "description": "Получить процент партнерских бонусов"
     },
     "user.add_bonus": {
         "prefix": "user.add_bonus( amount, 'comment' )",
-        "body": "user.add_bonus( ${1:amount},'${2:comment}' ) ",
+        "body": "user.add_bonus( ${1:amount},'${2:comment}' )",
         "description": "Начисление бонусов"
     },
     "u.add_bonus": {
         "prefix": "u.add_bonus( amount, 'comment' )",
-        "body": "u.add_bonus( ${1:amount},'${2:comment}' ) ",
+        "body": "u.add_bonus( ${1:amount},'${2:comment}' )",
         "description": "Начисление бонусов"
     },
     "user.set_settings": {
         "prefix": "user.set_settings({ 'key' => value })",
-        "body": "user.set_settings({ '${1:key}' => ${2:value} }) ",
+        "body": "user.set_settings({ '${1:key}' => ${2:value} })",
         "description": "Сохранить в settings пользователя произвольные данные"
     },
     "u.set_settings": {
         "prefix": "u.set_settings({ 'key' => value })",
-        "body": "u.set_settings({ '${1:key}' => ${2:value} }) ",
+        "body": "u.set_settings({ '${1:key}' => ${2:value} })",
         "description": "Сохранить в settings пользователя произвольные данные"
     },
     "user.gen_session.id": {
         "prefix": "user.gen_session.id",
-        "body": "user.gen_session.id ",
+        "body": "user.gen_session.id",
         "description": "Функция для генерации идентификатора сессии"
     },
     "u.gen_session.id": {
         "prefix": "u.gen_session.id",
-        "body": "u.gen_session.id ",
+        "body": "u.gen_session.id",
         "description": "Функция для генерации идентификатора сессии"
     },
     "user.pays": {
         "prefix": "user.pays",
-        "body": "user.pays ",
+        "body": "user.pays",
         "description": "Ссылка на платежи пользователя"
     },
     "u.pays": {
         "prefix": "u.pays",
-        "body": "u.pays ",
+        "body": "u.pays",
         "description": "Ссылка на платежи пользователя"
     },
     "user.pays.forecast": {
         "prefix": "user.pays.forecast( days = 3, blocked = 0 )",
-        "body": "user.pays.forecast( days = 3, blocked = 0 ) ",
+        "body": "user.pays.forecast( days = 3, blocked = 0 )",
         "description": "Возвращает JSON прогноза оплат услуг. days - кол-во дней для прогноза (3 дня по-умолчанию), blocked - учитывать заблокированные услуги (0 - по-умолчанию НЕТ, 1 - ДА)"
     },
     "u.pays.forecast": {
         "prefix": "u.pays.forecast( days = 3, blocked = 0 )",
-        "body": "u.pays.forecast( days = 3, blocked = 0 ) ",
+        "body": "u.pays.forecast( days = 3, blocked = 0 )",
         "description": "Возвращает JSON прогноза оплат услуг. days - кол-во дней для прогноза (3 дня по-умолчанию), blocked - учитывать заблокированные услуги (0 - по-умолчанию НЕТ, 1 - ДА)"
     },
     "user.delete": {
@@ -574,42 +574,42 @@
     },
     "user.delete_force": {
         "prefix": "user.delete(force = 1)",
-        "body": "user.delete( force = 1 ) ",
+        "body": "user.delete( force = 1 )",
         "description": "Принудительное удаление пользователя (с услугами и/или балансом), без выполнения шаблонов по событию"
     },
     "u.delete_force": {
         "prefix": "u.delete(force = 1)",
-        "body": "u.delete( force = 1 ) ",
+        "body": "u.delete( force = 1 )",
         "description": "Принудительное удаление пользователя (с услугами и/или балансом), без выполнения шаблонов по событию"
     },
     "user.partner_id": {
         "prefix": "user.partner_id",
-        "body": "user.partner_id ",
+        "body": "user.partner_id",
         "description": "Партнер пользователя"
     },
     "u.partner_id": {
         "prefix": "u.partner_id",
-        "body": "u.partner_id ",
+        "body": "u.partner_id",
         "description": "Партнер пользователя"
     },
     "user.referrals_count": {
         "prefix": "user.referrals_count",
-        "body": "user.referrals_count ",
+        "body": "user.referrals_count",
         "description": "Количество рефералов пользователя"
     },
     "u.referrals_count": {
         "prefix": "u.referrals_count",
-        "body": "u.referrals_count ",
+        "body": "u.referrals_count",
         "description": "Количество рефералов пользователя"
     },
     "user.list_for_api": {
         "prefix": "user.list_for_api",
-        "body": "user.list_for_api( 'admin', 1) ",
+        "body": "user.list_for_api( 'admin', 1)",
         "description": "Получить всех пользователей"
     },
     "u.list_for_api": {
         "prefix": "u.list_for_api",
-        "body": "u.list_for_api( 'admin', 1) ",
+        "body": "u.list_for_api( 'admin', 1)",
         "description": "Получить всех пользователей"
     },
     "user.items": {
@@ -619,7 +619,7 @@
     },
     "u.items": {
         "prefix": "u.items",
-        "body": "u.items ",
+        "body": "u.items",
         "description": "Список объектов всех пользователей"
     },
     "user.us.items": {
@@ -629,7 +629,7 @@
     },
     "u.us.items": {
         "prefix": "u.us.items",
-        "body": "u.us.items ",
+        "body": "u.us.items",
         "description": "Получить все услуги пользователя"
     },
     "user.has_payments": {
@@ -754,12 +754,12 @@
     },
     "user.comment": {
         "prefix": "user.comment",
-        "body": "user.comment ",
+        "body": "user.comment",
         "description": "Комментарий в карточке пользователя"
     },
     "u.comment": {
         "prefix": "u.comment",
-        "body": "u.comment ",
+        "body": "u.comment",
         "description": "Комментарий в карточке пользователя"
     },
     "us.id()": {
@@ -774,42 +774,42 @@
     },
     "us.name": {
         "prefix": "us.name",
-        "body": "us.name ",
+        "body": "us.name",
         "description": "Имя пользовательской услуги"
     },
     "us.created": {
         "prefix": "us.created",
-        "body": "us.created ",
+        "body": "us.created",
         "description": "Дата создания пользовательской услуги"
     },
     "us.expire": {
         "prefix": "us.expire",
-        "body": "us.expire ",
+        "body": "us.expire",
         "description": "Дата истечения пользовательской услуги"
     },
     "us.status": {
         "prefix": "us.status",
-        "body": "us.status ",
+        "body": "us.status",
         "description": "Получить статус пользовательской услуги"
     },
     "us.status('STATUS')": {
         "prefix": "us.status()",
-        "body": "us.status( '${1:STATUS}' ) ",
+        "body": "us.status( '${1:STATUS}' )",
         "description": "Изменить статус пользовательской услуги, чтобы при этом выполнилось событие: CHANGED"
     },
     "us.status_before": {
         "prefix": "us.status_before",
-        "body": "us.status_before ",
+        "body": "us.status_before",
         "description": "Предыдущий Статус пользовательской услуги"
     },
     "us.last_event": {
         "prefix": "us.last_event",
-        "body": "us.last_event ",
+        "body": "us.last_event",
         "description": "Последнее событие пользовательской услуги"
     },
     "us.service_id": {
         "prefix": "us.service_id",
-        "body": "us.service_id ",
+        "body": "us.service_id",
         "description": "ID услуги в каталоге услуг"
     },
     "us.settings": {
@@ -819,27 +819,27 @@
     },
     "us.set_settings": {
         "prefix": "us.set_settings({ 'key' => value })",
-        "body": "us.set_settings({ '${1:key}' => ${2:value} }) ",
+        "body": "us.set_settings({ '${1:key}' => ${2:value} })",
         "description": "Сохранить в settings услуги пользователя произвольные данные"
     },
     "us.set": {
         "prefix": "us.set( 'FIELD', 'VALUE' )",
-        "body": "us.set( '${1:FIELD}', ${2:'VALUE'} ) ",
+        "body": "us.set( '${1:FIELD}', ${2:'VALUE'} )",
         "description": "Установка поля FIELD в значение VALUE. Пример: us.set('next', 123)"
     },
     "us.child_by_category": {
         "prefix": "us.child_by_category",
-        "body": "us.child_by_category( ${1:CATEGORY} ) ",
+        "body": "us.child_by_category( ${1:CATEGORY} )",
         "description": "Ссылка на дочернюю услугу определенной категории"
     },
     "us.change(finish_active = 1)": {
         "prefix": "us.change( service_id = N, finish_active = 1 )",
-        "body": "us.change( service_id = ${1:N}, finish_active = 1 ) ",
+        "body": "us.change( service_id = ${1:N}, finish_active = 1 )",
         "description": "Метод смены тарифа с завершением услуги, где N идентификатор новой услуги"
     },
     "us.change(finish_active = 0)": {
         "prefix": "us.change( service_id = N, finish_active = 0 )",
-        "body": "us.change( service_id = ${1:N}, finish_active = 0 ) ",
+        "body": "us.change( service_id = ${1:N}, finish_active = 0 )",
         "description": "Метод смены тарифа БЕЗ завершения услуги, где N идентификатор новой услуги"
     },
     "us.touch": {
@@ -849,37 +849,37 @@
     },
     "us.make_commands_by_event('EVENT')": {
         "prefix": "us.make_commands_by_event('EVENT')",
-        "body": "us.make_commands_by_event( '${1:EVENT}' ) ",
+        "body": "us.make_commands_by_event( '${1:EVENT}' )",
         "description": "Принудительно выполнить событие. Нужно предварительно перевести услугу в статус PROGRESS и затем выполнить нужное событие, пример: us.set( status = 'PROGRESS'), затем us.make_commands_by_event( 'CREATE' )"
     },
     "us.finish('money_back', 1)": {
         "prefix": "us.finish('money_back', 1)",
-        "body": "us.finish( 'money_back', ${1:1} ) ",
+        "body": "us.finish( 'money_back', ${1:1} )",
         "description": "Завершение услуги с возвратом средств (биллинг продлит или заблокирует услугу в зависимости от наличия средств)"
     },
     "us.finish('money_back', 0)": {
         "prefix": "us.finish('money_back', 0)",
-        "body": "us.finish( 'money_back', ${1:0} ) ",
+        "body": "us.finish( 'money_back', ${1:0} )",
         "description": "Завершение услуги БЕЗ возврата средств (биллинг продлит или заблокирует услугу в зависимости от наличия средств)"
     },
     "us.block": {
         "prefix": "us.block",
-        "body": "us.block ",
+        "body": "us.block",
         "description": "Принудительная блокировка услуги пользователя"
     },
     "us.activate": {
         "prefix": "us.activate",
-        "body": "us.activate ",
+        "body": "us.activate",
         "description": "Активация услуги пользователя после блокировки"
     },
     "us.delete": {
         "prefix": "us.delete",
-        "body": "us.delete ",
+        "body": "us.delete",
         "description": "Удаление заблокированной услуги пользователя"
     },
     "us.gen_store_pass": {
         "prefix": "us.gen_store_pass",
-        "body": "us.gen_store_pass ",
+        "body": "us.gen_store_pass",
         "description": "Специальная функция для генерации и сохранения пароля в settings"
     },
     "us.parent": {
@@ -914,7 +914,7 @@
     },
     "us.list_for_api": {
         "prefix": "us.list_for_api",
-        "body": "us.list_for_api( $1 ) ",
+        "body": "us.list_for_api( $1 )",
         "description": "Получение списка услуг пользователя"
     },
     "us.get_user_id": {
@@ -939,7 +939,7 @@
     },
     "service.id": {
         "prefix": "service.id",
-        "body": "service.id ",
+        "body": "service.id",
         "description": "Идентификатор пользовательской услуги (получить)"
     },
     "service.id()": {
@@ -949,22 +949,22 @@
     },
     "service.name": {
         "prefix": "service.name",
-        "body": "service.name ",
+        "body": "service.name",
         "description": "Название услуги"
     },
     "service.cost": {
         "prefix": "service.cost",
-        "body": "service.cost ",
+        "body": "service.cost",
         "description": "Базовая стоимость услуги"
     },
     "service.period": {
         "prefix": "service.period",
-        "body": "service.period ",
+        "body": "service.period",
         "description": "Период услуги"
     },
     "service.category": {
         "prefix": "service.category",
-        "body": "service.category ",
+        "body": "service.category",
         "description": "Категория услуги"
     },
     "service.server": {
@@ -974,7 +974,7 @@
     },
     "service.id.N.name": {
         "prefix": "service.id(N).name",
-        "body": "service.id(${1:N}).name ",
+        "body": "service.id(${1:N}).name",
         "description": "Получение имени услуги c идентификатором N"
     },
     "service.id.N.FIELD": {
@@ -994,7 +994,7 @@
     },
     "service.set_settings": {
         "prefix": "service.set_settings({ 'key' => value })",
-        "body": "service.set_settings({ '${1:key}' => ${2:value} }) ",
+        "body": "service.set_settings({ '${1:key}' => ${2:value} })",
         "description": "Сохранить в settings услуги произвольные данные"
     },
     "service.withdraw": {
@@ -1004,7 +1004,7 @@
     },
     "service.create_for_api": {
         "prefix": "service.create_for_api( 'service_id', N, 'check_allow_to_order', 1 )",
-        "body": "service.create_for_api( 'service_id', ${1:N}, 'check_allow_to_order', 1 ) ",
+        "body": "service.create_for_api( 'service_id', ${1:N}, 'check_allow_to_order', 1 )",
         "description": "Регистрирует услугу клиенту с идентификатором N"
     },
     "service.list_for_api": {
@@ -1014,7 +1014,7 @@
     },
     "wd.id": {
         "prefix": "wd.id",
-        "body": "wd.id ",
+        "body": "wd.id",
         "description": "Получить id списания"
     },
     "wd.id()": {
@@ -1024,52 +1024,52 @@
     },
     "wd.create_date": {
         "prefix": "wd.create_date",
-        "body": "wd.create_date ",
+        "body": "wd.create_date",
         "description": "Дата создания списания"
     },
     "wd.withdraw_date": {
         "prefix": "wd.withdraw_date",
-        "body": "wd.withdraw_date ",
+        "body": "wd.withdraw_date",
         "description": "Дата списания списания"
     },
     "wd.cost": {
         "prefix": "wd.cost",
-        "body": "wd.cost ",
+        "body": "wd.cost",
         "description": "Сумма списания"
     },
     "wd.discount": {
         "prefix": "wd.discount",
-        "body": "wd.discount ",
+        "body": "wd.discount",
         "description": "Скидка"
     },
     "wd.bonus": {
         "prefix": "wd.bonus",
-        "body": "wd.bonus ",
+        "body": "wd.bonus",
         "description": "Количество бонусов"
     },
     "wd.months": {
         "prefix": "wd.months",
-        "body": "wd.months ",
+        "body": "wd.months",
         "description": "Период услуги"
     },
     "wd.total": {
         "prefix": "wd.total",
-        "body": "wd.total ",
+        "body": "wd.total",
         "description": "Итоговая стоимость"
     },
     "wd.service_id": {
         "prefix": "wd.service_id",
-        "body": "wd.service_id ",
+        "body": "wd.service_id",
         "description": "Идентификатор каталога услуг"
     },
     "wd.user_service_id": {
         "prefix": "wd.user_service_id",
-        "body": "wd.user_service_id ",
+        "body": "wd.user_service_id",
         "description": "Идентификатор услуги пользователя"
     },
     "wd.qnt": {
         "prefix": "wd.qnt",
-        "body": "wd.qnt ",
+        "body": "wd.qnt",
         "description": "Количество единиц товара"
     },
     "wd.paid": {
@@ -1084,22 +1084,22 @@
     },
     "wd.list_for_api": {
         "prefix": "wd.list_for_api",
-        "body": "wd.list_for_api( $1 ) ",
+        "body": "wd.list_for_api( $1 )",
         "description": "Получение списка списаний"
     },
     "pay.id": {
         "prefix": "pay.id",
-        "body": "pay.id ",
+        "body": "pay.id",
         "description": "Получить id платежа"
     },
     "pay.id()": {
         "prefix": "pay.id()",
-        "body": "pay.id( $1 ) ",
+        "body": "pay.id( $1 )",
         "description": "Установить id платежа"
     },
     "pay.date": {
         "prefix": "pay.date",
-        "body": "pay.date ",
+        "body": "pay.date",
         "description": "Дата и время платежа"
     },
     "pay.money": {
@@ -1109,37 +1109,37 @@
     },
     "pay.pay_system_id": {
         "prefix": "pay.pay_system_id",
-        "body": "pay.pay_system_id ",
+        "body": "pay.pay_system_id",
         "description": "Имя платежной системы"
     },
     "pay.comment": {
         "prefix": "pay.comment",
-        "body": "pay.comment ",
+        "body": "pay.comment",
         "description": "Комментарий к платежу"
     },
     "pay.last": {
         "prefix": "pay.last",
-        "body": "pay.last ",
+        "body": "pay.last",
         "description": "Получить ссылку на последний платеж"
     },
     "pay.forecast": {
         "prefix": "pay.forecast( days = 3, blocked = 0 )",
-        "body": "pay.forecast( days = 3, blocked = 0 ) ",
+        "body": "pay.forecast( days = 3, blocked = 0 )",
         "description": "Возвращает JSON прогноза оплат услуг. days - кол-во дней для прогноза (3 дня по-умолчанию), blocked - учитывать заблокированные услуги (0 - по-умолчанию НЕТ, 1 - ДА)"
     },
     "pay.paysystems": {
         "prefix": "pay.paysystems",
-        "body": "pay.paysystems ",
+        "body": "pay.paysystems",
         "description": "Получить список платежных систем"
     },
     "pay.list_for_api": {
         "prefix": "pay.list_for_api",
-        "body": "pay.list_for_api( $1 ) ",
+        "body": "pay.list_for_api( $1 )",
         "description": "Получение списка платежей"
     },
     "bonus.list_for_api": {
         "prefix": "bonus.list_for_api",
-        "body": "bonus.list_for_api( $1 ) ",
+        "body": "bonus.list_for_api( $1 )",
         "description": "Получение списка бонусов"
     },
     "sg.id": {
@@ -1174,7 +1174,7 @@
     },
     "sg.set_settings": {
         "prefix": "sg.set_settings({ 'key' => value })",
-        "body": "sg.set_settings({ '${1:key}' => ${2:value} }) ",
+        "body": "sg.set_settings({ '${1:key}' => ${2:value} })",
         "description": "Сохранить в settings группы серверов произвольные данные"
     },
     "sg.list_for_api": {
@@ -1194,12 +1194,12 @@
     },
     "server.name": {
         "prefix": "server.name",
-        "body": "server.name ",
+        "body": "server.name",
         "description": "Имя сервера"
     },
     "server.host": {
         "prefix": "server.host",
-        "body": "server.host ",
+        "body": "server.host",
         "description": "Host сервера"
     },
     "server.transport": {
@@ -1229,7 +1229,7 @@
     },
     "server.set_settings": {
         "prefix": "server.set_settings({ 'key' => value })",
-        "body": "server.set_settings({ '${1:key}' => ${2:value} }) ",
+        "body": "server.set_settings({ '${1:key}' => ${2:value} })",
         "description": "Сохранить в settings сервера произвольные данные"
     },
     "server.group": {
@@ -1259,7 +1259,7 @@
     },
     "server.list_for_api": {
         "prefix": "list_for_api()",
-        "body": "list_for_api( $1 ) ",
+        "body": "list_for_api( $1 )",
         "description": "Получение списка серверов"
     },
     "spool.id": {
@@ -1374,7 +1374,7 @@
     },
     "storage.save": {
         "prefix": "storage.save( NAME, DATA )",
-        "body": "storage.save( ${1:NAME}, ${2:DATA} ) ",
+        "body": "storage.save( ${1:NAME}, ${2:DATA} )",
         "description": "Сохранить данные DATA в хранилище с ключом NAME"
     },
     "storage.load": {
@@ -1389,7 +1389,7 @@
     },
     "storage.del": {
         "prefix": "storage.del( NAME )",
-        "body": "storage.dele( ${1:NAME} ) ",
+        "body": "storage.dele( ${1:NAME} )",
         "description": "Удалить данные из хранилища с ключом NAME"
     },
     "storage.list_for_api": {
@@ -1432,7 +1432,7 @@
     },
     "telegram.bot": {
         "prefix": "telegram.bot( TEMPLATE, CMD, ARGS )",
-        "body": "telegram.bot( ${1:TEMPLATE}, ${2:CMD}, ${3:ARGS} ) ",
+        "body": "telegram.bot( ${1:TEMPLATE}, ${2:CMD}, ${3:ARGS} )",
         "description": "Выполнить CMD с аргументами ARGS из шаблона TEMPLATE"
     },
     "tg_api(answerCallbackQuery)": {
@@ -1572,7 +1572,7 @@
     },
     "fromJson": {
         "prefix": "fromJson( data )",
-        "body": "fromJson( ${1:data} ) ",
+        "body": "fromJson( ${1:data} )",
         "description": "Преобразование Json в объект"
     },
     "toJson": {
@@ -1582,17 +1582,17 @@
     },
     "fromBase64Url": {
         "prefix": "fromBase64Url( 'Base64Url' )",
-        "body": "fromBase64Url( '${1:Base64Url}' ) ",
+        "body": "fromBase64Url( '${1:Base64Url}' )",
         "description": "Раскодирование из Base64Url"
     },
     "toBase64Url": {
         "prefix": "toBase64Url( 'string' )",
-        "body": "toBase64Url( '${1:string}' ) ",
+        "body": "toBase64Url( '${1:string}' )",
         "description": "Кодирование в Base64Url"
     },
     "dump": {
         "prefix": "dump(var)",
-        "body": "dump( ${1:data} ) ",
+        "body": "dump( ${1:data} )",
         "description": "Дебаг значения переменных"
     },
     "request.headers": {
@@ -1600,7 +1600,7 @@
             "request.headers",
             "headers"
         ],
-        "body": "request.headers ",
+        "body": "request.headers",
         "description": "Заголовки запроса"
     },
     "request.params": {
@@ -1608,17 +1608,17 @@
             "request.params",
             "params"
         ],
-        "body": "request.params ",
+        "body": "request.params",
         "description": "Данные запроса"
     },
     "filter": {
         "prefix": "filter( key = value )",
-        "body": "filter( ${1:key} = ${2:value} ) ",
+        "body": "filter( ${1:key} = ${2:value} )",
         "description": "Пример: {{ nopaid_block2  = user.us.filter( status = [ 'NOT PAID', 'BLOCK' ] ).items }}"
     },
     "where": {
         "prefix": "where = { key = value }",
-        "body": "where = { ${1:key} = ${2:value} } ",
+        "body": "where = { ${1:key} = ${2:value} }",
         "description": "Пример: {{ nopaid_block = user.us.items( where =  { status = [ 'NOT PAID', 'BLOCK' ] } ) }}"
     },
     "toQueryString": {
@@ -1628,7 +1628,7 @@
     },
     "event_name": {
         "prefix": "event_name",
-        "body": "event_name ",
+        "body": "event_name",
         "description": "Название текущего события"
     },
     "list_for_api": {
@@ -1678,7 +1678,7 @@
     },
     ".set( 'FIELD', 'VALUE' )": {
         "prefix": "set( 'FIELD', 'VALUE' )",
-        "body": "set( '${1:FIELD}', ${2:'VALUE'} ) ",
+        "body": "set( '${1:FIELD}', ${2:'VALUE'} )",
         "description": "Установка поля FIELD в значение VALUE. Пример: server.set('services_count', 123), изменение количества услуг на сервере"
     }
 }
