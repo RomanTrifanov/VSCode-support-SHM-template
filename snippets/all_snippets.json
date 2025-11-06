@@ -1570,6 +1570,11 @@
         "body": "misc.html_escape(${1:str})",
         "description": "Заменяет HTML символы: & => &amp;, < => &lt;, > => &gt;, / => '&#x2F;' и кавычки "
     },
+    "misc.format_time_diff": {
+        "prefix": "misc.format_time_diff()",
+        "body": "misc.format_time_diff(${1:us.expire})",
+        "description": "Возвращает разницу между датой в аргументе () и текущей датой в формате - Осталось: 29 дней, 18 часов"
+    },
     "fromJson": {
         "prefix": "fromJson( data )",
         "body": "fromJson( ${1:data} )",
